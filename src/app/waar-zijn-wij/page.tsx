@@ -4,6 +4,7 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import { getImagePath } from "@/lib/config";
 import { useTranslation } from "@/i18n";
+import Map from "@/components/Map";
 
 export default function WaarZijnWij() {
   const { t } = useTranslation();
@@ -63,19 +64,22 @@ export default function WaarZijnWij() {
                 />
               </div>
 
-              {/* Map placeholder */}
-              <div className="bg-gray-100 rounded-xl p-8 text-center">
+              {/* Map */}
+              <div>
                 <h3 className="text-lg font-semibold text-gray-700 mb-4">
                   {t.whereAreWe.directions}
                 </h3>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=7+Impasse+de+la+Tranquillité+Nades+France"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition-colors"
-                >
-                  {t.common.viewOnGoogleMaps}
-                </a>
+                <Map className="h-64" />
+                <div className="mt-4 text-center">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=7+Impasse+de+la+Tranquillité+Nades+France"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition-colors"
+                  >
+                    {t.common.viewOnGoogleMaps}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
