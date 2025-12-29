@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { getImagePath } from "@/lib/config";
 
 interface ImageGalleryProps {
   images: {
@@ -23,7 +24,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             className="relative aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
           >
             <Image
-              src={image.src}
+              src={getImagePath(image.src)}
               alt={image.alt}
               fill
               className="object-cover"
@@ -87,7 +88,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             onClick={(e) => e.stopPropagation()}
           >
             <Image
-              src={images[selectedImage].src}
+              src={getImagePath(images[selectedImage].src)}
               alt={images[selectedImage].alt}
               fill
               className="object-contain"

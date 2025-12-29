@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getImagePath } from "@/lib/config";
 
 interface HeroProps {
   title: string;
@@ -19,7 +20,7 @@ export default function Hero({
     >
       {image && (
         <Image
-          src={image}
+          src={getImagePath(image)}
           alt={title}
           fill
           className="object-cover"
