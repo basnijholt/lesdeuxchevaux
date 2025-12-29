@@ -72,7 +72,7 @@ export default function WaarZijnWij() {
                 <Map className="h-64" />
                 <div className="mt-4 text-center">
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=7+Impasse+de+la+Tranquillité+Nades+France"
+                    href="https://maps.app.goo.gl/3MdgjqSP66RKNZdX8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition-colors"

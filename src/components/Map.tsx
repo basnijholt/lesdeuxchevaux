@@ -4,10 +4,9 @@ interface MapProps {
   className?: string;
 }
 
-// Coordinates for 7 Impasse de la Tranquillité, Nades, France
-const LAT = 46.2833;
-const LON = 3.0667;
-const ZOOM = 14;
+// Coordinates for Slaperij Les Deux Chevaux, Nades, France
+const LAT = 46.1586;
+const LON = 2.96912;
 
 export default function Map({ className = "h-80" }: MapProps) {
   // OpenStreetMap embed URL with marker
