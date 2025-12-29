@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
+import { getImagePath } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "De streek",
@@ -156,7 +157,7 @@ export default function DeStreek() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/uploads/2018/11/winter-e1543590063310-768x1024.jpg"
+                src={getImagePath("/uploads/2018/11/winter-e1543590063310-768x1024.jpg")}
                 alt="Winter in Auvergne"
                 fill
                 className="object-cover"
