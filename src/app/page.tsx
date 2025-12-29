@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
@@ -5,28 +7,7 @@ import Card from "@/components/Card";
 import ImageGallery from "@/components/ImageGallery";
 import FadeIn from "@/components/FadeIn";
 import { getImagePath } from "@/lib/config";
-
-const highlights = [
-  {
-    title: "Mini-Camping",
-    description:
-      "6 ruime plekken voor tent of caravan in een ontspannen sfeer",
-    image: "/uploads/2020/07/camping-2-1024x656.jpg",
-    href: "/wat-te-verwachten",
-  },
-  {
-    title: "Chambres d'Hôtes",
-    description: "Comfortabele kamers met heerlijk Frans ontbijt",
-    image: "/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg",
-    href: "/wat-te-verwachten",
-  },
-  {
-    title: "Table d'Hôtes",
-    description: "Geniet van authentieke Franse maaltijden",
-    image: "/uploads/2016/09/tafelen.jpg",
-    href: "/tarieven",
-  },
-];
+import { useTranslation } from "@/i18n";
 
 const galleryImages = [
   { src: "/uploads/2020/07/onze-achterkant-1024x768.jpg", alt: "Achtertuin" },
@@ -39,11 +20,34 @@ const galleryImages = [
 ];
 
 export default function Home() {
+  const { t } = useTranslation();
+
+  const highlights = [
+    {
+      title: t.home.highlights.camping.title,
+      description: t.home.highlights.camping.description,
+      image: "/uploads/2020/07/camping-2-1024x656.jpg",
+      href: "/wat-te-verwachten",
+    },
+    {
+      title: t.home.highlights.chambres.title,
+      description: t.home.highlights.chambres.description,
+      image: "/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg",
+      href: "/wat-te-verwachten",
+    },
+    {
+      title: t.home.highlights.table.title,
+      description: t.home.highlights.table.description,
+      image: "/uploads/2016/09/tafelen.jpg",
+      href: "/tarieven",
+    },
+  ];
+
   return (
     <>
       <Hero
         title="Les Deux Chevaux"
-        subtitle="Mini-camping, chambres d'hôtes en table d'hôtes in de Auvergne"
+        subtitle={t.home.heroSubtitle}
         image="/uploads/2020/07/2020-06-29-20.12.14-2-1024x682.jpg"
         fullHeight
       />
@@ -54,16 +58,13 @@ export default function Home() {
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-[#5C5840] mb-8 heading-decorated-center">
-                Welkom in de Auvergne
+                {t.home.welcomeTitle}
               </h2>
               <p className="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
-                Welkom op de website van <strong>Les Deux Chevaux</strong>, een
-                gezellige mini-camping, chambres d&apos;hôtes (Bed & Breakfast) en
-                table d&apos;hôtes in het prachtige Auvergne, Frankrijk.
+                {t.home.welcomeText1}
               </p>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                Wij, Yvonne en Rob, heten u van harte welkom op ons stukje paradijs
-                in het hartje van Frankrijk.
+                {t.home.welcomeText2}
               </p>
             </div>
           </FadeIn>
@@ -75,7 +76,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-bold text-[#5C5840] text-center mb-16 heading-decorated-center">
-              Wat bieden wij?
+              {t.home.whatWeOffer}
             </h2>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -95,16 +96,13 @@ export default function Home() {
             <FadeIn direction="left">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#5C5840] mb-8 heading-decorated">
-                  Waarom &quot;Les Deux Chevaux&quot;?
+                  {t.home.whyTheName}
                 </h2>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  De naam &quot;Les Deux Chevaux&quot; verwijst naar de iconische
-                  Franse auto, de Citroën 2CV - oftewel &quot;deux chevaux&quot;
-                  (twee paardenkrachten).
+                  {t.home.whyTheNameText1}
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Deze auto symboliseert het relaxte, authentieke Franse
-                  plattelandsleven dat wij onze gasten willen bieden.
+                  {t.home.whyTheNameText2}
                 </p>
               </div>
             </FadeIn>
@@ -112,7 +110,7 @@ export default function Home() {
               <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src={getImagePath("/uploads/2020/07/les-deux-chevaux2-1024x682.jpg")}
-                  alt="Les Deux Chevaux - De iconische 2CV"
+                  alt="Les Deux Chevaux - 2CV"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -128,7 +126,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-bold text-[#5C5840] text-center mb-16 heading-decorated-center">
-              Impressies
+              {t.home.impressions}
             </h2>
           </FadeIn>
           <FadeIn delay={200}>
@@ -142,18 +140,17 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Klaar voor uw verblijf in de Auvergne?
+              {t.home.readyForStay}
             </h2>
             <p className="text-xl text-[#D4C9A8] mb-10 max-w-2xl mx-auto leading-relaxed">
-              Neem contact met ons op voor meer informatie of om een reservering
-              te maken.
+              {t.home.ctaText}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-white">
-                Neem contact op
+                {t.common.contact}
               </Link>
               <Link href="/tarieven" className="btn-outline-white">
-                Bekijk tarieven
+                {t.common.viewRates}
               </Link>
             </div>
           </FadeIn>

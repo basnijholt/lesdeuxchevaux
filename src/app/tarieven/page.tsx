@@ -1,66 +1,78 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Tarieven",
-  description:
-    "Bekijk onze prijzen voor mini-camping, chambres d'hôtes en table d'hôtes bij Les Deux Chevaux.",
-};
+import Link from "next/link";
+import { useTranslation } from "@/i18n";
 
 export default function Tarieven() {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* Header */}
       <section className="py-16 bg-amber-800 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold mb-4">Onze Tarieven</h1>
-          <p className="text-xl text-amber-100">
-            Prijzen voor camping, kamers en maaltijden
-          </p>
+          <h1 className="text-4xl font-bold mb-4">{t.rates.heroTitle}</h1>
+          <p className="text-xl text-amber-100">{t.rates.heroSubtitle}</p>
         </div>
       </section>
 
       {/* Camping Rates */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-amber-900 mb-8">Camping</h2>
+          <h2 className="text-3xl font-bold text-amber-900 mb-8">
+            {t.rates.campingTitle}
+          </h2>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="bg-amber-100">
                   <th className="px-6 py-4 text-left text-amber-900 font-semibold">
-                    Omschrijving
+                    {t.rates.description}
                   </th>
                   <th className="px-6 py-4 text-right text-amber-900 font-semibold">
-                    Prijs
+                    {t.rates.price}
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Plek (2 personen + auto)</td>
-                  <td className="px-6 py-4 text-right font-medium">€17,50</td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Extra persoon</td>
-                  <td className="px-6 py-4 text-right font-medium">€2,50</td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Elektriciteit</td>
-                  <td className="px-6 py-4 text-right font-medium text-green-600">
-                    Inbegrepen
+                  <td className="px-6 py-4">
+                    {t.rates.campingItems.pitch.description}
                   </td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Hond (aangelijnd)</td>
-                  <td className="px-6 py-4 text-right font-medium text-green-600">
-                    Gratis
-                  </td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Toeristenbelasting</td>
                   <td className="px-6 py-4 text-right font-medium">
-                    €0,25 p.p./dag
+                    {t.rates.campingItems.pitch.price}
+                  </td>
+                </tr>
+                <tr className="hover:bg-amber-50">
+                  <td className="px-6 py-4">
+                    {t.rates.campingItems.extraPerson.description}
+                  </td>
+                  <td className="px-6 py-4 text-right font-medium">
+                    {t.rates.campingItems.extraPerson.price}
+                  </td>
+                </tr>
+                <tr className="hover:bg-amber-50">
+                  <td className="px-6 py-4">
+                    {t.rates.campingItems.electricity.description}
+                  </td>
+                  <td className="px-6 py-4 text-right font-medium text-green-600">
+                    {t.rates.campingItems.electricity.price}
+                  </td>
+                </tr>
+                <tr className="hover:bg-amber-50">
+                  <td className="px-6 py-4">
+                    {t.rates.campingItems.dog.description}
+                  </td>
+                  <td className="px-6 py-4 text-right font-medium text-green-600">
+                    {t.rates.campingItems.dog.price}
+                  </td>
+                </tr>
+                <tr className="hover:bg-amber-50">
+                  <td className="px-6 py-4">
+                    {t.rates.campingItems.touristTax.description}
+                  </td>
+                  <td className="px-6 py-4 text-right font-medium">
+                    {t.rates.campingItems.touristTax.price}
                   </td>
                 </tr>
               </tbody>
@@ -73,92 +85,110 @@ export default function Tarieven() {
       <section className="py-16 bg-amber-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 mb-8">
-            Chambres d&apos;Hôtes (Bed & Breakfast)
+            {t.rates.chambresTitle}
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-xl shadow-sm">
               <thead>
                 <tr className="bg-amber-100">
                   <th className="px-6 py-4 text-left text-amber-900 font-semibold">
-                    Accommodatie
+                    {t.rates.accommodation}
                   </th>
                   <th className="px-6 py-4 text-right text-amber-900 font-semibold">
-                    Prijs per nacht
+                    {t.rates.pricePerNight}
                   </th>
                   <th className="px-6 py-4 text-left text-amber-900 font-semibold">
-                    Details
+                    {t.rates.details}
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-amber-50">
                   <td className="px-6 py-4 font-medium">
-                    Kamer in hoofdgebouw
+                    {t.rates.chambresItems.mainRoom.name}
                   </td>
                   <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €75,00
+                    {t.rates.chambresItems.mainRoom.price}
                   </td>
                   <td className="px-6 py-4 text-gray-600">
-                    2 personen, incl. ontbijt, eigen douche/toilet
+                    {t.rates.chambresItems.mainRoom.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">La Longère</td>
+                  <td className="px-6 py-4 font-medium">
+                    {t.rates.chambresItems.longere.name}
+                  </td>
                   <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €80,00
+                    {t.rates.chambresItems.longere.price}
                   </td>
                   <td className="px-6 py-4 text-gray-600">
-                    2 personen, incl. ontbijt, eigen badkamer
+                    {t.rates.chambresItems.longere.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
                   <td className="px-6 py-4 text-gray-500 pl-10">
-                    + Extra persoon
+                    {t.rates.chambresItems.extraPerson.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-medium">€30,00</td>
-                  <td className="px-6 py-4 text-gray-600">Per extra persoon</td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">Chez Marco</td>
-                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €80,00
+                  <td className="px-6 py-4 text-right font-medium">
+                    {t.rates.chambresItems.extraPerson.price}
                   </td>
                   <td className="px-6 py-4 text-gray-600">
-                    2 personen, incl. ontbijt, eigen badkamer
+                    {t.rates.chambresItems.extraPerson.details}
+                  </td>
+                </tr>
+                <tr className="hover:bg-amber-50">
+                  <td className="px-6 py-4 font-medium">
+                    {t.rates.chambresItems.chezMarco.name}
+                  </td>
+                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
+                    {t.rates.chambresItems.chezMarco.price}
+                  </td>
+                  <td className="px-6 py-4 text-gray-600">
+                    {t.rates.chambresItems.chezMarco.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
                   <td className="px-6 py-4 text-gray-500 pl-10">
-                    + Extra persoon
+                    {t.rates.chambresItems.extraPerson.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-medium">€30,00</td>
-                  <td className="px-6 py-4 text-gray-600">Per extra persoon</td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">Kleine caravan</td>
-                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €70,00 / €65,00
+                  <td className="px-6 py-4 text-right font-medium">
+                    {t.rates.chambresItems.extraPerson.price}
                   </td>
                   <td className="px-6 py-4 text-gray-600">
-                    Met/zonder ontbijt (min. 2 nachten)
+                    {t.rates.chambresItems.extraPerson.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">Luxe tent</td>
+                  <td className="px-6 py-4 font-medium">
+                    {t.rates.chambresItems.smallCaravan.name}
+                  </td>
                   <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €70,00 / €65,00
+                    {t.rates.chambresItems.smallCaravan.price}
                   </td>
                   <td className="px-6 py-4 text-gray-600">
-                    Met/zonder ontbijt (min. 2 nachten)
+                    {t.rates.chambresItems.smallCaravan.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">La Bergerie (huisje)</td>
+                  <td className="px-6 py-4 font-medium">
+                    {t.rates.chambresItems.luxuryTent.name}
+                  </td>
                   <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €70,00 / €65,00
+                    {t.rates.chambresItems.luxuryTent.price}
                   </td>
                   <td className="px-6 py-4 text-gray-600">
-                    Met/zonder ontbijt
+                    {t.rates.chambresItems.luxuryTent.details}
+                  </td>
+                </tr>
+                <tr className="hover:bg-amber-50">
+                  <td className="px-6 py-4 font-medium">
+                    {t.rates.chambresItems.bergerie.name}
+                  </td>
+                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
+                    {t.rates.chambresItems.bergerie.price}
+                  </td>
+                  <td className="px-6 py-4 text-gray-600">
+                    {t.rates.chambresItems.bergerie.details}
                   </td>
                 </tr>
               </tbody>
@@ -171,43 +201,51 @@ export default function Tarieven() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 mb-8">
-            Table d&apos;Hôtes (Maaltijden)
+            {t.rates.tableTitle}
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="bg-amber-100">
                   <th className="px-6 py-4 text-left text-amber-900 font-semibold">
-                    Maaltijd
+                    {t.rates.meal}
                   </th>
                   <th className="px-6 py-4 text-right text-amber-900 font-semibold">
-                    Prijs
+                    {t.rates.price}
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Driegangen diner met koffie</td>
+                  <td className="px-6 py-4">
+                    {t.rates.tableItems.dinner.description}
+                  </td>
                   <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €20,00 p.p.
+                    {t.rates.tableItems.dinner.price}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Drankjes bij diner</td>
+                  <td className="px-6 py-4">
+                    {t.rates.tableItems.drinks.description}
+                  </td>
                   <td className="px-6 py-4 text-right font-medium">
-                    €2,00 per stuk
+                    {t.rates.tableItems.drinks.price}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Lunch</td>
+                  <td className="px-6 py-4">
+                    {t.rates.tableItems.lunch.description}
+                  </td>
                   <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €7,50 p.p.
+                    {t.rates.tableItems.lunch.price}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">Ontbijt (los)</td>
+                  <td className="px-6 py-4">
+                    {t.rates.tableItems.breakfast.description}
+                  </td>
                   <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    €6,50 p.p.
+                    {t.rates.tableItems.breakfast.price}
                   </td>
                 </tr>
               </tbody>
@@ -219,16 +257,15 @@ export default function Tarieven() {
       {/* CTA */}
       <section className="py-16 bg-amber-800 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Interesse?</h2>
+          <h2 className="text-3xl font-bold mb-6">{t.common.interested}</h2>
           <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
-            Neem contact met ons op voor meer informatie of om een reservering
-            te maken.
+            {t.common.contactUs}
           </p>
           <Link
             href="/contact"
             className="inline-block px-8 py-3 bg-white text-amber-800 font-semibold rounded-lg hover:bg-amber-50 transition-colors"
           >
-            Neem contact op
+            {t.common.contact}
           </Link>
         </div>
       </section>

@@ -1,75 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
 import { getImagePath } from "@/lib/config";
-
-export const metadata: Metadata = {
-  title: "De streek",
-  description:
-    "Ontdek de prachtige Auvergne - wandelen, fietsen, kajakken en meer. De perfecte bestemming voor natuurliefhebbers.",
-};
-
-const activities = [
-  {
-    title: "Wandelen",
-    description:
-      "Talloze paden met verschillende moeilijkheidsgraden door het prachtige landschap.",
-    icon: "🥾",
-  },
-  {
-    title: "Mountainbiken",
-    description: "Een paradijs voor MTB-liefhebbers met uitdagende routes.",
-    icon: "🚵",
-  },
-  {
-    title: "Fietsen",
-    description: "Ontdek de streek op de fiets via schilderachtige wegen.",
-    icon: "🚴",
-  },
-  {
-    title: "Vissen",
-    description: "Vis in de rivier de Sioul, rijk aan diverse vissoorten.",
-    icon: "🎣",
-  },
-  {
-    title: "Kanoën",
-    description: "Vaar over de Sioul en geniet van de natuur vanaf het water.",
-    icon: "🛶",
-  },
-  {
-    title: "Paardrijden",
-    description: "Verken de omgeving te paard of met een ezel.",
-    icon: "🐴",
-  },
-];
-
-const attractions = [
-  {
-    title: "Puy de Dôme",
-    description: "Iconische vulkaan met adembenemend uitzicht.",
-  },
-  {
-    title: "Puy de Sancy",
-    description: "Hoogste berg in het Centraal Massief.",
-  },
-  {
-    title: "Kastelen en ruïnes",
-    description: "Rijk historisch erfgoed in de omgeving.",
-  },
-  {
-    title: "Parc Vulcania",
-    description: "Avontuurlijk themapark over vulkanen bij Clermont-Ferrand.",
-  },
-  {
-    title: "Automuseum Bellenave",
-    description: "Voor liefhebbers van klassieke auto's.",
-  },
-  {
-    title: "Rommelmarkten",
-    description: "Gezellige markten met unieke vondsten.",
-  },
-];
+import { useTranslation } from "@/i18n";
 
 const regionImages = [
   { src: "/uploads/2013/11/WS14.jpg", alt: "Landschap Auvergne" },
@@ -82,11 +17,73 @@ const regionImages = [
 ];
 
 export default function DeStreek() {
+  const { t } = useTranslation();
+
+  const activities = [
+    {
+      title: t.theRegion.activities.hiking.title,
+      description: t.theRegion.activities.hiking.description,
+      icon: "🥾",
+    },
+    {
+      title: t.theRegion.activities.mountainBiking.title,
+      description: t.theRegion.activities.mountainBiking.description,
+      icon: "🚵",
+    },
+    {
+      title: t.theRegion.activities.cycling.title,
+      description: t.theRegion.activities.cycling.description,
+      icon: "🚴",
+    },
+    {
+      title: t.theRegion.activities.fishing.title,
+      description: t.theRegion.activities.fishing.description,
+      icon: "🎣",
+    },
+    {
+      title: t.theRegion.activities.canoeing.title,
+      description: t.theRegion.activities.canoeing.description,
+      icon: "🛶",
+    },
+    {
+      title: t.theRegion.activities.horseRiding.title,
+      description: t.theRegion.activities.horseRiding.description,
+      icon: "🐴",
+    },
+  ];
+
+  const attractions = [
+    {
+      title: t.theRegion.attractions.puyDeDome.title,
+      description: t.theRegion.attractions.puyDeDome.description,
+    },
+    {
+      title: t.theRegion.attractions.puyDeSancy.title,
+      description: t.theRegion.attractions.puyDeSancy.description,
+    },
+    {
+      title: t.theRegion.attractions.castles.title,
+      description: t.theRegion.attractions.castles.description,
+    },
+    {
+      title: t.theRegion.attractions.vulcania.title,
+      description: t.theRegion.attractions.vulcania.description,
+    },
+    {
+      title: t.theRegion.attractions.autoMuseum.title,
+      description: t.theRegion.attractions.autoMuseum.description,
+    },
+    {
+      title: t.theRegion.attractions.fleaMarkets.title,
+      description: t.theRegion.attractions.fleaMarkets.description,
+    },
+  ];
+
   return (
     <>
       <Hero
-        title="Wat heeft de streek te bieden?"
-        subtitle="Ontdek de prachtige Auvergne"
+        title={t.theRegion.heroTitle}
+        subtitle={t.theRegion.heroSubtitle}
         image="/uploads/2013/11/WS14.jpg"
       />
 
@@ -94,14 +91,8 @@ export default function DeStreek() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xl text-gray-600 mb-4">
-              De Auvergne biedt het hele jaar door schoonheid met activiteiten
-              voor iedereen. Het is een plek waar je echt tot rust kunt komen.
-            </p>
-            <p className="text-lg text-gray-500">
-              Laat de technologie achter en geniet van een complete reset in de
-              natuur.
-            </p>
+            <p className="text-xl text-gray-600 mb-4">{t.theRegion.intro1}</p>
+            <p className="text-lg text-gray-500">{t.theRegion.intro2}</p>
           </div>
         </div>
       </section>
@@ -110,7 +101,7 @@ export default function DeStreek() {
       <section className="py-16 bg-amber-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
-            Buitenactiviteiten
+            {t.theRegion.outdoorActivities}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {activities.map((activity) => (
@@ -133,7 +124,7 @@ export default function DeStreek() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
-            Attracties binnen 60 km
+            {t.theRegion.attractionsTitle}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {attractions.map((attraction) => (
@@ -157,7 +148,9 @@ export default function DeStreek() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src={getImagePath("/uploads/2018/11/winter-e1543590063310-768x1024.jpg")}
+                src={getImagePath(
+                  "/uploads/2018/11/winter-e1543590063310-768x1024.jpg"
+                )}
                 alt="Winter in Auvergne"
                 fill
                 className="object-cover"
@@ -166,16 +159,12 @@ export default function DeStreek() {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-amber-900 mb-6">
-                Ook in de winter
+                {t.theRegion.winterTitle}
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                De Auvergne is ook in de winter prachtig, met mogelijkheden voor
-                winterse wandelingen en het genieten van de rust.
+                {t.theRegion.winterText1}
               </p>
-              <p className="text-lg text-gray-600">
-                Geniet van de besneeuwde landschappen en de gezellige sfeer bij
-                de open haard.
-              </p>
+              <p className="text-lg text-gray-600">{t.theRegion.winterText2}</p>
             </div>
           </div>
         </div>
@@ -185,7 +174,7 @@ export default function DeStreek() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
-            Impressies van de streek
+            {t.theRegion.impressions}
           </h2>
           <ImageGallery images={regionImages} />
         </div>

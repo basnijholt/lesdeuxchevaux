@@ -1,0 +1,302 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "whoAreWe": "Qui sommes-nous ?",
+    "whereAreWe": "Où sommes-nous ?",
+    "theRegion": "La région",
+    "whatToExpect": "À quoi s'attendre ?",
+    "rates": "Tarifs",
+    "contact": "Contact"
+  },
+  "common": {
+    "readMore": "En savoir plus",
+    "contact": "Contactez-nous",
+    "viewRates": "Voir les tarifs",
+    "openInGoogleMaps": "Ouvrir dans Google Maps",
+    "allRightsReserved": "Tous droits réservés",
+    "address": "Adresse",
+    "navigation": "Navigation",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "interested": "Intéressé(e) ?",
+    "contactUs": "Contactez-nous pour plus d'informations ou pour faire une réservation.",
+    "location": "Localisation",
+    "viewOnGoogleMaps": "Voir sur Google Maps",
+    "persons": "personnes",
+    "person": "personne",
+    "perNight": "par nuit",
+    "included": "Inclus",
+    "free": "Gratuit"
+  },
+  "home": {
+    "heroSubtitle": "Mini-camping, chambres d'hôtes et table d'hôtes en Auvergne",
+    "welcomeTitle": "Bienvenue en Auvergne",
+    "welcomeText1": "Bienvenue sur le site de Les Deux Chevaux, un mini-camping convivial, chambres d'hôtes (Bed & Breakfast) et table d'hôtes dans la magnifique Auvergne, France.",
+    "welcomeText2": "Nous, Yvonne et Rob, vous souhaitons la bienvenue dans notre petit coin de paradis au cœur de la France.",
+    "whatWeOffer": "Que proposons-nous ?",
+    "whyTheName": "Pourquoi \"Les Deux Chevaux\" ?",
+    "whyTheNameText1": "Le nom \"Les Deux Chevaux\" fait référence à l'emblématique voiture française, la Citroën 2CV - soit \"deux chevaux\" (deux chevaux-vapeur).",
+    "whyTheNameText2": "Cette voiture symbolise la vie détendue et authentique de la campagne française que nous souhaitons offrir à nos hôtes.",
+    "impressions": "Impressions",
+    "readyForStay": "Prêt pour votre séjour en Auvergne ?",
+    "ctaText": "Contactez-nous pour plus d'informations ou pour faire une réservation.",
+    "highlights": {
+      "camping": {
+        "title": "Mini-Camping",
+        "description": "6 emplacements spacieux pour tente ou caravane dans une ambiance détendue"
+      },
+      "chambres": {
+        "title": "Chambres d'Hôtes",
+        "description": "Chambres confortables avec délicieux petit-déjeuner français"
+      },
+      "table": {
+        "title": "Table d'Hôtes",
+        "description": "Savourez d'authentiques repas français"
+      }
+    }
+  },
+  "whoAreWe": {
+    "heroSubtitle": "Faites connaissance avec Yvonne et Rob",
+    "title": "Yvonne van de Velde & Rob Nijholt",
+    "text1": "Fin juin 2013, nous avons quitté Zierikzee, aux Pays-Bas, pour nous installer en Auvergne, en France, afin de réaliser notre rêve.",
+    "text2": "Aujourd'hui, nous gérons avec plaisir notre mini-camping et nos chambres d'hôtes. Nous vous souhaitons la bienvenue pour partager avec nous le calme et la beauté de l'Auvergne.",
+    "text3": "Que vous veniez camper, passer la nuit dans l'une de nos chambres ou profiter de notre table d'hôtes - nous veillons à ce que vous vous sentiez chez vous.",
+    "jipTitle": "Notre fidèle ami Jip",
+    "jipText": "Et puis il y a Jip, notre fidèle compagnon qui vous accueillera avec plaisir à votre arrivée ! Jip est toujours content de rencontrer de nouveaux hôtes et vous réserve un accueil chaleureux."
+  },
+  "whereAreWe": {
+    "heroSubtitle": "Notre emplacement au cœur de l'Auvergne",
+    "title": "Nades, Auvergne",
+    "text": "Nous nous trouvons dans le pittoresque village de Nades (prononcé \"nade\"), situé à l'extrême sud du département de l'Allier, l'un des quatre départements de la région Auvergne.",
+    "addressTitle": "Adresse",
+    "addressNote": "Cette adresse est reconnue par Google Maps et les systèmes de navigation TomTom.",
+    "distances": "Distances",
+    "distance1": "Environ 60 km au nord de Clermont-Ferrand",
+    "distance2": "Environ 750 km de Zierikzee, Pays-Bas (à mi-chemin de la route sud)",
+    "directions": "Itinéraire"
+  },
+  "theRegion": {
+    "heroTitle": "Que propose la région ?",
+    "heroSubtitle": "Découvrez la magnifique Auvergne",
+    "intro1": "L'Auvergne offre beauté et activités toute l'année pour tous. C'est un endroit où vous pouvez vraiment vous ressourcer.",
+    "intro2": "Laissez la technologie derrière vous et profitez d'une remise à zéro complète dans la nature.",
+    "outdoorActivities": "Activités de plein air",
+    "attractionsTitle": "Attractions dans un rayon de 60 km",
+    "winterTitle": "Aussi en hiver",
+    "winterText1": "L'Auvergne est également magnifique en hiver, avec des possibilités de randonnées hivernales et le plaisir du calme.",
+    "winterText2": "Profitez des paysages enneigés et de l'ambiance chaleureuse près de la cheminée.",
+    "impressions": "Impressions de la région",
+    "activities": {
+      "hiking": {
+        "title": "Randonnée",
+        "description": "De nombreux sentiers de différents niveaux de difficulté à travers le magnifique paysage."
+      },
+      "mountainBiking": {
+        "title": "VTT",
+        "description": "Un paradis pour les amateurs de VTT avec des parcours stimulants."
+      },
+      "cycling": {
+        "title": "Cyclisme",
+        "description": "Découvrez la région à vélo via des routes pittoresques."
+      },
+      "fishing": {
+        "title": "Pêche",
+        "description": "Pêchez dans la rivière Sioule, riche en espèces de poissons diverses."
+      },
+      "canoeing": {
+        "title": "Canoë",
+        "description": "Naviguez sur la Sioule et profitez de la nature depuis l'eau."
+      },
+      "horseRiding": {
+        "title": "Équitation",
+        "description": "Explorez les environs à cheval ou à dos d'âne."
+      }
+    },
+    "attractions": {
+      "puyDeDome": {
+        "title": "Puy de Dôme",
+        "description": "Volcan emblématique avec une vue imprenable."
+      },
+      "puyDeSancy": {
+        "title": "Puy de Sancy",
+        "description": "Plus haut sommet du Massif Central."
+      },
+      "castles": {
+        "title": "Châteaux et ruines",
+        "description": "Riche patrimoine historique dans les environs."
+      },
+      "vulcania": {
+        "title": "Parc Vulcania",
+        "description": "Parc à thème aventure sur les volcans près de Clermont-Ferrand."
+      },
+      "autoMuseum": {
+        "title": "Musée de l'Auto Bellenave",
+        "description": "Pour les amateurs de voitures classiques."
+      },
+      "fleaMarkets": {
+        "title": "Marchés aux puces",
+        "description": "Marchés conviviaux avec des trouvailles uniques."
+      }
+    }
+  },
+  "whatToExpect": {
+    "heroTitle": "À quoi s'attendre chez nous ?",
+    "heroSubtitle": "Nos hébergements et équipements",
+    "intro": "Chez Les Deux Chevaux, nous proposons différentes options d'hébergement, du camping aux chambres de luxe, le tout avec l'accueil chaleureux que vous pouvez attendre de nous.",
+    "chambresTitle": "Chambres d'Hôtes",
+    "rooms": {
+      "red": {
+        "name": "Chambre Rouge",
+        "capacity": "2 personnes",
+        "description": "Confortable et chaleureusement décorée"
+      },
+      "green": {
+        "name": "Chambre Verte",
+        "capacity": "2 personnes",
+        "description": "Avec vue sur le jardin"
+      },
+      "blue": {
+        "name": "Chambre Bleue",
+        "capacity": "2-3 personnes",
+        "description": "Spacieuse et lumineuse"
+      },
+      "family": {
+        "name": "Chambres Famille/Amis",
+        "capacity": "Jusqu'à 7 personnes",
+        "description": "Parfait pour les groupes"
+      }
+    },
+    "campingTitle": "Mini-Camping",
+    "campingText": "Nous avons 6 emplacements pour tentes et caravanes, dans une ambiance détendue avec tous les équipements nécessaires.",
+    "campingFeatures": {
+      "electricity": "Électricité incluse",
+      "dogs": "Chiens bienvenus (en laisse)",
+      "quiet": "Environnement calme et verdoyant",
+      "sanitary": "Sanitaires partagés"
+    },
+    "additionalTitle": "Options d'hébergement supplémentaires",
+    "caravan": {
+      "title": "Caravane équipée",
+      "text": "Pour ceux qui veulent camper sans leur propre équipement. Entièrement équipée et prête à l'emploi.",
+      "note": "Minimum 2 nuits"
+    },
+    "bergerie": {
+      "title": "La Bergerie",
+      "text": "Un petit cottage romantique pour les couples. Privé et paisiblement situé sur notre terrain.",
+      "note": "Parfait pour une escapade romantique"
+    },
+    "tableTitle": "Table d'Hôtes",
+    "tableText": "Notre table d'hôtes propose de délicieux repas fraîchement préparés. Profitez d'une expérience culinaire française authentique avec d'autres hôtes.",
+    "tableFeatures": {
+      "dinner": "Dîner trois services avec café",
+      "fresh": "Ingrédients frais et locaux",
+      "atmosphere": "Ambiance conviviale avec d'autres hôtes"
+    },
+    "impressions": "Impressions"
+  },
+  "rates": {
+    "heroTitle": "Nos Tarifs",
+    "heroSubtitle": "Prix pour le camping, les chambres et les repas",
+    "campingTitle": "Camping",
+    "description": "Description",
+    "price": "Prix",
+    "campingItems": {
+      "pitch": {
+        "description": "Emplacement (2 personnes + voiture)",
+        "price": "17,50 €"
+      },
+      "extraPerson": {
+        "description": "Personne supplémentaire",
+        "price": "2,50 €"
+      },
+      "electricity": {
+        "description": "Électricité",
+        "price": "Inclus"
+      },
+      "dog": {
+        "description": "Chien (en laisse)",
+        "price": "Gratuit"
+      },
+      "touristTax": {
+        "description": "Taxe de séjour",
+        "price": "0,25 € p.p./jour"
+      }
+    },
+    "chambresTitle": "Chambres d'Hôtes (Bed & Breakfast)",
+    "accommodation": "Hébergement",
+    "pricePerNight": "Prix par nuit",
+    "details": "Détails",
+    "chambresItems": {
+      "mainRoom": {
+        "name": "Chambre dans bâtiment principal",
+        "price": "75,00 €",
+        "details": "2 personnes, petit-déj. incl., douche/WC privés"
+      },
+      "longere": {
+        "name": "La Longère",
+        "price": "80,00 €",
+        "details": "2 personnes, petit-déj. incl., salle de bain privée"
+      },
+      "extraPerson": {
+        "name": "+ Personne supplémentaire",
+        "price": "30,00 €",
+        "details": "Par personne supplémentaire"
+      },
+      "chezMarco": {
+        "name": "Chez Marco",
+        "price": "80,00 €",
+        "details": "2 personnes, petit-déj. incl., salle de bain privée"
+      },
+      "smallCaravan": {
+        "name": "Petite caravane",
+        "price": "70,00 € / 65,00 €",
+        "details": "Avec/sans petit-déjeuner (min. 2 nuits)"
+      },
+      "luxuryTent": {
+        "name": "Tente de luxe",
+        "price": "70,00 € / 65,00 €",
+        "details": "Avec/sans petit-déjeuner (min. 2 nuits)"
+      },
+      "bergerie": {
+        "name": "La Bergerie (cottage)",
+        "price": "70,00 € / 65,00 €",
+        "details": "Avec/sans petit-déjeuner"
+      }
+    },
+    "tableTitle": "Table d'Hôtes (Repas)",
+    "meal": "Repas",
+    "tableItems": {
+      "dinner": {
+        "description": "Dîner trois services avec café",
+        "price": "20,00 € p.p."
+      },
+      "drinks": {
+        "description": "Boissons au dîner",
+        "price": "2,00 € pièce"
+      },
+      "lunch": {
+        "description": "Déjeuner",
+        "price": "7,50 € p.p."
+      },
+      "breakfast": {
+        "description": "Petit-déjeuner (séparé)",
+        "price": "6,50 € p.p."
+      }
+    }
+  },
+  "contact": {
+    "heroSubtitle": "Contactez-nous pour plus d'informations ou une réservation",
+    "contactDetails": "Coordonnées",
+    "phoneYvonne": "Téléphone Yvonne",
+    "phoneRob": "Téléphone Rob",
+    "viewLocationText": "Voir notre emplacement sur Google Maps"
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Adresse",
+    "navigation": "Navigation",
+    "allRightsReserved": "Tous droits réservés",
+    "rates": "Tarifs",
+    "theRegion": "La région"
+  }
+}
