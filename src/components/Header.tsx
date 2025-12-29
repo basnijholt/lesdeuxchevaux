@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { getImagePath } from "@/lib/config";
 
 const navigation = [
@@ -17,42 +17,20 @@ const navigation = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-[#837F5A]/95 backdrop-blur-md shadow-lg"
-          : "bg-[#837F5A] shadow-md"
-      }`}
-    >
+    <header className="sticky top-0 z-50 bg-[#837F5A] shadow-md">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div
-          className={`flex justify-between items-center transition-all duration-300 ${
-            isScrolled ? "h-16" : "h-20"
-          }`}
-        >
+        <div className="flex h-20 justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center group">
+            <Link href="/" className="flex items-center">
               <Image
                 src={getImagePath("/logo.jpg")}
                 alt="Les Deux Chevaux"
                 width={200}
                 height={85}
-                className={`w-auto transition-all duration-300 ${
-                  isScrolled ? "h-12" : "h-16"
-                }`}
+                className="h-16 w-auto"
                 priority
               />
             </Link>
