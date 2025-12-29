@@ -1,0 +1,302 @@
+{
+  "nav": {
+    "home": "Home",
+    "whoAreWe": "Wie zijn wij?",
+    "whereAreWe": "Waar zitten wij?",
+    "theRegion": "De streek",
+    "whatToExpect": "Wat te verwachten?",
+    "rates": "Tarieven",
+    "contact": "Contact"
+  },
+  "common": {
+    "readMore": "Lees meer",
+    "contact": "Neem contact op",
+    "viewRates": "Bekijk tarieven",
+    "openInGoogleMaps": "Open in Google Maps",
+    "allRightsReserved": "Alle rechten voorbehouden",
+    "address": "Adres",
+    "navigation": "Navigatie",
+    "phone": "Telefoon",
+    "email": "E-mail",
+    "interested": "Interesse?",
+    "contactUs": "Neem contact met ons op voor meer informatie of om een reservering te maken.",
+    "location": "Locatie",
+    "viewOnGoogleMaps": "Bekijk op Google Maps",
+    "persons": "personen",
+    "person": "persoon",
+    "perNight": "per nacht",
+    "included": "Inbegrepen",
+    "free": "Gratis"
+  },
+  "home": {
+    "heroSubtitle": "Mini-camping, chambres d'hôtes en table d'hôtes in de Auvergne",
+    "welcomeTitle": "Welkom in de Auvergne",
+    "welcomeText1": "Welkom op de website van Les Deux Chevaux, een gezellige mini-camping, chambres d'hôtes (Bed & Breakfast) en table d'hôtes in het prachtige Auvergne, Frankrijk.",
+    "welcomeText2": "Wij, Yvonne en Rob, heten u van harte welkom op ons stukje paradijs in het hartje van Frankrijk.",
+    "whatWeOffer": "Wat bieden wij?",
+    "whyTheName": "Waarom \"Les Deux Chevaux\"?",
+    "whyTheNameText1": "De naam \"Les Deux Chevaux\" verwijst naar de iconische Franse auto, de Citroën 2CV - oftewel \"deux chevaux\" (twee paardenkrachten).",
+    "whyTheNameText2": "Deze auto symboliseert het relaxte, authentieke Franse plattelandsleven dat wij onze gasten willen bieden.",
+    "impressions": "Impressies",
+    "readyForStay": "Klaar voor uw verblijf in de Auvergne?",
+    "ctaText": "Neem contact met ons op voor meer informatie of om een reservering te maken.",
+    "highlights": {
+      "camping": {
+        "title": "Mini-Camping",
+        "description": "6 ruime plekken voor tent of caravan in een ontspannen sfeer"
+      },
+      "chambres": {
+        "title": "Chambres d'Hôtes",
+        "description": "Comfortabele kamers met heerlijk Frans ontbijt"
+      },
+      "table": {
+        "title": "Table d'Hôtes",
+        "description": "Geniet van authentieke Franse maaltijden"
+      }
+    }
+  },
+  "whoAreWe": {
+    "heroSubtitle": "Maak kennis met Yvonne en Rob",
+    "title": "Yvonne van de Velde & Rob Nijholt",
+    "text1": "Wij zijn eind juni 2013 vanuit Zierikzee, Nederland, naar de Auvergne in Frankrijk verhuisd om ons droomleven te beginnen.",
+    "text2": "Nu runnen wij met veel plezier onze mini-camping en chambres d'hôtes. We heten u van harte welkom om de rust en schoonheid van de Auvergne met ons te delen.",
+    "text3": "Of u nu komt kamperen, overnachten in een van onze kamers, of genieten van onze table d'hôtes - wij zorgen ervoor dat u zich thuis voelt.",
+    "jipTitle": "Onze trouwe vriend Jip",
+    "jipText": "En dan is er nog Jip, ons trouwe maatje die u graag begroet bij aankomst! Jip is altijd blij om nieuwe gasten te ontmoeten en zorgt voor een warm welkom."
+  },
+  "whereAreWe": {
+    "heroSubtitle": "Onze locatie in het hart van de Auvergne",
+    "title": "Nades, Auvergne",
+    "text": "Wij bevinden ons in het pittoreske dorpje Nades (spreek uit: \"nade\"), gelegen in het uiterste zuiden van het departement Allier, één van de vier departementen in de regio Auvergne.",
+    "addressTitle": "Adres",
+    "addressNote": "Dit adres wordt herkend door zowel Google Maps als TomTom navigatiesystemen.",
+    "distances": "Afstanden",
+    "distance1": "Ongeveer 60 km ten noorden van Clermont-Ferrand",
+    "distance2": "Ongeveer 750 km van Zierikzee, Nederland (halverwege de zuidelijke route)",
+    "directions": "Routebeschrijving"
+  },
+  "theRegion": {
+    "heroTitle": "Wat heeft de streek te bieden?",
+    "heroSubtitle": "Ontdek de prachtige Auvergne",
+    "intro1": "De Auvergne biedt het hele jaar door schoonheid met activiteiten voor iedereen. Het is een plek waar je echt tot rust kunt komen.",
+    "intro2": "Laat de technologie achter en geniet van een complete reset in de natuur.",
+    "outdoorActivities": "Buitenactiviteiten",
+    "attractionsTitle": "Attracties binnen 60 km",
+    "winterTitle": "Ook in de winter",
+    "winterText1": "De Auvergne is ook in de winter prachtig, met mogelijkheden voor winterse wandelingen en het genieten van de rust.",
+    "winterText2": "Geniet van de besneeuwde landschappen en de gezellige sfeer bij de open haard.",
+    "impressions": "Impressies van de streek",
+    "activities": {
+      "hiking": {
+        "title": "Wandelen",
+        "description": "Talloze paden met verschillende moeilijkheidsgraden door het prachtige landschap."
+      },
+      "mountainBiking": {
+        "title": "Mountainbiken",
+        "description": "Een paradijs voor MTB-liefhebbers met uitdagende routes."
+      },
+      "cycling": {
+        "title": "Fietsen",
+        "description": "Ontdek de streek op de fiets via schilderachtige wegen."
+      },
+      "fishing": {
+        "title": "Vissen",
+        "description": "Vis in de rivier de Sioul, rijk aan diverse vissoorten."
+      },
+      "canoeing": {
+        "title": "Kanoën",
+        "description": "Vaar over de Sioul en geniet van de natuur vanaf het water."
+      },
+      "horseRiding": {
+        "title": "Paardrijden",
+        "description": "Verken de omgeving te paard of met een ezel."
+      }
+    },
+    "attractions": {
+      "puyDeDome": {
+        "title": "Puy de Dôme",
+        "description": "Iconische vulkaan met adembenemend uitzicht."
+      },
+      "puyDeSancy": {
+        "title": "Puy de Sancy",
+        "description": "Hoogste berg in het Centraal Massief."
+      },
+      "castles": {
+        "title": "Kastelen en ruïnes",
+        "description": "Rijk historisch erfgoed in de omgeving."
+      },
+      "vulcania": {
+        "title": "Parc Vulcania",
+        "description": "Avontuurlijk themapark over vulkanen bij Clermont-Ferrand."
+      },
+      "autoMuseum": {
+        "title": "Automuseum Bellenave",
+        "description": "Voor liefhebbers van klassieke auto's."
+      },
+      "fleaMarkets": {
+        "title": "Rommelmarkten",
+        "description": "Gezellige markten met unieke vondsten."
+      }
+    }
+  },
+  "whatToExpect": {
+    "heroTitle": "Wat kun je bij ons verwachten?",
+    "heroSubtitle": "Onze accommodaties en faciliteiten",
+    "intro": "Bij Les Deux Chevaux bieden we verschillende verblijfsmogelijkheden, van kamperen tot luxe kamers, allemaal met de warme gastvrijheid die u van ons mag verwachten.",
+    "chambresTitle": "Chambres d'Hôtes",
+    "rooms": {
+      "red": {
+        "name": "Rode Kamer",
+        "capacity": "2 personen",
+        "description": "Comfortabel en sfeervol ingericht"
+      },
+      "green": {
+        "name": "Groene Kamer",
+        "capacity": "2 personen",
+        "description": "Met uitzicht op de tuin"
+      },
+      "blue": {
+        "name": "Blauwe Kamer",
+        "capacity": "2-3 personen",
+        "description": "Ruim en licht"
+      },
+      "family": {
+        "name": "Familie/Vrienden Kamers",
+        "capacity": "Tot 7 personen",
+        "description": "Perfect voor groepen"
+      }
+    },
+    "campingTitle": "Mini-Camping",
+    "campingText": "Wij hebben 6 plekken voor tenten en caravans, met een ontspannen sfeer en alle nodige faciliteiten.",
+    "campingFeatures": {
+      "electricity": "Elektriciteit inbegrepen",
+      "dogs": "Honden welkom (aangelijnd)",
+      "quiet": "Rustige, groene omgeving",
+      "sanitary": "Gedeelde sanitaire voorzieningen"
+    },
+    "additionalTitle": "Aanvullende Verblijfsopties",
+    "caravan": {
+      "title": "Uitgeruste Caravan",
+      "text": "Voor wie wil kamperen zonder eigen spullen. Volledig ingericht en klaar voor gebruik.",
+      "note": "Minimaal 2 nachten verblijf"
+    },
+    "bergerie": {
+      "title": "La Bergerie",
+      "text": "Een romantisch huisje voor koppels. Privé en rustig gelegen op ons terrein.",
+      "note": "Perfect voor een romantisch uitje"
+    },
+    "tableTitle": "Table d'Hôtes",
+    "tableText": "Onze table d'hôtes biedt heerlijke, vers bereide maaltijden. Geniet samen met andere gasten van een authentieke Franse eetervaring.",
+    "tableFeatures": {
+      "dinner": "Driegangen diner met koffie",
+      "fresh": "Verse, lokale ingrediënten",
+      "atmosphere": "Gezellige sfeer met andere gasten"
+    },
+    "impressions": "Impressies"
+  },
+  "rates": {
+    "heroTitle": "Onze Tarieven",
+    "heroSubtitle": "Prijzen voor camping, kamers en maaltijden",
+    "campingTitle": "Camping",
+    "description": "Omschrijving",
+    "price": "Prijs",
+    "campingItems": {
+      "pitch": {
+        "description": "Plek (2 personen + auto)",
+        "price": "€17,50"
+      },
+      "extraPerson": {
+        "description": "Extra persoon",
+        "price": "€2,50"
+      },
+      "electricity": {
+        "description": "Elektriciteit",
+        "price": "Inbegrepen"
+      },
+      "dog": {
+        "description": "Hond (aangelijnd)",
+        "price": "Gratis"
+      },
+      "touristTax": {
+        "description": "Toeristenbelasting",
+        "price": "€0,25 p.p./dag"
+      }
+    },
+    "chambresTitle": "Chambres d'Hôtes (Bed & Breakfast)",
+    "accommodation": "Accommodatie",
+    "pricePerNight": "Prijs per nacht",
+    "details": "Details",
+    "chambresItems": {
+      "mainRoom": {
+        "name": "Kamer in hoofdgebouw",
+        "price": "€75,00",
+        "details": "2 personen, incl. ontbijt, eigen douche/toilet"
+      },
+      "longere": {
+        "name": "La Longère",
+        "price": "€80,00",
+        "details": "2 personen, incl. ontbijt, eigen badkamer"
+      },
+      "extraPerson": {
+        "name": "+ Extra persoon",
+        "price": "€30,00",
+        "details": "Per extra persoon"
+      },
+      "chezMarco": {
+        "name": "Chez Marco",
+        "price": "€80,00",
+        "details": "2 personen, incl. ontbijt, eigen badkamer"
+      },
+      "smallCaravan": {
+        "name": "Kleine caravan",
+        "price": "€70,00 / €65,00",
+        "details": "Met/zonder ontbijt (min. 2 nachten)"
+      },
+      "luxuryTent": {
+        "name": "Luxe tent",
+        "price": "€70,00 / €65,00",
+        "details": "Met/zonder ontbijt (min. 2 nachten)"
+      },
+      "bergerie": {
+        "name": "La Bergerie (huisje)",
+        "price": "€70,00 / €65,00",
+        "details": "Met/zonder ontbijt"
+      }
+    },
+    "tableTitle": "Table d'Hôtes (Maaltijden)",
+    "meal": "Maaltijd",
+    "tableItems": {
+      "dinner": {
+        "description": "Driegangen diner met koffie",
+        "price": "€20,00 p.p."
+      },
+      "drinks": {
+        "description": "Drankjes bij diner",
+        "price": "€2,00 per stuk"
+      },
+      "lunch": {
+        "description": "Lunch",
+        "price": "€7,50 p.p."
+      },
+      "breakfast": {
+        "description": "Ontbijt (los)",
+        "price": "€6,50 p.p."
+      }
+    }
+  },
+  "contact": {
+    "heroSubtitle": "Neem contact met ons op voor meer informatie of een reservering",
+    "contactDetails": "Contactgegevens",
+    "phoneYvonne": "Telefoon Yvonne",
+    "phoneRob": "Telefoon Rob",
+    "viewLocationText": "Bekijk onze locatie op Google Maps"
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Adres",
+    "navigation": "Navigatie",
+    "allRightsReserved": "Alle rechten voorbehouden",
+    "rates": "Tarieven",
+    "theRegion": "De streek"
+  }
+}

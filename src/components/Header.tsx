@@ -4,19 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { getImagePath } from "@/lib/config";
-
-const navigation = [
-  { title: "Home", href: "/" },
-  { title: "Wie zijn wij?", href: "/wie-zijn-wij" },
-  { title: "Waar zitten wij?", href: "/waar-zijn-wij" },
-  { title: "De streek", href: "/de-streek" },
-  { title: "Wat te verwachten?", href: "/wat-te-verwachten" },
-  { title: "Tarieven", href: "/tarieven" },
-  { title: "Contact", href: "/contact" },
-];
+import { useTranslation } from "@/i18n";
+import LanguageToggle from "./LanguageToggle";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const navigation = [
+    { title: t.nav.home, href: "/" },
+    { title: t.nav.whoAreWe, href: "/wie-zijn-wij" },
+    { title: t.nav.whereAreWe, href: "/waar-zijn-wij" },
+    { title: t.nav.theRegion, href: "/de-streek" },
+    { title: t.nav.whatToExpect, href: "/wat-te-verwachten" },
+    { title: t.nav.rates, href: "/tarieven" },
+    { title: t.nav.contact, href: "/contact" },
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-[#837F5A] shadow-md">
@@ -37,7 +40,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:gap-8">
+          <div className="hidden lg:flex lg:items-center lg:gap-6">
             {navigation.map((item) => (
               <Link
                 key={item.href}
@@ -47,10 +50,12 @@ export default function Header() {
                 {item.title}
               </Link>
             ))}
+            <LanguageToggle />
           </div>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center gap-3">
+            <LanguageToggle />
             <button
               type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}

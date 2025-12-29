@@ -1,20 +1,18 @@
+"use client";
+
 import Image from "next/image";
-import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import { getImagePath } from "@/lib/config";
-
-export const metadata: Metadata = {
-  title: "Wie zijn wij?",
-  description:
-    "Maak kennis met Yvonne en Rob, de eigenaren van Les Deux Chevaux in de Auvergne.",
-};
+import { useTranslation } from "@/i18n";
 
 export default function WieZijnWij() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Hero
-        title="Wie zijn wij?"
-        subtitle="Maak kennis met Yvonne en Rob"
+        title={t.nav.whoAreWe}
+        subtitle={t.whoAreWe.heroSubtitle}
         image="/uploads/2021/09/rob-en-yvonne-1.jpg"
       />
 
@@ -23,22 +21,11 @@ export default function WieZijnWij() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="prose max-w-none">
               <h2 className="text-2xl font-bold text-amber-900 mb-6">
-                Yvonne van de Velde & Rob Nijholt
+                {t.whoAreWe.title}
               </h2>
-              <p className="text-lg text-gray-600 mb-4">
-                Wij zijn eind juni 2013 vanuit Zierikzee, Nederland, naar de
-                Auvergne in Frankrijk verhuisd om ons droomleven te beginnen.
-              </p>
-              <p className="text-lg text-gray-600 mb-4">
-                Nu runnen wij met veel plezier onze mini-camping en chambres
-                d&apos;hôtes. We heten u van harte welkom om de rust en schoonheid
-                van de Auvergne met ons te delen.
-              </p>
-              <p className="text-lg text-gray-600">
-                Of u nu komt kamperen, overnachten in een van onze kamers, of
-                genieten van onze table d&apos;hôtes - wij zorgen ervoor dat u
-                zich thuis voelt.
-              </p>
+              <p className="text-lg text-gray-600 mb-4">{t.whoAreWe.text1}</p>
+              <p className="text-lg text-gray-600 mb-4">{t.whoAreWe.text2}</p>
+              <p className="text-lg text-gray-600">{t.whoAreWe.text3}</p>
             </div>
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
               <Image
@@ -64,36 +51,10 @@ export default function WieZijnWij() {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-amber-900 mb-6">
-                Onze trouwe vriend Jip
+                {t.whoAreWe.jipTitle}
               </h2>
-              <p className="text-lg text-gray-600">
-                En dan is er nog <strong>Jip</strong>, ons trouwe maatje die u
-                graag begroet bij aankomst! Jip is altijd blij om nieuwe gasten
-                te ontmoeten en zorgt voor een warm welkom.
-              </p>
+              <p className="text-lg text-gray-600">{t.whoAreWe.jipText}</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* French version */}
-      <section className="py-16 bg-amber-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-amber-900 mb-6">
-              Qui sommes-nous?
-            </h2>
-            <p className="text-lg text-gray-600 mb-4">
-              <strong>Les Deux Chevaux</strong> est géré par{" "}
-              <strong>Yvonne van de Velde</strong> et{" "}
-              <strong>Rob Nijholt</strong>.
-            </p>
-            <p className="text-lg text-gray-600">
-              Fin juin 2013, nous avons quitté Zierikzee, aux Pays-Bas, pour
-              nous installer en Auvergne, en France, afin de réaliser notre
-              rêve. Aujourd&apos;hui, nous gérons avec plaisir notre mini-camping
-              et nos chambres d&apos;hôtes.
-            </p>
           </div>
         </div>
       </section>
