@@ -1,13 +1,18 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslation } from "@/i18n";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-[#5C5840] text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4">{t.footer.contact}</h3>
             <div className="space-y-2 text-[#D4C9A8]">
               <p>
                 <a
@@ -24,35 +29,35 @@ export default function Footer() {
 
           {/* Address */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Adres</h3>
+            <h3 className="text-lg font-semibold mb-4">{t.footer.address}</h3>
             <div className="text-[#D4C9A8]">
               <p>7 Impasse de la Tranquillité</p>
               <p>Nades, Allier</p>
-              <p>Auvergne, Frankrijk</p>
+              <p>Auvergne, France</p>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Navigatie</h3>
+            <h3 className="text-lg font-semibold mb-4">{t.footer.navigation}</h3>
             <div className="space-y-2">
               <Link
                 href="/tarieven"
                 className="block text-[#D4C9A8] hover:text-white transition-colors"
               >
-                Tarieven
+                {t.footer.rates}
               </Link>
               <Link
                 href="/contact"
                 className="block text-[#D4C9A8] hover:text-white transition-colors"
               >
-                Contact
+                {t.nav.contact}
               </Link>
               <Link
                 href="/de-streek"
                 className="block text-[#D4C9A8] hover:text-white transition-colors"
               >
-                De streek
+                {t.footer.theRegion}
               </Link>
             </div>
           </div>
@@ -60,8 +65,8 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-[#4A4635] text-center text-[#D4C9A8]">
           <p>
-            &copy; {new Date().getFullYear()} Les Deux Chevaux. Alle rechten
-            voorbehouden.
+            &copy; {new Date().getFullYear()} Les Deux Chevaux.{" "}
+            {t.footer.allRightsReserved}.
           </p>
         </div>
       </div>

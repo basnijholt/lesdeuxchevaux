@@ -1,21 +1,17 @@
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Neem contact op met Les Deux Chevaux voor reserveringen of vragen. E-mail of bel ons!",
-};
+import { useTranslation } from "@/i18n";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* Header */}
       <section className="py-16 bg-amber-800 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold mb-4">Contact</h1>
-          <p className="text-xl text-amber-100">
-            Neem contact met ons op voor meer informatie of een reservering
-          </p>
+          <h1 className="text-4xl font-bold mb-4">{t.nav.contact}</h1>
+          <p className="text-xl text-amber-100">{t.contact.heroSubtitle}</p>
         </div>
       </section>
 
@@ -25,7 +21,7 @@ export default function Contact() {
             {/* Contact Info */}
             <div>
               <h2 className="text-2xl font-bold text-amber-900 mb-8">
-                Contactgegevens
+                {t.contact.contactDetails}
               </h2>
 
               <div className="space-y-6">
@@ -47,7 +43,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">E-mail</h3>
+                    <h3 className="font-semibold text-gray-900">
+                      {t.common.email}
+                    </h3>
                     <a
                       href="mailto:lesdeuxchevaux@gmail.com"
                       className="text-amber-700 hover:text-amber-800 transition-colors"
@@ -76,7 +74,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">
-                      Telefoon Yvonne
+                      {t.contact.phoneYvonne}
                     </h3>
                     <a
                       href="tel:+33786141714"
@@ -105,7 +103,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Telefoon Rob</h3>
+                    <h3 className="font-semibold text-gray-900">
+                      {t.contact.phoneRob}
+                    </h3>
                     <a
                       href="tel:+33768859020"
                       className="text-amber-700 hover:text-amber-800 transition-colors"
@@ -138,13 +138,15 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Adres</h3>
+                    <h3 className="font-semibold text-gray-900">
+                      {t.common.address}
+                    </h3>
                     <address className="not-italic text-gray-600">
                       7 Impasse de la Tranquillité
                       <br />
                       Nades, Allier
                       <br />
-                      Auvergne, Frankrijk
+                      Auvergne, France
                     </address>
                   </div>
                 </div>
@@ -154,12 +156,12 @@ export default function Contact() {
             {/* Map */}
             <div>
               <h2 className="text-2xl font-bold text-amber-900 mb-8">
-                Locatie
+                {t.common.location}
               </h2>
               <div className="bg-gray-100 rounded-xl overflow-hidden h-80 flex items-center justify-center">
                 <div className="text-center p-8">
                   <p className="text-gray-600 mb-4">
-                    Bekijk onze locatie op Google Maps
+                    {t.contact.viewLocationText}
                   </p>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=7+Impasse+de+la+Tranquillité+Nades+France"
@@ -167,50 +169,10 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition-colors"
                   >
-                    Open in Google Maps
+                    {t.common.openInGoogleMaps}
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* French version */}
-      <section className="py-16 bg-amber-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold text-amber-900 mb-6">
-              Contactez-nous
-            </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Vous avez des questions ou souhaitez faire une réservation?
-              N&apos;hésitez pas à nous contacter!
-            </p>
-            <div className="bg-white p-6 rounded-xl">
-              <dl className="space-y-4">
-                <div>
-                  <dt className="font-semibold text-gray-900">E-mail</dt>
-                  <dd>
-                    <a
-                      href="mailto:lesdeuxchevaux@gmail.com"
-                      className="text-amber-700"
-                    >
-                      lesdeuxchevaux@gmail.com
-                    </a>
-                  </dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-gray-900">
-                    Téléphone Yvonne
-                  </dt>
-                  <dd>+33 786 141 714</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold text-gray-900">Téléphone Rob</dt>
-                  <dd>+33 768 859 020</dd>
-                </div>
-              </dl>
             </div>
           </div>
         </div>

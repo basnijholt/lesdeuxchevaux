@@ -1,37 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
 import { getImagePath } from "@/lib/config";
-
-export const metadata: Metadata = {
-  title: "Wat te verwachten?",
-  description:
-    "Ontdek onze accommodaties: mini-camping, chambres d'hôtes en La Bergerie. Allemaal met warme gastvrijheid.",
-};
-
-const rooms = [
-  {
-    name: "Rode Kamer",
-    capacity: "2 personen",
-    description: "Comfortabel en sfeervol ingericht",
-  },
-  {
-    name: "Groene Kamer",
-    capacity: "2 personen",
-    description: "Met uitzicht op de tuin",
-  },
-  {
-    name: "Blauwe Kamer",
-    capacity: "2-3 personen",
-    description: "Ruim en licht",
-  },
-  {
-    name: "Familie/Vrienden Kamers",
-    capacity: "Tot 7 personen",
-    description: "Perfect voor groepen",
-  },
-];
+import { useTranslation } from "@/i18n";
 
 const accommodationImages = [
   {
@@ -44,11 +17,36 @@ const accommodationImages = [
 ];
 
 export default function WatTeVerwachten() {
+  const { t } = useTranslation();
+
+  const rooms = [
+    {
+      name: t.whatToExpect.rooms.red.name,
+      capacity: t.whatToExpect.rooms.red.capacity,
+      description: t.whatToExpect.rooms.red.description,
+    },
+    {
+      name: t.whatToExpect.rooms.green.name,
+      capacity: t.whatToExpect.rooms.green.capacity,
+      description: t.whatToExpect.rooms.green.description,
+    },
+    {
+      name: t.whatToExpect.rooms.blue.name,
+      capacity: t.whatToExpect.rooms.blue.capacity,
+      description: t.whatToExpect.rooms.blue.description,
+    },
+    {
+      name: t.whatToExpect.rooms.family.name,
+      capacity: t.whatToExpect.rooms.family.capacity,
+      description: t.whatToExpect.rooms.family.description,
+    },
+  ];
+
   return (
     <>
       <Hero
-        title="Wat kun je bij ons verwachten?"
-        subtitle="Onze accommodaties en faciliteiten"
+        title={t.whatToExpect.heroTitle}
+        subtitle={t.whatToExpect.heroSubtitle}
         image="/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg"
       />
 
@@ -56,11 +54,7 @@ export default function WatTeVerwachten() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xl text-gray-600">
-              Bij Les Deux Chevaux bieden we verschillende verblijfsmogelijkheden,
-              van kamperen tot luxe kamers, allemaal met de warme gastvrijheid
-              die u van ons mag verwachten.
-            </p>
+            <p className="text-xl text-gray-600">{t.whatToExpect.intro}</p>
           </div>
         </div>
       </section>
@@ -69,20 +63,15 @@ export default function WatTeVerwachten() {
       <section className="py-16 bg-amber-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
-            Chambres d&apos;Hôtes
+            {t.whatToExpect.chambresTitle}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {rooms.map((room) => (
-              <div
-                key={room.name}
-                className="bg-white p-6 rounded-xl shadow-sm"
-              >
+              <div key={room.name} className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">
                   {room.name}
                 </h3>
-                <p className="text-amber-600 font-medium mb-2">
-                  {room.capacity}
-                </p>
+                <p className="text-amber-600 font-medium mb-2">{room.capacity}</p>
                 <p className="text-gray-600">{room.description}</p>
               </div>
             ))}
@@ -90,7 +79,7 @@ export default function WatTeVerwachten() {
           <div className="relative h-80 rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
             <Image
               src={getImagePath("/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg")}
-              alt="Groene Kamer"
+              alt="Chambre"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 768px"
@@ -105,28 +94,27 @@ export default function WatTeVerwachten() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-amber-900 mb-6">
-                Mini-Camping
+                {t.whatToExpect.campingTitle}
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                Wij hebben <strong>6 plekken</strong> voor tenten en caravans,
-                met een ontspannen sfeer en alle nodige faciliteiten.
+                {t.whatToExpect.campingText}
               </p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-600">✓</span>
-                  Elektriciteit inbegrepen
+                  {t.whatToExpect.campingFeatures.electricity}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-600">✓</span>
-                  Honden welkom (aangelijnd)
+                  {t.whatToExpect.campingFeatures.dogs}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-600">✓</span>
-                  Rustige, groene omgeving
+                  {t.whatToExpect.campingFeatures.quiet}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-600">✓</span>
-                  Gedeelde sanitaire voorzieningen
+                  {t.whatToExpect.campingFeatures.sanitary}
                 </li>
               </ul>
             </div>
@@ -147,31 +135,25 @@ export default function WatTeVerwachten() {
       <section className="py-16 bg-amber-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
-            Aanvullende Verblijfsopties
+            {t.whatToExpect.additionalTitle}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-semibold text-amber-800 mb-4">
-                Uitgeruste Caravan
+                {t.whatToExpect.caravan.title}
               </h3>
-              <p className="text-gray-600 mb-4">
-                Voor wie wil kamperen zonder eigen spullen. Volledig ingericht
-                en klaar voor gebruik.
-              </p>
+              <p className="text-gray-600 mb-4">{t.whatToExpect.caravan.text}</p>
               <p className="text-amber-600 font-medium">
-                Minimaal 2 nachten verblijf
+                {t.whatToExpect.caravan.note}
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-semibold text-amber-800 mb-4">
-                La Bergerie
+                {t.whatToExpect.bergerie.title}
               </h3>
-              <p className="text-gray-600 mb-4">
-                Een romantisch huisje voor koppels. Privé en rustig gelegen op
-                ons terrein.
-              </p>
+              <p className="text-gray-600 mb-4">{t.whatToExpect.bergerie.text}</p>
               <p className="text-amber-600 font-medium">
-                Perfect voor een romantisch uitje
+                {t.whatToExpect.bergerie.note}
               </p>
             </div>
           </div>
@@ -184,25 +166,23 @@ export default function WatTeVerwachten() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="lg:order-last">
               <h2 className="text-3xl font-bold text-amber-900 mb-6">
-                Table d&apos;Hôtes
+                {t.whatToExpect.tableTitle}
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                Onze table d&apos;hôtes biedt heerlijke, vers bereide maaltijden.
-                Geniet samen met andere gasten van een authentieke Franse
-                eetervaring.
+                {t.whatToExpect.tableText}
               </p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-600">✓</span>
-                  Driegangen diner met koffie
+                  {t.whatToExpect.tableFeatures.dinner}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-600">✓</span>
-                  Verse, lokale ingrediënten
+                  {t.whatToExpect.tableFeatures.fresh}
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-600">✓</span>
-                  Gezellige sfeer met andere gasten
+                  {t.whatToExpect.tableFeatures.atmosphere}
                 </li>
               </ul>
             </div>
@@ -223,7 +203,7 @@ export default function WatTeVerwachten() {
       <section className="py-16 bg-amber-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
-            Impressies
+            {t.whatToExpect.impressions}
           </h2>
           <ImageGallery images={accommodationImages} />
         </div>
