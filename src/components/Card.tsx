@@ -11,21 +11,26 @@ interface CardProps {
 
 export default function Card({ title, description, image, href }: CardProps) {
   const content = (
-    <div className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+    <div className="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
       {image && (
-        <div className="relative h-48 overflow-hidden">
+        <div className="relative h-52 overflow-hidden">
           <Image
             src={getImagePath(image)}
             alt={title}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            className="object-cover group-hover:scale-110 transition-transform duration-500"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
       )}
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
-        {description && <p className="text-gray-600">{description}</p>}
+        <h3 className="text-xl font-semibold text-[#5C5840] mb-2 group-hover:text-[#837F5A] transition-colors">
+          {title}
+        </h3>
+        {description && (
+          <p className="text-gray-600 leading-relaxed">{description}</p>
+        )}
       </div>
     </div>
   );
