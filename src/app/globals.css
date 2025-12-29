@@ -3,6 +3,10 @@
 :root {
   --background: #fffbf5;
   --foreground: #1a1a1a;
+  --olive: #837F5A;
+  --olive-dark: #5C5840;
+  --cream: #F5E6C8;
+  --terracotta: #A0522D;
 }
 
 @theme inline {
@@ -19,6 +23,68 @@ body {
     sans-serif;
 }
 
+/* Serif headings with Playfair Display */
+.font-heading {
+  font-family: var(--font-playfair), Georgia, "Times New Roman", serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-playfair), Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
+
+/* Modern button styles */
+.btn-primary {
+  @apply inline-block px-8 py-3 bg-[#837F5A] text-white font-semibold rounded-full
+         hover:bg-[#6E6A4A] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply inline-block px-8 py-3 border-2 border-[#837F5A] text-[#837F5A] font-semibold rounded-full
+         hover:bg-[#837F5A] hover:text-white transition-all duration-300;
+}
+
+.btn-white {
+  @apply inline-block px-8 py-3 bg-white text-[#5C5840] font-semibold rounded-full
+         hover:bg-[#F5E6C8] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+}
+
+.btn-outline-white {
+  @apply inline-block px-8 py-3 border-2 border-white text-white font-semibold rounded-full
+         hover:bg-white/10 transition-all duration-300;
+}
+
+/* Section styling with more whitespace */
+.section-padding {
+  @apply py-20 md:py-28;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* Decorative line under headings */
+.heading-decorated::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--olive), var(--cream));
+  margin-top: 1rem;
+  border-radius: 2px;
+}
+
+.heading-decorated-center::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--olive), var(--cream));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
 /* Prose styles for MDX content */
 .prose {
   max-width: 65ch;
@@ -28,7 +94,7 @@ body {
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #78350f;
+  color: #5C5840;
 }
 
 .prose h2 {
@@ -36,7 +102,7 @@ body {
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  color: #92400e;
+  color: #6E6A4A;
 }
 
 .prose h3 {
@@ -44,7 +110,7 @@ body {
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #a16207;
+  color: #837F5A;
 }
 
 .prose p {
@@ -67,17 +133,18 @@ body {
 }
 
 .prose img {
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   margin: 1.5rem 0;
 }
 
 .prose a {
-  color: #b45309;
+  color: #837F5A;
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .prose a:hover {
-  color: #92400e;
+  color: #5C5840;
 }
 
 .prose table {
@@ -95,11 +162,16 @@ body {
 
 .prose th {
   font-weight: 600;
-  background-color: #fef3c7;
+  background-color: #f5f5f0;
 }
 
 .prose tr:hover {
-  background-color: #fffbeb;
+  background-color: #fafaf5;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* Custom scrollbar */
@@ -113,10 +185,16 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c4b5a4;
+  background: #837F5A;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a89888;
+  background: #6E6A4A;
+}
+
+/* Selection color */
+::selection {
+  background: #837F5A;
+  color: white;
 }
