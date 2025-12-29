@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-amber-900 text-white">
+    <footer className="bg-[#5C5840] text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <div className="space-y-2 text-amber-100">
+            <div className="space-y-2 text-[#D4C9A8]">
               <p>
                 <a
                   href="mailto:lesdeuxchevaux@gmail.com"
@@ -25,7 +25,7 @@ export default function Footer() {
           {/* Address */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Adres</h3>
-            <div className="text-amber-100">
+            <div className="text-[#D4C9A8]">
               <p>7 Impasse de la Tranquillité</p>
               <p>Nades, Allier</p>
               <p>Auvergne, Frankrijk</p>
@@ -38,19 +38,19 @@ export default function Footer() {
             <div className="space-y-2">
               <Link
                 href="/tarieven"
-                className="block text-amber-100 hover:text-white transition-colors"
+                className="block text-[#D4C9A8] hover:text-white transition-colors"
               >
                 Tarieven
               </Link>
               <Link
                 href="/contact"
-                className="block text-amber-100 hover:text-white transition-colors"
+                className="block text-[#D4C9A8] hover:text-white transition-colors"
               >
                 Contact
               </Link>
               <Link
                 href="/de-streek"
-                className="block text-amber-100 hover:text-white transition-colors"
+                className="block text-[#D4C9A8] hover:text-white transition-colors"
               >
                 De streek
               </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-amber-800 text-center text-amber-200">
+        <div className="mt-8 pt-8 border-t border-[#4A4635] text-center text-[#D4C9A8]">
           <p>
             &copy; {new Date().getFullYear()} Les Deux Chevaux. Alle rechten
             voorbehouden.
