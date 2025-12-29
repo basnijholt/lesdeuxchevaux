@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getImagePath } from "@/lib/config";
 
 interface CardProps {
   title: string;
@@ -14,7 +15,7 @@ export default function Card({ title, description, image, href }: CardProps) {
       {image && (
         <div className="relative h-48 overflow-hidden">
           <Image
-            src={image}
+            src={getImagePath(image)}
             alt={title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
