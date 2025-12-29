@@ -38,7 +38,7 @@
     "whyTheNameText1": "Le nom \"Les Deux Chevaux\" fait référence à l'emblématique voiture française, la Citroën 2CV - soit \"deux chevaux\" (deux chevaux-vapeur).",
     "whyTheNameText2": "Cette voiture symbolise la vie détendue et authentique de la campagne française que nous souhaitons offrir à nos hôtes.",
     "impressions": "Impressions",
-    "readyForStay": "Prêt pour votre séjour en Auvergne ?",
+    "readyForStay": "Prêt(e) pour votre séjour en Auvergne ?",
     "ctaText": "Contactez-nous pour plus d'informations ou pour faire une réservation.",
     "highlights": {
       "camping": {
@@ -72,14 +72,14 @@
     "addressNote": "Cette adresse est reconnue par Google Maps et les systèmes de navigation TomTom.",
     "distances": "Distances",
     "distance1": "Environ 60 km au nord de Clermont-Ferrand",
-    "distance2": "Environ 750 km de Zierikzee, Pays-Bas (à mi-chemin de la route sud)",
+    "distance2": "Environ 750 km de Zierikzee, Pays-Bas (via la route du sud)",
     "directions": "Itinéraire"
   },
   "theRegion": {
     "heroTitle": "Que propose la région ?",
     "heroSubtitle": "Découvrez la magnifique Auvergne",
     "intro1": "L'Auvergne offre beauté et activités toute l'année pour tous. C'est un endroit où vous pouvez vraiment vous ressourcer.",
-    "intro2": "Laissez la technologie derrière vous et profitez d'une remise à zéro complète dans la nature.",
+    "intro2": "Laissez la technologie derrière vous et profitez d'une vraie déconnexion dans la nature.",
     "outdoorActivities": "Activités de plein air",
     "attractionsTitle": "Attractions dans un rayon de 60 km",
     "winterTitle": "Aussi en hiver",
@@ -267,7 +267,7 @@
     "meal": "Repas",
     "tableItems": {
       "dinner": {
-        "description": "Dîner trois services avec café",
+        "description": "Menu en 3 services avec café",
         "price": "20,00 € p.p."
       },
       "drinks": {
