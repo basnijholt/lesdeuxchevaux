@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { getImagePath } from "@/lib/config";
 
 const navigation = [
   { title: "Home", href: "/" },
@@ -22,10 +24,15 @@ export default function Header() {
         <div className="flex h-16 justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-amber-800">
-                Les Deux Chevaux
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src={getImagePath("/logo.jpg")}
+                alt="Les Deux Chevaux"
+                width={180}
+                height={76}
+                className="h-12 w-auto"
+                priority
+              />
             </Link>
           </div>
 
