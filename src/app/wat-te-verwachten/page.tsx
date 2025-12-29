@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
+import { getImagePath } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Wat te verwachten?",
@@ -88,7 +89,7 @@ export default function WatTeVerwachten() {
           </div>
           <div className="relative h-80 rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
             <Image
-              src="/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg"
+              src={getImagePath("/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg")}
               alt="Groene Kamer"
               fill
               className="object-cover"
@@ -131,7 +132,7 @@ export default function WatTeVerwachten() {
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/uploads/2020/07/camping-2-1024x656.jpg"
+                src={getImagePath("/uploads/2020/07/camping-2-1024x656.jpg")}
                 alt="Camping"
                 fill
                 className="object-cover"
@@ -207,7 +208,7 @@ export default function WatTeVerwachten() {
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/uploads/2016/09/tafelen.jpg"
+                src={getImagePath("/uploads/2016/09/tafelen.jpg")}
                 alt="Table d'Hôtes"
                 fill
                 className="object-cover"

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
+import { getImagePath } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Waar zitten wij?",
@@ -66,7 +67,7 @@ export default function WaarZijnWij() {
             <div className="space-y-6">
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/uploads/2020/07/landschap-panorama-1024x405.jpg"
+                  src={getImagePath("/uploads/2020/07/landschap-panorama-1024x405.jpg")}
                   alt="Panorama van het landschap"
                   fill
                   className="object-cover"
