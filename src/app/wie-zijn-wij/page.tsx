@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
+import { getImagePath } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Wie zijn wij?",
@@ -41,7 +42,7 @@ export default function WieZijnWij() {
             </div>
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/uploads/2021/09/rob-en-yvonne-1.jpg"
+                src={getImagePath("/uploads/2021/09/rob-en-yvonne-1.jpg")}
                 alt="Yvonne en Rob"
                 fill
                 className="object-cover"
@@ -54,7 +55,7 @@ export default function WieZijnWij() {
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg lg:order-first">
               <Image
-                src="/uploads/2021/09/jip-2.jpg"
+                src={getImagePath("/uploads/2021/09/jip-2.jpg")}
                 alt="Jip"
                 fill
                 className="object-cover"

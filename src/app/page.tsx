@@ -3,6 +3,7 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import Card from "@/components/Card";
 import ImageGallery from "@/components/ImageGallery";
+import { getImagePath } from "@/lib/config";
 
 const highlights = [
   {
@@ -100,7 +101,7 @@ export default function Home() {
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/uploads/2020/07/les-deux-chevaux2-1024x682.jpg"
+                src={getImagePath("/uploads/2020/07/les-deux-chevaux2-1024x682.jpg")}
                 alt="Les Deux Chevaux - De iconische 2CV"
                 fill
                 className="object-cover"
