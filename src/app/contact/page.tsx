@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "@/i18n";
+import Map from "@/components/Map";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -158,20 +159,16 @@ export default function Contact() {
               <h2 className="text-2xl font-bold text-amber-900 mb-8">
                 {t.common.location}
               </h2>
-              <div className="bg-gray-100 rounded-xl overflow-hidden h-80 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <p className="text-gray-600 mb-4">
-                    {t.contact.viewLocationText}
-                  </p>
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=7+Impasse+de+la+Tranquillité+Nades+France"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition-colors"
-                  >
-                    {t.common.openInGoogleMaps}
-                  </a>
-                </div>
+              <Map className="h-80" />
+              <div className="mt-4 text-center">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=7+Impasse+de+la+Tranquillité+Nades+France"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition-colors"
+                >
+                  {t.common.openInGoogleMaps}
+                </a>
               </div>
             </div>
           </div>
