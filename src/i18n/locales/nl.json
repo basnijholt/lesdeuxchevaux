@@ -168,22 +168,12 @@
       "red": {
         "name": "Rode Kamer",
         "capacity": "2 personen",
-        "description": "Comfortabel en sfeervol ingericht"
+        "description": "Comfortabel en sfeervol ingericht met eigen badkamer"
       },
-      "green": {
-        "name": "Groene Kamer",
-        "capacity": "2 personen",
-        "description": "Met uitzicht op de tuin"
-      },
-      "blue": {
-        "name": "Blauwe Kamer",
-        "capacity": "2-3 personen",
-        "description": "Ruim en licht"
-      },
-      "family": {
-        "name": "Familie/Vrienden Kamers",
-        "capacity": "Tot 7 personen",
-        "description": "Perfect voor groepen"
+      "chezMarco": {
+        "name": "Chez Marco",
+        "capacity": "Tot 6 personen",
+        "description": "Ruime accommodatie met eigen badkamer, perfect voor families of groepen"
       }
     },
     "campingTitle": "Mini-Camping",
@@ -265,7 +255,7 @@
       "chezMarco": {
         "name": "Chez Marco",
         "price": "€80,00",
-        "details": "2 personen, incl. ontbijt, eigen badkamer"
+        "details": "Tot 6 personen, incl. ontbijt, eigen badkamer"
       },
       "smallCaravan": {
         "name": "Kleine caravan",

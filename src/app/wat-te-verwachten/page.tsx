@@ -8,7 +8,7 @@ import { useTranslation } from "@/i18n";
 const accommodationImages = [
   {
     src: "/uploads/2016/09/Les-2CV-3-copy.jpg",
-    alt: "Groene Kamer",
+    alt: "Rode Kamer",
   },
   { src: "/uploads/2020/07/camping-2.jpg", alt: "Camping" },
   { src: "/uploads/2020/07/Bergerie.jpg", alt: "La Bergerie" },
@@ -25,19 +25,9 @@ export default function WatTeVerwachten() {
       description: t.whatToExpect.rooms.red.description,
     },
     {
-      name: t.whatToExpect.rooms.green.name,
-      capacity: t.whatToExpect.rooms.green.capacity,
-      description: t.whatToExpect.rooms.green.description,
-    },
-    {
-      name: t.whatToExpect.rooms.blue.name,
-      capacity: t.whatToExpect.rooms.blue.capacity,
-      description: t.whatToExpect.rooms.blue.description,
-    },
-    {
-      name: t.whatToExpect.rooms.family.name,
-      capacity: t.whatToExpect.rooms.family.capacity,
-      description: t.whatToExpect.rooms.family.description,
+      name: t.whatToExpect.rooms.chezMarco.name,
+      capacity: t.whatToExpect.rooms.chezMarco.capacity,
+      description: t.whatToExpect.rooms.chezMarco.description,
     },
   ];
 
