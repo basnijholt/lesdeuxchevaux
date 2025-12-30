@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "compress-images": "bash scripts/compress-images.sh",
-    "build": "bun run compress-images && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
