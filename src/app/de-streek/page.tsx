@@ -8,12 +8,12 @@ import { useTranslation } from "@/i18n";
 
 const regionImages = [
   { src: "/uploads/2013/11/WS14.jpg", alt: "Landschap Auvergne" },
-  { src: "/uploads/2013/11/WS17-764x1024.jpg", alt: "Wandelen" },
+  { src: "/uploads/2013/11/WS17.jpg", alt: "Wandelen" },
   {
-    src: "/uploads/2018/11/winter-e1543590063310-768x1024.jpg",
+    src: "/uploads/2018/11/winter-e1543590063310.jpg",
     alt: "Winter in Auvergne",
   },
-  { src: "/uploads/2016/09/kanoën-300x224.jpeg", alt: "Kanoën" },
+  { src: "/uploads/2016/09/kanoën.jpeg", alt: "Kanoën" },
 ];
 
 export default function DeStreek() {
@@ -149,7 +149,7 @@ export default function DeStreek() {
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
               <Image
                 src={getImagePath(
-                  "/uploads/2018/11/winter-e1543590063310-768x1024.jpg"
+                  "/uploads/2018/11/winter-e1543590063310.jpg"
                 )}
                 alt="Winter in Auvergne"
                 fill

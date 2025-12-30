@@ -8,11 +8,11 @@ import { useTranslation } from "@/i18n";
 
 const accommodationImages = [
   {
-    src: "/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg",
+    src: "/uploads/2016/09/Les-2CV-3-copy.jpg",
     alt: "Groene Kamer",
   },
-  { src: "/uploads/2020/07/camping-2-1024x656.jpg", alt: "Camping" },
-  { src: "/uploads/2020/07/Bergerie-1024x682.jpg", alt: "La Bergerie" },
+  { src: "/uploads/2020/07/camping-2.jpg", alt: "Camping" },
+  { src: "/uploads/2020/07/Bergerie.jpg", alt: "La Bergerie" },
   { src: "/uploads/2016/09/tafelen.jpg", alt: "Buiten tafelen" },
 ];
 
@@ -47,7 +47,7 @@ export default function WatTeVerwachten() {
       <Hero
         title={t.whatToExpect.heroTitle}
         subtitle={t.whatToExpect.heroSubtitle}
-        image="/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg"
+        image="/uploads/2016/09/Les-2CV-3-copy.jpg"
       />
 
       {/* Introduction */}
@@ -78,7 +78,7 @@ export default function WatTeVerwachten() {
           </div>
           <div className="relative h-80 rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
             <Image
-              src={getImagePath("/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg")}
+              src={getImagePath("/uploads/2016/09/Les-2CV-3-copy.jpg")}
               alt="Chambre"
               fill
               className="object-cover"
@@ -120,7 +120,7 @@ export default function WatTeVerwachten() {
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src={getImagePath("/uploads/2020/07/camping-2-1024x656.jpg")}
+                src={getImagePath("/uploads/2020/07/camping-2.jpg")}
                 alt="Camping"
                 fill
                 className="object-cover"
