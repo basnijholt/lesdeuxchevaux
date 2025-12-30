@@ -109,6 +109,7 @@ export interface Translations {
     rooms: {
       red: { name: string; capacity: string; description: string };
       chezMarco: { name: string; capacity: string; description: string };
+      longere: { name: string; capacity: string; description: string };
     };
     campingTitle: string;
     campingText: string;
@@ -146,10 +147,8 @@ export interface Translations {
     price: string;
     campingItems: {
       pitch: { description: string; price: string };
-      extraPerson: { description: string; price: string };
       electricity: { description: string; price: string };
       dog: { description: string; price: string };
-      touristTax: { description: string; price: string };
     };
     chambresTitle: string;
     accommodation: string;
@@ -158,7 +157,6 @@ export interface Translations {
     chambresItems: {
       mainRoom: { name: string; price: string; details: string };
       longere: { name: string; price: string; details: string };
-      extraPerson: { name: string; price: string; details: string };
       chezMarco: { name: string; price: string; details: string };
       smallCaravan: { name: string; price: string; details: string };
       luxuryTent: { name: string; price: string; details: string };

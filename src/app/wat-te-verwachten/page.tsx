@@ -7,12 +7,12 @@ import { useTranslation } from "@/i18n";
 
 const accommodationImages = [
   {
-    src: "/uploads/2016/09/Les-2CV-3-copy.jpg",
+    src: "/uploads/2016/09/Rode-kamer.jpg",
     alt: "Rode Kamer",
   },
   { src: "/uploads/2020/07/camping-2.jpg", alt: "Camping" },
   { src: "/uploads/2020/07/Bergerie.jpg", alt: "La Bergerie" },
-  { src: "/uploads/2016/09/tafelen.jpg", alt: "Buiten tafelen" },
+  { src: "/uploads/2020/07/proost.jpg", alt: "Table d'Hôtes" },
 ];
 
 export default function WatTeVerwachten() {
@@ -29,6 +29,11 @@ export default function WatTeVerwachten() {
       capacity: t.whatToExpect.rooms.chezMarco.capacity,
       description: t.whatToExpect.rooms.chezMarco.description,
     },
+    {
+      name: t.whatToExpect.rooms.longere.name,
+      capacity: t.whatToExpect.rooms.longere.capacity,
+      description: t.whatToExpect.rooms.longere.description,
+    },
   ];
 
   return (
@@ -36,7 +41,7 @@ export default function WatTeVerwachten() {
       <Hero
         title={t.whatToExpect.heroTitle}
         subtitle={t.whatToExpect.heroSubtitle}
-        image="/uploads/2016/09/Les-2CV-3-copy.jpg"
+        image="/uploads/2016/09/Rode-kamer.jpg"
       />
 
       {/* Introduction */}
@@ -67,7 +72,7 @@ export default function WatTeVerwachten() {
           </div>
           <div className="relative h-80 rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
             <OptimizedImage
-              src="/uploads/2016/09/Les-2CV-3-copy.jpg"
+              src="/uploads/2016/09/Rode-kamer.jpg"
               alt="Chambre"
               fill
               sizes="(max-width: 1024px) 100vw, 768px"
@@ -175,7 +180,7 @@ export default function WatTeVerwachten() {
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
               <OptimizedImage
-                src="/uploads/2016/09/tafelen.jpg"
+                src="/uploads/2020/07/proost.jpg"
                 alt="Table d'Hôtes"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -33,13 +33,13 @@ export default function Home() {
     {
       title: t.home.highlights.chambres.title,
       description: t.home.highlights.chambres.description,
-      image: "/uploads/2016/09/Les-2CV-3-copy.jpg",
+      image: "/uploads/2016/09/Rode-kamer.jpg",
       href: "/wat-te-verwachten",
     },
     {
       title: t.home.highlights.table.title,
       description: t.home.highlights.table.description,
-      image: "/uploads/2016/09/tafelen.jpg",
+      image: "/uploads/2020/07/proost.jpg",
       href: "/tarieven",
     },
   ];

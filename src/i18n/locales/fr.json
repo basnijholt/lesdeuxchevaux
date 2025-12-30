@@ -172,8 +172,13 @@
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "capacity": "Jusqu'à 6 personnes",
-        "description": "Hébergement spacieux avec salle de bain privée, parfait pour les familles ou groupes"
+        "capacity": "Jusqu'à 4 personnes",
+        "description": "Maison accueillante avec 1 salle de bain et 2 toilettes. Plus de personnes possible sur demande."
+      },
+      "longere": {
+        "name": "La Longère",
+        "capacity": "2-7 personnes",
+        "description": "Spacieux gîte avec grand salon lumineux et cuisine équipée. 2 salles de bain, 2 toilettes. Lits faits à l'arrivée, serviettes fournies. Terrasse privée."
       }
     },
     "campingTitle": "Mini-Camping",
@@ -186,20 +191,20 @@
     },
     "additionalTitle": "Options d'hébergement supplémentaires",
     "caravan": {
-      "title": "Caravane équipée",
-      "text": "Pour ceux qui veulent camper sans leur propre équipement. Entièrement équipée et prête à l'emploi.",
+      "title": "Petite Caravane",
+      "text": "Caravane confortable pour 1-2 personnes. Idéale pour camper sans son propre équipement.",
       "note": "Minimum 2 nuits"
     },
     "bergerie": {
       "title": "La Bergerie",
-      "text": "Un petit cottage romantique pour les couples. Privé et paisiblement situé sur notre terrain.",
-      "note": "Parfait pour une escapade romantique"
+      "text": "Une petite maison de gnome accueillante avec un bon lit et 2 chaises. Uniquement pour dormir - sanitaires dans le bâtiment adjacent.",
+      "note": "Cosy et romantique"
     },
     "tableTitle": "Table d'Hôtes",
     "tableText": "Notre table d'hôtes propose de délicieux repas fraîchement préparés. Profitez d'une expérience culinaire française authentique avec d'autres hôtes.",
     "tableFeatures": {
       "dinner": "Dîner trois services avec café",
-      "fresh": "Ingrédients frais et locaux",
+      "fresh": "Repas fraîchement préparés",
       "atmosphere": "Ambiance conviviale avec d'autres hôtes"
     },
     "impressions": "Impressions"
@@ -212,12 +217,8 @@
     "price": "Prix",
     "campingItems": {
       "pitch": {
-        "description": "Emplacement (2 personnes + voiture)",
-        "price": "17,50 €"
-      },
-      "extraPerson": {
-        "description": "Personne supplémentaire",
-        "price": "2,50 €"
+        "description": "Emplacement par nuit",
+        "price": "20,00 €"
       },
       "electricity": {
         "description": "Électricité",
@@ -226,10 +227,6 @@
       "dog": {
         "description": "Chien (en laisse)",
         "price": "Gratuit"
-      },
-      "touristTax": {
-        "description": "Taxe de séjour",
-        "price": "0,25 € p.p./jour"
       }
     },
     "chambresTitle": "Chambres d'Hôtes (Bed & Breakfast)",
@@ -238,39 +235,34 @@
     "details": "Détails",
     "chambresItems": {
       "mainRoom": {
-        "name": "Chambre dans bâtiment principal",
+        "name": "Chambre Rouge",
         "price": "75,00 €",
-        "details": "2 personnes, petit-déj. incl., douche/WC privés"
+        "details": "2 personnes, salle de bain privée"
       },
       "longere": {
-        "name": "La Longère",
-        "price": "80,00 €",
-        "details": "2 personnes, petit-déj. incl., salle de bain privée"
-      },
-      "extraPerson": {
-        "name": "+ Personne supplémentaire",
-        "price": "30,00 €",
-        "details": "Par personne supplémentaire"
+        "name": "La Longère (gîte)",
+        "price": "80,00 € / 560 € p.s.",
+        "details": "2-7 pers, 80€/nuit ou 560€/sem (haute saison), 500€/sem (basse saison)"
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "price": "80,00 €",
-        "details": "Jusqu'à 6 personnes, petit-déj. incl., salle de bain privée"
+        "price": "80,00 € / 140,00 €",
+        "details": "80€ (1 chambre) ou 140€ (2 chambres), jusqu'à 4 personnes"
       },
       "smallCaravan": {
         "name": "Petite caravane",
-        "price": "70,00 € / 65,00 €",
-        "details": "Avec/sans petit-déjeuner (min. 2 nuits)"
+        "price": "60,00 €",
+        "details": "1-2 personnes, min. 2 nuits"
       },
       "luxuryTent": {
-        "name": "Tente de luxe",
-        "price": "70,00 € / 65,00 €",
-        "details": "Avec/sans petit-déjeuner (min. 2 nuits)"
+        "name": "Tente équipée",
+        "price": "60,00 €",
+        "details": "Min. 2 nuits"
       },
       "bergerie": {
-        "name": "La Bergerie (cottage)",
-        "price": "70,00 € / 65,00 €",
-        "details": "Avec/sans petit-déjeuner"
+        "name": "La Bergerie",
+        "price": "60,00 €",
+        "details": "Petite maison cosy, uniquement pour dormir"
       }
     },
     "tableTitle": "Table d'Hôtes (Repas)",

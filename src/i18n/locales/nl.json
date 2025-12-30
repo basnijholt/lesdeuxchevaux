@@ -172,8 +172,13 @@
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "capacity": "Tot 6 personen",
-        "description": "Ruime accommodatie met eigen badkamer, perfect voor families of groepen"
+        "capacity": "Tot 4 personen",
+        "description": "Gezellig huis met 1 badkamer en 2 toiletten. Meer personen in overleg mogelijk."
+      },
+      "longere": {
+        "name": "La Longère",
+        "capacity": "2-7 personen",
+        "description": "Ruim vakantiehuis met grote, lichte woonkamer en ingerichte keuken. 2 badkamers, 2 toiletten. Bedden opgemaakt bij aankomst, handdoeken aanwezig. Eigen terras."
       }
     },
     "campingTitle": "Mini-Camping",
@@ -186,20 +191,20 @@
     },
     "additionalTitle": "Aanvullende Verblijfsopties",
     "caravan": {
-      "title": "Uitgeruste Caravan",
-      "text": "Voor wie wil kamperen zonder eigen spullen. Volledig ingericht en klaar voor gebruik.",
+      "title": "Kleine Caravan",
+      "text": "Gezellige caravan voor 1-2 personen. Ideaal voor wie wil kamperen zonder eigen spullen.",
       "note": "Minimaal 2 nachten verblijf"
     },
     "bergerie": {
       "title": "La Bergerie",
-      "text": "Een romantisch huisje voor koppels. Privé en rustig gelegen op ons terrein.",
-      "note": "Perfect voor een romantisch uitje"
+      "text": "Een gezellig kabouterhuisje met een goed bed en 2 stoelen. Echt alleen om in te slapen - sanitair bevindt zich in het gebouwtje ernaast.",
+      "note": "Knus en romantisch"
     },
     "tableTitle": "Table d'Hôtes",
     "tableText": "Onze table d'hôtes biedt heerlijke, vers bereide maaltijden. Geniet samen met andere gasten van een authentieke Franse eetervaring.",
     "tableFeatures": {
       "dinner": "Driegangen diner met koffie",
-      "fresh": "Verse, lokale ingrediënten",
+      "fresh": "Vers bereide maaltijden",
       "atmosphere": "Gezellige sfeer met andere gasten"
     },
     "impressions": "Impressies"
@@ -212,12 +217,8 @@
     "price": "Prijs",
     "campingItems": {
       "pitch": {
-        "description": "Plek (2 personen + auto)",
-        "price": "€17,50"
-      },
-      "extraPerson": {
-        "description": "Extra persoon",
-        "price": "€2,50"
+        "description": "Campingplek per nacht",
+        "price": "€20,00"
       },
       "electricity": {
         "description": "Elektriciteit",
@@ -226,10 +227,6 @@
       "dog": {
         "description": "Hond (aangelijnd)",
         "price": "Gratis"
-      },
-      "touristTax": {
-        "description": "Toeristenbelasting",
-        "price": "€0,25 p.p./dag"
       }
     },
     "chambresTitle": "Chambres d'Hôtes (Bed & Breakfast)",
@@ -238,39 +235,34 @@
     "details": "Details",
     "chambresItems": {
       "mainRoom": {
-        "name": "Kamer in hoofdgebouw",
+        "name": "Rode Kamer",
         "price": "€75,00",
-        "details": "2 personen, incl. ontbijt, eigen douche/toilet"
+        "details": "2 personen, eigen badkamer"
       },
       "longere": {
-        "name": "La Longère",
-        "price": "€80,00",
-        "details": "2 personen, incl. ontbijt, eigen badkamer"
-      },
-      "extraPerson": {
-        "name": "+ Extra persoon",
-        "price": "€30,00",
-        "details": "Per extra persoon"
+        "name": "La Longère (gîte)",
+        "price": "€80,00 / €560,- p.w.",
+        "details": "2-7 pers, €80/nacht of €560/week (hoogseizoen), €500/week (laagseizoen)"
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "price": "€80,00",
-        "details": "Tot 6 personen, incl. ontbijt, eigen badkamer"
+        "price": "€80,00 / €140,00",
+        "details": "€80 (1 kamer) of €140 (2 kamers), tot 4 personen"
       },
       "smallCaravan": {
         "name": "Kleine caravan",
-        "price": "€70,00 / €65,00",
-        "details": "Met/zonder ontbijt (min. 2 nachten)"
+        "price": "€60,00",
+        "details": "1-2 personen, min. 2 nachten"
       },
       "luxuryTent": {
-        "name": "Luxe tent",
-        "price": "€70,00 / €65,00",
-        "details": "Met/zonder ontbijt (min. 2 nachten)"
+        "name": "Ingerichte tent",
+        "price": "€60,00",
+        "details": "Min. 2 nachten"
       },
       "bergerie": {
-        "name": "La Bergerie (huisje)",
-        "price": "€70,00 / €65,00",
-        "details": "Met/zonder ontbijt"
+        "name": "La Bergerie",
+        "price": "€60,00",
+        "details": "Knus huisje, alleen om te slapen"
       }
     },
     "tableTitle": "Table d'Hôtes (Maaltijden)",
