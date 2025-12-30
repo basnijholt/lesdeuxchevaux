@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Hero from "@/components/Hero";
-import { getImagePath } from "@/lib/config";
+import OptimizedImage from "@/components/OptimizedImage";
 import { useTranslation } from "@/i18n";
 
 export default function WieZijnWij() {
@@ -28,11 +27,10 @@ export default function WieZijnWij() {
               <p className="text-lg text-gray-600">{t.whoAreWe.text3}</p>
             </div>
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src={getImagePath("/uploads/2021/09/rob-en-yvonne-1.jpg")}
+              <OptimizedImage
+                src="/uploads/2021/09/rob-en-yvonne-1.jpg"
                 alt="Yvonne en Rob"
                 fill
-                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -41,11 +39,10 @@ export default function WieZijnWij() {
           {/* Jip section */}
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg lg:order-first">
-              <Image
-                src={getImagePath("/uploads/2021/09/jip-2.jpg")}
+              <OptimizedImage
+                src="/uploads/2021/09/jip-2.jpg"
                 alt="Jip"
                 fill
-                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

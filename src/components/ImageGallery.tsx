@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
-import { getImagePath } from "@/lib/config";
+import OptimizedImage from "./OptimizedImage";
 
 interface ImageGalleryProps {
   images: {
@@ -23,11 +22,11 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             onClick={() => setSelectedImage(index)}
             className="group relative aspect-square overflow-hidden rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#837F5A] focus:ring-offset-2 shadow-md hover:shadow-xl transition-all duration-300"
           >
-            <Image
-              src={getImagePath(image.src)}
+            <OptimizedImage
+              src={image.src}
               alt={image.alt}
               fill
-              className="object-cover group-hover:scale-110 transition-transform duration-500"
+              className="group-hover:scale-110 transition-transform duration-500"
               sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
@@ -106,12 +105,13 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             className="relative max-w-5xl max-h-[85vh] w-full h-full"
             onClick={(e) => e.stopPropagation()}
           >
-            <Image
-              src={getImagePath(images[selectedImage].src)}
+            <OptimizedImage
+              src={images[selectedImage].src}
               alt={images[selectedImage].alt}
               fill
               className="object-contain"
               sizes="100vw"
+              priority
             />
           </div>
 

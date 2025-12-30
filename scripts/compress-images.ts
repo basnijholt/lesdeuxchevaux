@@ -1,16 +1,26 @@
 import { Transformer } from "@napi-rs/image";
-import { readdir, stat, readFile, writeFile, mkdir, copyFile } from "fs/promises";
-import { join, extname, relative } from "path";
+import { readdir, readFile, writeFile, mkdir } from "fs/promises";
+import { join, extname, dirname, basename } from "path";
 import { existsSync } from "fs";
 
 const SOURCE_DIR = "./public/uploads";
-const OUTPUT_DIR = "./public/uploads"; // In CI, we compress in-place since it's ephemeral
 const QUALITY = 80;
-const MIN_SIZE = 100 * 1024; // 100KB
-const MAX_WIDTH = 1920;
+const WEBP_QUALITY = 80;
+const MIN_SIZE = 50 * 1024; // 50KB - process more images
+const SIZES = [640, 960, 1280, 1920]; // Responsive breakpoints
+const BLUR_WIDTH = 20; // Tiny placeholder
 
 // Skip if not in CI (to preserve local originals)
 const IS_CI = process.env.CI === "true";
+
+interface ImageManifest {
+  [path: string]: {
+    blur: string; // base64 data URL
+    sizes: number[]; // available widths
+    originalWidth: number;
+    originalHeight: number;
+  };
+}
 
 async function getImageFiles(dir: string): Promise<string[]> {
   const files: string[] = [];
@@ -30,72 +40,138 @@ async function getImageFiles(dir: string): Promise<string[]> {
   return files;
 }
 
-async function compressImage(filePath: string): Promise<number> {
+async function processImage(
+  filePath: string,
+  manifest: ImageManifest
+): Promise<{ saved: number; generated: number }> {
   const originalBuffer = await readFile(filePath);
   const originalSize = originalBuffer.length;
-
-  // Skip small files
-  if (originalSize < MIN_SIZE) {
-    return 0;
-  }
+  let totalSaved = 0;
+  let filesGenerated = 0;
 
   try {
     const transformer = new Transformer(originalBuffer);
     const metadata = await transformer.metadata();
+    const originalWidth = metadata.width || 1920;
+    const originalHeight = metadata.height || 1080;
 
-    // Resize if too wide
-    if (metadata.width && metadata.width > MAX_WIDTH) {
-      transformer.resize(MAX_WIDTH);
-    }
-
+    // Get relative path for manifest (remove ./public prefix)
+    const relativePath = filePath.replace(/^\.\/public/, "");
     const ext = extname(filePath).toLowerCase();
-    let output: Buffer;
+    const nameWithoutExt = basename(filePath, ext);
+    const dir = dirname(filePath);
 
-    if (ext === ".png") {
-      output = await transformer.png();
-    } else {
-      output = await transformer.jpeg(QUALITY);
+    // Generate blur placeholder
+    const blurTransformer = new Transformer(originalBuffer);
+    blurTransformer.resize(BLUR_WIDTH);
+    const blurBuffer = await blurTransformer.jpeg(60);
+    const blurDataUrl = `data:image/jpeg;base64,${blurBuffer.toString("base64")}`;
+
+    // Track which sizes we generate
+    const generatedSizes: number[] = [];
+
+    // Generate WebP and resized versions
+    for (const width of SIZES) {
+      if (width > originalWidth) continue; // Skip sizes larger than original
+
+      // Generate WebP version
+      const webpTransformer = new Transformer(originalBuffer);
+      if (width < originalWidth) {
+        webpTransformer.resize(width);
+      }
+      const webpBuffer = await webpTransformer.webp(WEBP_QUALITY);
+      const webpPath = join(dir, `${nameWithoutExt}-${width}w.webp`);
+      await writeFile(webpPath, webpBuffer);
+      filesGenerated++;
+      generatedSizes.push(width);
+
+      // Generate optimized JPEG/PNG fallback at this size
+      const fallbackTransformer = new Transformer(originalBuffer);
+      if (width < originalWidth) {
+        fallbackTransformer.resize(width);
+      }
+      let fallbackBuffer: Buffer;
+      if (ext === ".png") {
+        fallbackBuffer = await fallbackTransformer.png();
+      } else {
+        fallbackBuffer = await fallbackTransformer.jpeg(QUALITY);
+      }
+      const fallbackPath = join(dir, `${nameWithoutExt}-${width}w${ext}`);
+      await writeFile(fallbackPath, fallbackBuffer);
+      filesGenerated++;
     }
 
-    // Only save if we reduced size by at least 5%
-    if (output.length < originalSize * 0.95) {
-      await writeFile(filePath, output);
-      return originalSize - output.length;
+    // Compress original in-place
+    if (originalSize >= MIN_SIZE) {
+      const compressTransformer = new Transformer(originalBuffer);
+      let output: Buffer;
+      if (ext === ".png") {
+        output = await compressTransformer.png();
+      } else {
+        output = await compressTransformer.jpeg(QUALITY);
+      }
+      if (output.length < originalSize * 0.95) {
+        await writeFile(filePath, output);
+        totalSaved = originalSize - output.length;
+      }
     }
+
+    // Also generate a WebP of the original size
+    const originalWebpTransformer = new Transformer(originalBuffer);
+    const originalWebpBuffer = await originalWebpTransformer.webp(WEBP_QUALITY);
+    const originalWebpPath = join(dir, `${nameWithoutExt}.webp`);
+    await writeFile(originalWebpPath, originalWebpBuffer);
+    filesGenerated++;
+
+    // Add to manifest
+    manifest[relativePath] = {
+      blur: blurDataUrl,
+      sizes: generatedSizes,
+      originalWidth,
+      originalHeight,
+    };
   } catch (error) {
     console.error(`  ✗ ${filePath}: ${error}`);
   }
 
-  return 0;
+  return { saved: totalSaved, generated: filesGenerated };
 }
 
 async function main() {
   if (!IS_CI) {
-    console.log("⏭️  Skipping image compression (not in CI)");
-    console.log("   Run with CI=true to force compression");
+    console.log("⏭️  Skipping image optimization (not in CI)");
+    console.log("   Run with CI=true to force optimization");
     return;
   }
 
-  console.log("🖼️  Compressing images with @napi-rs/image...");
+  console.log("🖼️  Optimizing images with @napi-rs/image...");
+  console.log("   → Generating WebP versions");
+  console.log("   → Creating responsive sizes (640, 960, 1280, 1920)");
+  console.log("   → Generating blur placeholders\n");
 
   const files = await getImageFiles(SOURCE_DIR);
+  const manifest: ImageManifest = {};
   let totalSaved = 0;
-  let compressed = 0;
+  let totalGenerated = 0;
+  let processed = 0;
 
   for (const file of files) {
-    const saved = await compressImage(file);
-    if (saved > 0) {
-      totalSaved += saved;
-      compressed++;
-      console.log(`  ✓ ${file} (saved ${(saved / 1024).toFixed(1)}KB)`);
-    }
+    const { saved, generated } = await processImage(file, manifest);
+    processed++;
+    totalSaved += saved;
+    totalGenerated += generated;
+    const progress = `[${processed}/${files.length}]`;
+    console.log(`  ✓ ${progress} ${file} (+${generated} variants)`);
   }
 
-  if (compressed > 0) {
-    console.log(`\n✅ Compressed ${compressed} images, saved ${(totalSaved / 1024 / 1024).toFixed(2)}MB`);
-  } else {
-    console.log("\n✅ All images already optimized");
-  }
+  // Write manifest
+  const manifestPath = "./public/image-manifest.json";
+  await writeFile(manifestPath, JSON.stringify(manifest, null, 2));
+  console.log(`\n📄 Generated ${manifestPath}`);
+
+  console.log(`\n✅ Processed ${processed} images`);
+  console.log(`   → Generated ${totalGenerated} optimized variants`);
+  console.log(`   → Saved ${(totalSaved / 1024 / 1024).toFixed(2)}MB from originals`);
 }
 
 main().catch(console.error);

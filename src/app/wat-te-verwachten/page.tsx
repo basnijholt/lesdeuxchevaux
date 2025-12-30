@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
-import { getImagePath } from "@/lib/config";
+import OptimizedImage from "@/components/OptimizedImage";
 import { useTranslation } from "@/i18n";
 
 const accommodationImages = [
@@ -77,11 +76,10 @@ export default function WatTeVerwachten() {
             ))}
           </div>
           <div className="relative h-80 rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
-            <Image
-              src={getImagePath("/uploads/2016/09/Les-2CV-3-copy.jpg")}
+            <OptimizedImage
+              src="/uploads/2016/09/Les-2CV-3-copy.jpg"
               alt="Chambre"
               fill
-              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 768px"
             />
           </div>
@@ -119,11 +117,10 @@ export default function WatTeVerwachten() {
               </ul>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src={getImagePath("/uploads/2020/07/camping-2.jpg")}
+              <OptimizedImage
+                src="/uploads/2020/07/camping-2.jpg"
                 alt="Camping"
                 fill
-                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -187,11 +184,10 @@ export default function WatTeVerwachten() {
               </ul>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src={getImagePath("/uploads/2016/09/tafelen.jpg")}
+              <OptimizedImage
+                src="/uploads/2016/09/tafelen.jpg"
                 alt="Table d'Hôtes"
                 fill
-                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
