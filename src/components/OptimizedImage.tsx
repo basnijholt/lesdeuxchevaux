@@ -30,13 +30,30 @@ export function OptimizedImage({
     ? { fill: true }
     : { width: width || 1920, height: height || 1080 };
 
-  return (
-    <div className={fill ? `relative ${className}` : className} onClick={onClick}>
+  // When using fill, don't wrap in an extra div - let the parent handle positioning
+  if (fill) {
+    return (
       <ExportedImage
         src={src}
         alt={alt}
-        {...imageProps}
-        className={fill ? "object-cover" : ""}
+        fill
+        className={`object-cover ${className}`}
+        priority={priority}
+        sizes={sizes}
+        placeholder="blur"
+        basePath="/lesdeuxchevaux"
+        onClick={onClick}
+      />
+    );
+  }
+
+  return (
+    <div className={className} onClick={onClick}>
+      <ExportedImage
+        src={src}
+        alt={alt}
+        width={width || 1920}
+        height={height || 1080}
         priority={priority}
         sizes={sizes}
         placeholder="blur"
