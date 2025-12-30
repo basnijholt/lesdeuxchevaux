@@ -1,19 +1,8 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import ImageGallery from "@/components/ImageGallery";
 import OptimizedImage from "@/components/OptimizedImage";
 import { useTranslation } from "@/i18n";
-
-const accommodationImages = [
-  {
-    src: "/uploads/2016/09/Rode-kamer.jpg",
-    alt: "Rode Kamer",
-  },
-  { src: "/uploads/2020/07/camping-2.jpg", alt: "Camping" },
-  { src: "/uploads/2020/07/Bergerie.jpg", alt: "La Bergerie" },
-  { src: "/uploads/2020/07/proost.jpg", alt: "Table d'Hôtes" },
-];
 
 export default function WatTeVerwachten() {
   const { t } = useTranslation();
@@ -216,16 +205,6 @@ export default function WatTeVerwachten() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Gallery */}
-      <section className="py-16 bg-amber-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
-            {t.whatToExpect.impressions}
-          </h2>
-          <ImageGallery images={accommodationImages} />
         </div>
       </section>
     </>
