@@ -137,11 +137,32 @@ async function processImage(
   return { saved: totalSaved, generated: filesGenerated };
 }
 
+async function loadExistingManifest(): Promise<ImageManifest> {
+  const manifestPath = "./public/image-manifest.json";
+  try {
+    if (existsSync(manifestPath)) {
+      const content = await readFile(manifestPath, "utf-8");
+      return JSON.parse(content);
+    }
+  } catch {
+    // Ignore errors, return empty manifest
+  }
+  return {};
+}
+
 async function main() {
   if (!IS_CI) {
     console.log("⏭️  Skipping image optimization (not in CI)");
     console.log("   Run with CI=true to force optimization");
     return;
+  }
+
+  // Check for cached manifest
+  const existingManifest = await loadExistingManifest();
+  const cachedCount = Object.keys(existingManifest).length;
+
+  if (cachedCount > 0) {
+    console.log(`📦 Found cached manifest with ${cachedCount} images`);
   }
 
   console.log("🖼️  Optimizing images with @napi-rs/image...");
@@ -150,17 +171,26 @@ async function main() {
   console.log("   → Generating blur placeholders\n");
 
   const files = await getImageFiles(SOURCE_DIR);
-  const manifest: ImageManifest = {};
+  const manifest: ImageManifest = { ...existingManifest };
   let totalSaved = 0;
   let totalGenerated = 0;
   let processed = 0;
+  let skipped = 0;
 
   for (const file of files) {
+    const relativePath = file.replace(/^(\.\/)?public/, "");
+
+    // Skip if already in cache
+    if (existingManifest[relativePath]) {
+      skipped++;
+      continue;
+    }
+
     const { saved, generated } = await processImage(file, manifest);
     processed++;
     totalSaved += saved;
     totalGenerated += generated;
-    const progress = `[${processed}/${files.length}]`;
+    const progress = `[${processed}/${files.length - skipped}]`;
     console.log(`  ✓ ${progress} ${file} (+${generated} variants)`);
   }
 
@@ -169,7 +199,10 @@ async function main() {
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2));
   console.log(`\n📄 Generated ${manifestPath}`);
 
-  console.log(`\n✅ Processed ${processed} images`);
+  if (skipped > 0) {
+    console.log(`\n⏭️  Skipped ${skipped} cached images`);
+  }
+  console.log(`✅ Processed ${processed} new images`);
   console.log(`   → Generated ${totalGenerated} optimized variants`);
   console.log(`   → Saved ${(totalSaved / 1024 / 1024).toFixed(2)}MB from originals`);
 }
