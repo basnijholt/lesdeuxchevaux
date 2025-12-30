@@ -50,6 +50,26 @@ export default function DeStreek() {
       description: t.theRegion.activities.horseRiding.description,
       icon: "🐴",
     },
+    {
+      title: t.theRegion.activities.motorcycling.title,
+      description: t.theRegion.activities.motorcycling.description,
+      icon: "🏍️",
+    },
+    {
+      title: t.theRegion.activities.golf.title,
+      description: t.theRegion.activities.golf.description,
+      icon: "⛳",
+    },
+    {
+      title: t.theRegion.activities.climbing.title,
+      description: t.theRegion.activities.climbing.description,
+      icon: "🧗",
+    },
+    {
+      title: t.theRegion.activities.swimming.title,
+      description: t.theRegion.activities.swimming.description,
+      icon: "🏊",
+    },
   ];
 
   const attractions = [
@@ -76,6 +96,10 @@ export default function DeStreek() {
     {
       title: t.theRegion.attractions.fleaMarkets.title,
       description: t.theRegion.attractions.fleaMarkets.description,
+    },
+    {
+      title: t.theRegion.attractions.shoppingTowns.title,
+      description: t.theRegion.attractions.shoppingTowns.description,
     },
   ];
 
