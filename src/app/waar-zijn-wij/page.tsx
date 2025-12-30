@@ -14,7 +14,7 @@ export default function WaarZijnWij() {
       <Hero
         title={t.nav.whereAreWe}
         subtitle={t.whereAreWe.heroSubtitle}
-        image="/uploads/2020/07/landschap-panorama-1024x405.jpg"
+        image="/uploads/2020/07/landschap-panorama.jpg"
       />
 
       <section className="py-16 bg-white">
@@ -55,7 +55,7 @@ export default function WaarZijnWij() {
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src={getImagePath(
-                    "/uploads/2020/07/landschap-panorama-1024x405.jpg"
+                    "/uploads/2020/07/landschap-panorama.jpg"
                   )}
                   alt="Panorama"
                   fill

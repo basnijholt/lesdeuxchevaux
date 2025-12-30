@@ -12,11 +12,11 @@ import { getImagePath } from "@/lib/config";
 import { useTranslation } from "@/i18n";
 
 const galleryImages = [
-  { src: "/uploads/2020/07/onze-achterkant-1024x768.jpg", alt: "Achtertuin" },
-  { src: "/uploads/2020/06/2020-05-28-09.55.31-1024x768.jpg", alt: "Tuin" },
-  { src: "/uploads/2020/07/Bergerie-1024x682.jpg", alt: "La Bergerie" },
+  { src: "/uploads/2020/07/onze-achterkant.jpg", alt: "Achtertuin" },
+  { src: "/uploads/2020/06/2020-05-28-09.55.31.jpg", alt: "Tuin" },
+  { src: "/uploads/2020/07/Bergerie.jpg", alt: "La Bergerie" },
   {
-    src: "/uploads/2020/07/les-deux-chevaux2-1024x682.jpg",
+    src: "/uploads/2020/07/les-deux-chevaux2.jpg",
     alt: "Les Deux Chevaux",
   },
 ];
@@ -28,13 +28,13 @@ export default function Home() {
     {
       title: t.home.highlights.camping.title,
       description: t.home.highlights.camping.description,
-      image: "/uploads/2020/07/camping-2-1024x656.jpg",
+      image: "/uploads/2020/07/camping-2.jpg",
       href: "/wat-te-verwachten",
     },
     {
       title: t.home.highlights.chambres.title,
       description: t.home.highlights.chambres.description,
-      image: "/uploads/2016/09/Les-2CV-3-copy-1024x683.jpg",
+      image: "/uploads/2016/09/Les-2CV-3-copy.jpg",
       href: "/wat-te-verwachten",
     },
     {
@@ -50,7 +50,7 @@ export default function Home() {
       <Hero
         title="Les Deux Chevaux"
         subtitle={t.home.heroSubtitle}
-        image="/uploads/2020/07/2020-06-29-20.12.14-2-1024x682.jpg"
+        image="/uploads/2020/07/2020-06-29-20.12.14-2.jpg"
         fullHeight
       />
 
@@ -111,7 +111,7 @@ export default function Home() {
             <FadeIn direction="right">
               <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src={getImagePath("/uploads/2020/07/les-deux-chevaux2-1024x682.jpg")}
+                  src={getImagePath("/uploads/2020/07/les-deux-chevaux2.jpg")}
                   alt="Les Deux Chevaux - 2CV"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
