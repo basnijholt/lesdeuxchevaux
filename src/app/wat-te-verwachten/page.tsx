@@ -178,13 +178,23 @@ export default function WatTeVerwachten() {
                 </li>
               </ul>
             </div>
-            <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
-              <OptimizedImage
-                src="/uploads/2020/07/proost.jpg"
-                alt="Table d'Hôtes"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+                <OptimizedImage
+                  src="/uploads/2024/rob-cooking-1.jpg"
+                  alt="Rob kookt voor Table d'Hôtes"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+                <OptimizedImage
+                  src="/uploads/2024/rob-cooking-2.jpg"
+                  alt="Rob bereidt maaltijd"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
             </div>
           </div>
         </div>
