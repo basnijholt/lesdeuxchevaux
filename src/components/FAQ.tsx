@@ -51,16 +51,6 @@ const faqItems: FAQItem[] = [
   },
   {
     question: {
-      nl: "Is er een zwembad?",
-      fr: "Y a-t-il une piscine ?",
-    },
-    answer: {
-      nl: "Ja, we hebben een heerlijk zwembad dat onze gasten gratis kunnen gebruiken.",
-      fr: "Oui, nous avons une belle piscine que nos hôtes peuvent utiliser gratuitement.",
-    },
-  },
-  {
-    question: {
       nl: "Welke betaalmethoden accepteren jullie?",
       fr: "Quels modes de paiement acceptez-vous ?",
     },
