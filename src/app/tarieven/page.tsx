@@ -87,19 +87,14 @@ export default function Tarieven() {
           <h2 className="text-3xl font-bold text-amber-900 mb-8">
             {t.rates.chambresTitle}
           </h2>
-          <div className="overflow-x-auto max-w-3xl">
-            <table className="w-full bg-white rounded-xl shadow-sm table-fixed">
-              <colgroup>
-                <col className="w-[35%]" />
-                <col className="w-[15%]" />
-                <col className="w-[50%]" />
-              </colgroup>
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-xl shadow-sm">
               <thead>
                 <tr className="bg-amber-100">
                   <th className="px-4 py-3 text-left text-amber-900 font-semibold">
                     {t.rates.accommodation}
                   </th>
-                  <th className="px-4 py-3 text-right text-amber-900 font-semibold whitespace-nowrap">
+                  <th className="px-4 py-3 text-right text-amber-900 font-semibold">
                     {t.rates.pricePerNight}
                   </th>
                   <th className="px-4 py-3 text-left text-amber-900 font-semibold">
