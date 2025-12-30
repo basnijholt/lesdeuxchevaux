@@ -254,8 +254,8 @@
     "chambresItems": {
       "longere": {
         "name": "La Longère (gîte)",
-        "price": "80,00 € / 560 € p.s.",
-        "details": "2-7 pers, 80€/nuit ou 560€/sem pour 2 pers (haute saison), 500€/sem (basse saison)"
+        "price": "à partir de 80€/nuit",
+        "details": "2p: 80€/nuit, 560€/sem (basse 500€) | 3p: 120€/nuit, 735€/sem (basse 600€) | 4p: 160€/nuit, 885€/sem (basse 700€) | 5-6p: 200-240€/nuit, 1000€/sem. Hors pellets pour chauffage."
       },
       "chezMarco": {
         "name": "Chez Marco",

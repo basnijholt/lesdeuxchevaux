@@ -254,8 +254,8 @@
     "chambresItems": {
       "longere": {
         "name": "La Longère (gîte)",
-        "price": "€80,00 / €560,- p.w.",
-        "details": "2-7 pers, €80/nacht of €560/week voor 2 pers (hoogseizoen), €500/week (laagseizoen)"
+        "price": "vanaf €80/nacht",
+        "details": "2p: €80/nacht, €560/week (laag €500) | 3p: €120/nacht, €735/week (laag €600) | 4p: €160/nacht, €885/week (laag €700) | 5-6p: €200-240/nacht, €1000/week. Excl. pellets voor verwarming."
       },
       "chezMarco": {
         "name": "Chez Marco",
