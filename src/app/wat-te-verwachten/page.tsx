@@ -20,9 +20,9 @@ export default function WatTeVerwachten() {
 
   const rooms = [
     {
-      name: t.whatToExpect.rooms.red.name,
-      capacity: t.whatToExpect.rooms.red.capacity,
-      description: t.whatToExpect.rooms.red.description,
+      name: t.whatToExpect.rooms.longere.name,
+      capacity: t.whatToExpect.rooms.longere.capacity,
+      description: t.whatToExpect.rooms.longere.description,
     },
     {
       name: t.whatToExpect.rooms.chezMarco.name,
@@ -30,9 +30,9 @@ export default function WatTeVerwachten() {
       description: t.whatToExpect.rooms.chezMarco.description,
     },
     {
-      name: t.whatToExpect.rooms.longere.name,
-      capacity: t.whatToExpect.rooms.longere.capacity,
-      description: t.whatToExpect.rooms.longere.description,
+      name: t.whatToExpect.rooms.red.name,
+      capacity: t.whatToExpect.rooms.red.capacity,
+      description: t.whatToExpect.rooms.red.description,
     },
   ];
 
