@@ -88,106 +88,111 @@ export default function Tarieven() {
             {t.rates.chambresTitle}
           </h2>
           <div className="overflow-x-auto max-w-3xl">
-            <table className="w-full bg-white rounded-xl shadow-sm">
+            <table className="w-full bg-white rounded-xl shadow-sm table-fixed">
+              <colgroup>
+                <col className="w-[35%]" />
+                <col className="w-[15%]" />
+                <col className="w-[50%]" />
+              </colgroup>
               <thead>
                 <tr className="bg-amber-100">
-                  <th className="px-6 py-4 text-left text-amber-900 font-semibold">
+                  <th className="px-4 py-3 text-left text-amber-900 font-semibold">
                     {t.rates.accommodation}
                   </th>
-                  <th className="px-6 py-4 text-right text-amber-900 font-semibold">
+                  <th className="px-4 py-3 text-right text-amber-900 font-semibold whitespace-nowrap">
                     {t.rates.pricePerNight}
                   </th>
-                  <th className="px-6 py-4 text-left text-amber-900 font-semibold">
+                  <th className="px-4 py-3 text-left text-amber-900 font-semibold">
                     {t.rates.details}
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">
+                  <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.mainRoom.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
+                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.mainRoom.price}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.mainRoom.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">
+                  <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.longere.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
+                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.longere.price}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.longere.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 text-gray-500 pl-10">
+                  <td className="px-4 py-3 text-gray-500 pl-8">
                     {t.rates.chambresItems.extraPerson.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-medium">
+                  <td className="px-4 py-3 text-right font-medium">
                     {t.rates.chambresItems.extraPerson.price}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.extraPerson.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">
+                  <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.chezMarco.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
+                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.chezMarco.price}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.chezMarco.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 text-gray-500 pl-10">
+                  <td className="px-4 py-3 text-gray-500 pl-8">
                     {t.rates.chambresItems.extraPerson.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-medium">
+                  <td className="px-4 py-3 text-right font-medium">
                     {t.rates.chambresItems.extraPerson.price}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.extraPerson.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">
+                  <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.smallCaravan.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
+                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.smallCaravan.price}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.smallCaravan.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">
+                  <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.luxuryTent.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
+                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.luxuryTent.price}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.luxuryTent.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4 font-medium">
+                  <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.bergerie.name}
                   </td>
-                  <td className="px-6 py-4 text-right font-semibold text-amber-700">
+                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.bergerie.price}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.bergerie.details}
                   </td>
                 </tr>
