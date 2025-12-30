@@ -57,8 +57,11 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-6 right-6 text-white/80 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
-            onClick={() => setSelectedImage(null)}
+            className="absolute top-6 right-6 z-10 text-white/80 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(null);
+            }}
           >
             <svg
               className="h-8 w-8"
