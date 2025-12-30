@@ -40,6 +40,7 @@ export function OptimizedImage({
         priority={priority}
         sizes={sizes}
         placeholder="blur"
+        basePath="/lesdeuxchevaux"
       />
     </div>
   );
