@@ -34,6 +34,7 @@ export default function Header() {
                 height={85}
                 className="h-16 w-auto"
                 priority
+                basePath="/lesdeuxchevaux"
               />
             </Link>
           </div>

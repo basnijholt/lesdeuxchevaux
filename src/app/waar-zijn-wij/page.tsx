@@ -58,6 +58,7 @@ export default function WaarZijnWij() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
+                  basePath="/lesdeuxchevaux"
                 />
               </div>
 
