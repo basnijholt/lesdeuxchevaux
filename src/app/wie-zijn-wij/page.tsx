@@ -36,37 +36,39 @@ export default function WieZijnWij() {
             </div>
           </div>
 
-          {/* Jip section */}
+          {/* Sons section */}
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg lg:order-first">
               <OptimizedImage
-                src="/uploads/2021/09/jip-2.jpg"
-                alt="Jip"
+                src="/uploads/2024/paul-marjolein-family.jpg"
+                alt="Paul, Marjolein, Mila en Luca"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             <div>
               <h2 className="text-2xl font-bold text-amber-900 mb-6">
-                {t.whoAreWe.jipTitle}
-              </h2>
-              <p className="text-lg text-gray-600">{t.whoAreWe.jipText}</p>
-            </div>
-          </div>
-
-          {/* Sons section */}
-          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-2xl font-bold text-amber-900 mb-6">
                 {t.whoAreWe.sonsTitle}
               </h2>
               <p className="text-lg text-gray-600">{t.whoAreWe.sonsText}</p>
             </div>
+          </div>
+
+          {/* Jip section */}
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl font-bold text-amber-900 mb-6">
+                {t.whoAreWe.jipTitle}
+              </h2>
+              <p className="text-lg text-gray-600">{t.whoAreWe.jipText}</p>
+            </div>
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-              {/* TODO: Add photo of Paul and Mario */}
-              <div className="w-full h-full bg-amber-100 flex items-center justify-center">
-                <span className="text-amber-600 text-lg">Foto volgt</span>
-              </div>
+              <OptimizedImage
+                src="/uploads/2021/09/jip-2.jpg"
+                alt="Jip"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
