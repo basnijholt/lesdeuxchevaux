@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import Card from "@/components/Card";
@@ -8,7 +7,7 @@ import ImageGallery from "@/components/ImageGallery";
 import FadeIn from "@/components/FadeIn";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
-import { getImagePath } from "@/lib/config";
+import OptimizedImage from "@/components/OptimizedImage";
 import { useTranslation } from "@/i18n";
 
 const galleryImages = [
@@ -110,11 +109,11 @@ export default function Home() {
             </FadeIn>
             <FadeIn direction="right">
               <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl">
-                <Image
-                  src={getImagePath("/uploads/2020/07/les-deux-chevaux2.jpg")}
+                <OptimizedImage
+                  src="/uploads/2020/07/les-deux-chevaux2.jpg"
                   alt="Les Deux Chevaux - 2CV"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  className="hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>

@@ -1,5 +1,6 @@
-import Image from "next/image";
-import { getImagePath } from "@/lib/config";
+"use client";
+
+import OptimizedImage from "./OptimizedImage";
 
 interface HeroProps {
   title: string;
@@ -19,11 +20,11 @@ export default function Hero({
       className={`relative ${fullHeight ? "h-[80vh] min-h-[600px]" : "h-[50vh] min-h-[350px]"} w-full overflow-hidden`}
     >
       {image && (
-        <Image
-          src={getImagePath(image)}
+        <OptimizedImage
+          src={image}
           alt={title}
           fill
-          className="object-cover scale-105"
+          className="scale-105"
           priority
           sizes="100vw"
         />

@@ -1,6 +1,7 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
-import { getImagePath } from "@/lib/config";
+import OptimizedImage from "./OptimizedImage";
 
 interface CardProps {
   title: string;
@@ -14,11 +15,11 @@ export default function Card({ title, description, image, href }: CardProps) {
     <div className="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
       {image && (
         <div className="relative h-52 overflow-hidden">
-          <Image
-            src={getImagePath(image)}
+          <OptimizedImage
+            src={image}
             alt={title}
             fill
-            className="object-cover group-hover:scale-110 transition-transform duration-500"
+            className="group-hover:scale-110 transition-transform duration-500"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
