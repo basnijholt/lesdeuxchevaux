@@ -181,7 +181,7 @@
     "heroTitle": "Wat kun je bij ons verwachten?",
     "heroSubtitle": "Onze accommodaties en faciliteiten",
     "intro": "Bij Les Deux Chevaux bieden we verschillende verblijfsmogelijkheden, van kamperen tot luxe kamers, allemaal met de warme gastvrijheid die u van ons mag verwachten.",
-    "chambresTitle": "Chambres d'Hôtes",
+    "chambresTitle": "Gîte / Chambres d'Hôtes",
     "rooms": {
       "red": {
         "name": "Rode Kamer",
@@ -247,7 +247,7 @@
         "price": "Gratis"
       }
     },
-    "chambresTitle": "Chambres d'Hôtes (Bed & Breakfast)",
+    "chambresTitle": "Gîte / Chambres d'Hôtes (Bed & Breakfast)",
     "accommodation": "Accommodatie",
     "pricePerNight": "Prijs per nacht",
     "details": "Details",
