@@ -56,6 +56,8 @@ export interface Translations {
     text3: string;
     jipTitle: string;
     jipText: string;
+    sonsTitle: string;
+    sonsText: string;
   };
   whereAreWe: {
     heroSubtitle: string;
