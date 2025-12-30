@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# next-image-export-optimizer (generated during build)
+**/nextImageExportOptimizer/
+next-image-export-optimizer-hashes.json

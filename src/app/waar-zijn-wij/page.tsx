@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Hero from "@/components/Hero";
-import { getImagePath } from "@/lib/config";
 import { useTranslation } from "@/i18n";
 import Map from "@/components/Map";
 
@@ -53,10 +52,8 @@ export default function WaarZijnWij() {
 
             <div className="space-y-6">
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src={getImagePath(
-                    "/uploads/2020/07/landschap-panorama.jpg"
-                  )}
+                <ExportedImage
+                  src="/uploads/2020/07/landschap-panorama.jpg"
                   alt="Panorama"
                   fill
                   className="object-cover"
