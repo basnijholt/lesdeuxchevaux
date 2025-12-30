@@ -55,8 +55,8 @@ async function processImage(
     const originalWidth = metadata.width || 1920;
     const originalHeight = metadata.height || 1080;
 
-    // Get relative path for manifest (remove ./public prefix)
-    const relativePath = filePath.replace(/^\.\/public/, "");
+    // Get relative path for manifest (remove ./public or public prefix)
+    const relativePath = filePath.replace(/^(\.\/)?public/, "");
     const ext = extname(filePath).toLowerCase();
     const nameWithoutExt = basename(filePath, ext);
     const dir = dirname(filePath);
