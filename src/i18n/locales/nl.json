@@ -190,8 +190,8 @@
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "capacity": "Tot 4 personen",
-        "description": "Gezellig huis met 1 badkamer en 2 toiletten. Meer personen in overleg mogelijk."
+        "capacity": "Tot 6 personen",
+        "description": "Gezellig huis met 1 badkamer en 2 toiletten."
       },
       "longere": {
         "name": "La Longère",
@@ -265,7 +265,7 @@
       "chezMarco": {
         "name": "Chez Marco",
         "price": "€80,00 / €140,00",
-        "details": "€80 (1 kamer) of €140 (2 kamers), tot 4 personen"
+        "details": "€80 (1 kamer) of €140 (2 kamers), tot 6 personen"
       },
       "smallCaravan": {
         "name": "Kleine caravan",

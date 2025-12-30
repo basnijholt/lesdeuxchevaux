@@ -190,8 +190,8 @@
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "capacity": "Jusqu'à 4 personnes",
-        "description": "Maison accueillante avec 1 salle de bain et 2 toilettes. Plus de personnes possible sur demande."
+        "capacity": "Jusqu'à 6 personnes",
+        "description": "Maison accueillante avec 1 salle de bain et 2 toilettes."
       },
       "longere": {
         "name": "La Longère",
@@ -265,7 +265,7 @@
       "chezMarco": {
         "name": "Chez Marco",
         "price": "80,00 € / 140,00 €",
-        "details": "80€ (1 chambre) ou 140€ (2 chambres), jusqu'à 4 personnes"
+        "details": "80€ (1 chambre) ou 140€ (2 chambres), jusqu'à 6 personnes"
       },
       "smallCaravan": {
         "name": "Petite caravane",
