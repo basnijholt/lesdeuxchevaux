@@ -108,9 +108,7 @@ export interface Translations {
     chambresTitle: string;
     rooms: {
       red: { name: string; capacity: string; description: string };
-      green: { name: string; capacity: string; description: string };
-      blue: { name: string; capacity: string; description: string };
-      family: { name: string; capacity: string; description: string };
+      chezMarco: { name: string; capacity: string; description: string };
     };
     campingTitle: string;
     campingText: string;

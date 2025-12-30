@@ -25,8 +25,8 @@ const faqItems: FAQItem[] = [
       fr: "Y a-t-il du WiFi disponible ?",
     },
     answer: {
-      nl: "We hebben bewust beperkte WiFi. Dit is een plek om te ontspannen en de technologie even achter je te laten!",
-      fr: "Nous avons volontairement un WiFi limité. C'est un endroit pour se détendre et laisser la technologie derrière soi !",
+      nl: "Ja, we hebben uitstekende WiFi via Starlink in en rond het huis. Op de camping is geen WiFi beschikbaar - daar kun je echt even ontspannen!",
+      fr: "Oui, nous avons un excellent WiFi via Starlink dans et autour de la maison. Il n'y a pas de WiFi au camping - là-bas, vous pouvez vraiment vous détendre !",
     },
   },
   {
@@ -55,8 +55,8 @@ const faqItems: FAQItem[] = [
       fr: "Quels modes de paiement acceptez-vous ?",
     },
     answer: {
-      nl: "We accepteren contant geld en bankoverschrijving. Pinbetalingen zijn helaas niet mogelijk.",
-      fr: "Nous acceptons les espèces et les virements bancaires. Les paiements par carte ne sont malheureusement pas possibles.",
+      nl: "We accepteren zowel pinbetalingen (via Sumup) als contant geld.",
+      fr: "Nous acceptons les paiements par carte (via Sumup) ainsi que les espèces.",
     },
   },
 ];
