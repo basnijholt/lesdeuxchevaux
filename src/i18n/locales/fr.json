@@ -110,6 +110,22 @@
       "horseRiding": {
         "title": "Équitation",
         "description": "Explorez les environs à cheval ou à dos d'âne."
+      },
+      "motorcycling": {
+        "title": "Moto",
+        "description": "Magnifiques itinéraires à travers les collines de l'Auvergne."
+      },
+      "golf": {
+        "title": "Golf",
+        "description": "Plusieurs terrains de golf dans les environs."
+      },
+      "climbing": {
+        "title": "Escalade",
+        "description": "Escalade aventureuse dans les forêts de survie."
+      },
+      "swimming": {
+        "title": "Baignade",
+        "description": "Lacs de baignade et rivières avec rapides à proximité."
       }
     },
     "attractions": {
@@ -136,6 +152,10 @@
       "fleaMarkets": {
         "title": "Marchés aux puces",
         "description": "Marchés conviviaux avec des trouvailles uniques."
+      },
+      "shoppingTowns": {
+        "title": "Villes commerçantes",
+        "description": "Centres commerciaux et villes agréables dans les environs."
       }
     }
   },
