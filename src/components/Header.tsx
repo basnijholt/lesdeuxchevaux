@@ -97,14 +97,25 @@ export default function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-[#6E6A4A]/50">
+        <div
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-out ${
+            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="py-4 border-t border-[#6E6A4A]/50">
             <div className="flex flex-col gap-1">
-              {navigation.map((item) => (
+              {navigation.map((item, index) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-4 py-3 text-base font-medium text-[#F5E6C8] hover:text-white hover:bg-[#6E6A4A] rounded-lg transition-colors"
+                  className={`px-4 py-3 text-base font-medium text-[#F5E6C8] hover:text-white hover:bg-[#6E6A4A] rounded-lg transition-all duration-200 ${
+                    isMenuOpen
+                      ? "translate-x-0 opacity-100"
+                      : "-translate-x-4 opacity-0"
+                  }`}
+                  style={{
+                    transitionDelay: isMenuOpen ? `${index * 50}ms` : "0ms",
+                  }}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.title}
@@ -112,7 +123,7 @@ export default function Header() {
               ))}
             </div>
           </div>
-        )}
+        </div>
       </nav>
     </header>
   );
