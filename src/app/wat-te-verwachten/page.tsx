@@ -30,7 +30,7 @@ export default function WatTeVerwachten() {
       <Hero
         title={t.whatToExpect.heroTitle}
         subtitle={t.whatToExpect.heroSubtitle}
-        image="/uploads/2016/09/Rode-kamer.jpg"
+        image="/uploads/2016/09/huis.jpeg"
       />
 
       {/* Introduction */}
@@ -59,7 +59,7 @@ export default function WatTeVerwachten() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {rooms.map((room) => (
               <div key={room.name} className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">
@@ -69,14 +69,6 @@ export default function WatTeVerwachten() {
                 <p className="text-gray-600">{room.description}</p>
               </div>
             ))}
-          </div>
-          <div className="relative h-80 rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
-            <OptimizedImage
-              src="/uploads/2016/09/Rode-kamer.jpg"
-              alt="Chambre"
-              fill
-              sizes="(max-width: 1024px) 100vw, 768px"
-            />
           </div>
         </div>
       </section>
