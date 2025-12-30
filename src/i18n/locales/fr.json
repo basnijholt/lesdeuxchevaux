@@ -181,7 +181,7 @@
     "heroTitle": "À quoi s'attendre chez nous ?",
     "heroSubtitle": "Nos hébergements et équipements",
     "intro": "Chez Les Deux Chevaux, nous proposons différentes options d'hébergement, du camping aux chambres de luxe, le tout avec l'accueil chaleureux que vous pouvez attendre de nous.",
-    "chambresTitle": "Chambres d'Hôtes",
+    "chambresTitle": "Gîte / Chambres d'Hôtes",
     "rooms": {
       "red": {
         "name": "Chambre Rouge",
@@ -247,7 +247,7 @@
         "price": "Gratuit"
       }
     },
-    "chambresTitle": "Chambres d'Hôtes (Bed & Breakfast)",
+    "chambresTitle": "Gîte / Chambres d'Hôtes (Bed & Breakfast)",
     "accommodation": "Hébergement",
     "pricePerNight": "Prix par nuit",
     "details": "Détails",
