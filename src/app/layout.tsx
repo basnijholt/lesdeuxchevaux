@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { LanguageProvider } from "@/i18n";
 
 const geistSans = Geist({
@@ -22,6 +23,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://basnijholt.github.io/lesdeuxchevaux"),
   title: {
     default: "Les Deux Chevaux | Mini-camping & B&B in Auvergne",
     template: "%s | Les Deux Chevaux",
@@ -49,6 +51,18 @@ export const metadata: Metadata = {
     title: "Les Deux Chevaux | Mini-camping & B&B in Auvergne",
     description:
       "Welkom bij Les Deux Chevaux - een gezellige mini-camping, chambres d'hôtes en table d'hôtes in de prachtige Auvergne, Frankrijk.",
+    images: [
+      {
+        url: "/lesdeuxchevaux/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Les Deux Chevaux - Mini-camping & B&B in Auvergne",
+      },
+    ],
+  },
+  icons: {
+    icon: "/lesdeuxchevaux/favicon.ico",
+    apple: "/lesdeuxchevaux/apple-touch-icon.png",
   },
 };
 
@@ -66,6 +80,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
+          <WhatsAppButton />
         </LanguageProvider>
       </body>
     </html>
