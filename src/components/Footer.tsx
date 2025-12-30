@@ -48,16 +48,16 @@ export default function Footer() {
                 {t.footer.rates}
               </Link>
               <Link
+                href="/waar-zijn-wij"
+                className="block text-[#D4C9A8] hover:text-white transition-colors"
+              >
+                {t.nav.whereAreWe}
+              </Link>
+              <Link
                 href="/contact"
                 className="block text-[#D4C9A8] hover:text-white transition-colors"
               >
                 {t.nav.contact}
-              </Link>
-              <Link
-                href="/de-streek"
-                className="block text-[#D4C9A8] hover:text-white transition-colors"
-              >
-                {t.footer.theRegion}
               </Link>
             </div>
           </div>
