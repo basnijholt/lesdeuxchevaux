@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
-import { getImagePath } from "@/lib/config";
 import { useTranslation } from "@/i18n";
 
 const regionImages = [
@@ -171,10 +170,8 @@ export default function DeStreek() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src={getImagePath(
-                  "/uploads/2018/11/winter-e1543590063310.jpg"
-                )}
+              <ExportedImage
+                src="/uploads/2018/11/winter-e1543590063310.jpg"
                 alt="Winter in Auvergne"
                 fill
                 className="object-cover"

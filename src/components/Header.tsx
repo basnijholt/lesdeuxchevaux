@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { useState } from "react";
-import { getImagePath } from "@/lib/config";
 import { useTranslation } from "@/i18n";
 import LanguageToggle from "./LanguageToggle";
 
@@ -28,8 +27,8 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <Image
-                src={getImagePath("/logo.jpg")}
+              <ExportedImage
+                src="/logo.jpg"
                 alt="Les Deux Chevaux"
                 width={200}
                 height={85}

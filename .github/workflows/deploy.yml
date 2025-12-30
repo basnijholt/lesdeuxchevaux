@@ -32,26 +32,6 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Get image hash for cache
-        id: image-hash
-        run: |
-          # Create hash of all source images
-          HASH=$(find public/uploads -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" \) -exec sha256sum {} \; | sort | sha256sum | cut -d' ' -f1)
-          echo "hash=$HASH" >> $GITHUB_OUTPUT
-
-      - name: Cache optimized images
-        id: cache-images
-        uses: actions/cache@v4
-        with:
-          path: |
-            public/uploads/**/*-640w.*
-            public/uploads/**/*-960w.*
-            public/uploads/**/*-1280w.*
-            public/uploads/**/*-1920w.*
-            public/uploads/**/*.webp
-            public/image-manifest.json
-          key: optimized-images-${{ steps.image-hash.outputs.hash }}
-
       - name: Build
         run: bun run build
 
