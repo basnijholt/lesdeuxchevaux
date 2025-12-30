@@ -44,7 +44,6 @@ export default function WieZijnWij() {
                 alt="Paul, Marjolein, Mila en Luca"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                style={{ objectPosition: "center 25%" }}
               />
             </div>
             <div>
