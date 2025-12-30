@@ -189,7 +189,7 @@ export default function WatTeVerwachten() {
               </div>
               <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
                 <OptimizedImage
-                  src="/uploads/2024/rob-cooking-2.jpg"
+                  src="/uploads/2024/rob-cooking-new.jpg"
                   alt="Rob bereidt maaltijd"
                   fill
                   sizes="(max-width: 1024px) 50vw, 25vw"
