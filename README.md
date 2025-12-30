@@ -10,6 +10,7 @@ Website for Les Deux Chevaux - a mini-camping, chambres d'hôtes (B&B), and tabl
 - Responsive design with Tailwind CSS
 - Static export for GitHub Pages deployment
 - Interactive OpenStreetMap location
+- Optimized images (WebP, responsive sizes, blur placeholders)
 
 ## Development
 
