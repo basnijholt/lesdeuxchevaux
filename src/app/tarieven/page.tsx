@@ -89,17 +89,6 @@ export default function Tarieven() {
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-amber-50">
                   <td className="px-4 py-3 font-medium">
-                    {t.rates.chambresItems.mainRoom.name}
-                  </td>
-                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
-                    {t.rates.chambresItems.mainRoom.price}
-                  </td>
-                  <td className="px-4 py-3 text-gray-600">
-                    {t.rates.chambresItems.mainRoom.details}
-                  </td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.longere.name}
                   </td>
                   <td className="px-4 py-3 text-right font-semibold text-amber-700">
@@ -118,6 +107,17 @@ export default function Tarieven() {
                   </td>
                   <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.chezMarco.details}
+                  </td>
+                </tr>
+                <tr className="hover:bg-amber-50">
+                  <td className="px-4 py-3 font-medium">
+                    {t.rates.chambresItems.mainRoom.name}
+                  </td>
+                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
+                    {t.rates.chambresItems.mainRoom.price}
+                  </td>
+                  <td className="px-4 py-3 text-gray-600">
+                    {t.rates.chambresItems.mainRoom.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
