@@ -45,14 +45,6 @@ export default function Tarieven() {
                 </tr>
                 <tr className="hover:bg-amber-50">
                   <td className="px-6 py-4">
-                    {t.rates.campingItems.extraPerson.description}
-                  </td>
-                  <td className="px-6 py-4 text-right font-medium">
-                    {t.rates.campingItems.extraPerson.price}
-                  </td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">
                     {t.rates.campingItems.electricity.description}
                   </td>
                   <td className="px-6 py-4 text-right font-medium text-green-600">
@@ -65,14 +57,6 @@ export default function Tarieven() {
                   </td>
                   <td className="px-6 py-4 text-right font-medium text-green-600">
                     {t.rates.campingItems.dog.price}
-                  </td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-6 py-4">
-                    {t.rates.campingItems.touristTax.description}
-                  </td>
-                  <td className="px-6 py-4 text-right font-medium">
-                    {t.rates.campingItems.touristTax.price}
                   </td>
                 </tr>
               </tbody>
@@ -126,17 +110,6 @@ export default function Tarieven() {
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
-                  <td className="px-4 py-3 text-gray-500 pl-8">
-                    {t.rates.chambresItems.extraPerson.name}
-                  </td>
-                  <td className="px-4 py-3 text-right font-medium">
-                    {t.rates.chambresItems.extraPerson.price}
-                  </td>
-                  <td className="px-4 py-3 text-gray-600">
-                    {t.rates.chambresItems.extraPerson.details}
-                  </td>
-                </tr>
-                <tr className="hover:bg-amber-50">
                   <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.chezMarco.name}
                   </td>
@@ -145,17 +118,6 @@ export default function Tarieven() {
                   </td>
                   <td className="px-4 py-3 text-gray-600">
                     {t.rates.chambresItems.chezMarco.details}
-                  </td>
-                </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-4 py-3 text-gray-500 pl-8">
-                    {t.rates.chambresItems.extraPerson.name}
-                  </td>
-                  <td className="px-4 py-3 text-right font-medium">
-                    {t.rates.chambresItems.extraPerson.price}
-                  </td>
-                  <td className="px-4 py-3 text-gray-600">
-                    {t.rates.chambresItems.extraPerson.details}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
