@@ -255,12 +255,12 @@
       "longere": {
         "name": "La Longère (gîte)",
         "price": "à partir de 80€/nuit",
-        "details": "2p: 80€/nuit, 560€/sem (basse 500€) | 3p: 120€/nuit, 735€/sem (basse 600€) | 4p: 160€/nuit, 885€/sem (basse 700€) | 5-6p: 200-240€/nuit, 1000€/sem. Hors pellets pour chauffage."
+        "details": "2-7 personnes, salle de bain privée, 40€ par personne supplémentaire"
       },
       "chezMarco": {
         "name": "Chez Marco",
         "price": "80,00 € / 140,00 €",
-        "details": "80€ (1 chambre) ou 140€ (2 chambres), jusqu'à 6 personnes"
+        "details": "Jusqu'à 6 personnes, petit-déjeuner inclus, salle de bain privée"
       },
       "smallCaravan": {
         "name": "Petite caravane",
@@ -280,7 +280,7 @@
       "mainRoom": {
         "name": "Chambre Rouge",
         "price": "75,00 €",
-        "details": "2 personnes, salle de bain privée"
+        "details": "2 personnes, petit-déjeuner inclus, rez-de-chaussée avec douche/toilette privée"
       }
     },
     "tableTitle": "Table d'Hôtes (Repas)",
