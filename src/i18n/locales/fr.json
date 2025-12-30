@@ -252,11 +252,6 @@
     "pricePerNight": "Prix par nuit",
     "details": "Détails",
     "chambresItems": {
-      "mainRoom": {
-        "name": "Chambre Rouge",
-        "price": "75,00 €",
-        "details": "2 personnes, salle de bain privée"
-      },
       "longere": {
         "name": "La Longère (gîte)",
         "price": "80,00 € / 560 € p.s.",
@@ -281,6 +276,11 @@
         "name": "La Bergerie",
         "price": "60,00 €",
         "details": "Petite maison cosy, uniquement pour dormir"
+      },
+      "mainRoom": {
+        "name": "Chambre Rouge",
+        "price": "75,00 €",
+        "details": "2 personnes, salle de bain privée"
       }
     },
     "tableTitle": "Table d'Hôtes (Repas)",

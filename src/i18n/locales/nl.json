@@ -252,11 +252,6 @@
     "pricePerNight": "Prijs per nacht",
     "details": "Details",
     "chambresItems": {
-      "mainRoom": {
-        "name": "Rode Kamer",
-        "price": "€75,00",
-        "details": "2 personen, eigen badkamer"
-      },
       "longere": {
         "name": "La Longère (gîte)",
         "price": "€80,00 / €560,- p.w.",
@@ -281,6 +276,11 @@
         "name": "La Bergerie",
         "price": "€60,00",
         "details": "Knus huisje, alleen om te slapen"
+      },
+      "mainRoom": {
+        "name": "Rode Kamer",
+        "price": "€75,00",
+        "details": "2 personen, eigen badkamer"
       }
     },
     "tableTitle": "Table d'Hôtes (Maaltijden)",
