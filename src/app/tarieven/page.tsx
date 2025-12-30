@@ -87,7 +87,7 @@ export default function Tarieven() {
           <h2 className="text-3xl font-bold text-amber-900 mb-8">
             {t.rates.chambresTitle}
           </h2>
-          <div className="overflow-x-auto max-w-4xl">
+          <div className="overflow-x-auto max-w-3xl">
             <table className="w-full bg-white rounded-xl shadow-sm">
               <thead>
                 <tr className="bg-amber-100">
