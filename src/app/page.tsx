@@ -6,6 +6,8 @@ import Hero from "@/components/Hero";
 import Card from "@/components/Card";
 import ImageGallery from "@/components/ImageGallery";
 import FadeIn from "@/components/FadeIn";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import { getImagePath } from "@/lib/config";
 import { useTranslation } from "@/i18n";
 
@@ -134,6 +136,12 @@ export default function Home() {
           </FadeIn>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* FAQ */}
+      <FAQ />
 
       {/* CTA Section */}
       <section className="py-20 md:py-28 bg-[#5C5840] text-white">
