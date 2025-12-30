@@ -70,10 +70,12 @@ export default function DeStreek() {
     {
       title: t.theRegion.attractions.puyDeDome.title,
       description: t.theRegion.attractions.puyDeDome.description,
+      url: "https://www.panoramiquedesdomes.fr/",
     },
     {
       title: t.theRegion.attractions.puyDeSancy.title,
       description: t.theRegion.attractions.puyDeSancy.description,
+      url: "https://www.sancy.com/",
     },
     {
       title: t.theRegion.attractions.castles.title,
@@ -82,6 +84,7 @@ export default function DeStreek() {
     {
       title: t.theRegion.attractions.vulcania.title,
       description: t.theRegion.attractions.vulcania.description,
+      url: "https://www.vulcania.com/",
     },
     {
       title: t.theRegion.attractions.autoMuseum.title,
@@ -98,6 +101,7 @@ export default function DeStreek() {
     {
       title: t.theRegion.attractions.paleopolis.title,
       description: t.theRegion.attractions.paleopolis.description,
+      url: "https://www.paleopolis-parc.com/",
     },
     {
       title: t.theRegion.attractions.accrobranche.title,
@@ -106,14 +110,17 @@ export default function DeStreek() {
     {
       title: t.theRegion.attractions.charroux.title,
       description: t.theRegion.attractions.charroux.description,
+      url: "https://www.charroux.com/",
     },
     {
       title: t.theRegion.attractions.vichy.title,
       description: t.theRegion.attractions.vichy.description,
+      url: "https://vichymonamour.com/",
     },
     {
       title: t.theRegion.attractions.troncais.title,
       description: t.theRegion.attractions.troncais.description,
+      url: "https://www.onf.fr/vivre-la-foret/forets-de-france/+/16fc::foret-domaniale-de-troncais.html",
     },
   ];
 
@@ -171,7 +178,18 @@ export default function DeStreek() {
                 className="border border-amber-200 p-6 rounded-xl hover:border-amber-400 transition-colors"
               >
                 <h3 className="text-lg font-semibold text-amber-800 mb-2">
-                  {attraction.title}
+                  {attraction.url ? (
+                    <a
+                      href={attraction.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      {attraction.title} ↗
+                    </a>
+                  ) : (
+                    attraction.title
+                  )}
                 </h3>
                 <p className="text-gray-600">{attraction.description}</p>
               </div>
