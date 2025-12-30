@@ -13,6 +13,16 @@ const regionImages = [
     alt: "Winter in Auvergne",
   },
   { src: "/uploads/2016/09/kanoën.jpeg", alt: "Kanoën" },
+  { src: "/uploads/2024/streek/region-1.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-2.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-3.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-4.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-5.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-6.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-7.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-8.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-9.jpg", alt: "De streek" },
+  { src: "/uploads/2024/streek/region-10.jpg", alt: "De streek" },
 ];
 
 export default function DeStreek() {
