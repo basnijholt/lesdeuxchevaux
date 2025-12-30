@@ -101,15 +101,11 @@
       },
       "fishing": {
         "title": "Vissen",
-        "description": "Vis in de rivier de Sioul, rijk aan diverse vissoorten."
+        "description": "Vis in de rivier de Sioule of in één van de 2 vismeren, rijk aan diverse vissoorten."
       },
       "canoeing": {
         "title": "Kanoën",
-        "description": "Vaar over de Sioul en geniet van de natuur vanaf het water."
-      },
-      "horseRiding": {
-        "title": "Paardrijden",
-        "description": "Verken de omgeving te paard of met een ezel."
+        "description": "Vaar over de Sioule en geniet van de natuur vanaf het water."
       },
       "motorcycling": {
         "title": "Motortoeren",
@@ -125,7 +121,7 @@
       },
       "swimming": {
         "title": "Zwemmen",
-        "description": "Zwemmeren en rivieren met stroomversnellingen in de buurt."
+        "description": "Zwemmen in Plan d'eau de Servant, Saint-Éloy-les-Mines, Vieure of Saint-Clément."
       }
     },
     "attractions": {
@@ -156,6 +152,26 @@
       "shoppingTowns": {
         "title": "Winkelsteden",
         "description": "Winkelcentra en gezellige stadjes in de omgeving."
+      },
+      "paleopolis": {
+        "title": "Paléopolis (Gannat)",
+        "description": "Dinopark met fossielen, skeletten en levensgrote dinosaurussen."
+      },
+      "accrobranche": {
+        "title": "Klimparken",
+        "description": "Meerdere accrobranche parken in de omgeving voor alle leeftijden en niveaus."
+      },
+      "charroux": {
+        "title": "Charroux",
+        "description": "Een van de 'Mooiste Dorpen van Frankrijk', op 10 km afstand."
+      },
+      "vichy": {
+        "title": "Vichy",
+        "description": "Historische thermale baden en prachtige Belle Époque architectuur."
+      },
+      "troncais": {
+        "title": "Forêt de Tronçais",
+        "description": "Grootste eikenbos van Europa met zwemvijvers en wandelpaden."
       }
     }
   },

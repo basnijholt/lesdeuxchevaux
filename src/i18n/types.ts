@@ -85,7 +85,6 @@ export interface Translations {
       cycling: { title: string; description: string };
       fishing: { title: string; description: string };
       canoeing: { title: string; description: string };
-      horseRiding: { title: string; description: string };
       motorcycling: { title: string; description: string };
       golf: { title: string; description: string };
       climbing: { title: string; description: string };
@@ -99,6 +98,11 @@ export interface Translations {
       autoMuseum: { title: string; description: string };
       fleaMarkets: { title: string; description: string };
       shoppingTowns: { title: string; description: string };
+      paleopolis: { title: string; description: string };
+      accrobranche: { title: string; description: string };
+      charroux: { title: string; description: string };
+      vichy: { title: string; description: string };
+      troncais: { title: string; description: string };
     };
   };
   whatToExpect: {

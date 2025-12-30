@@ -45,11 +45,6 @@ export default function DeStreek() {
       icon: "🛶",
     },
     {
-      title: t.theRegion.activities.horseRiding.title,
-      description: t.theRegion.activities.horseRiding.description,
-      icon: "🐴",
-    },
-    {
       title: t.theRegion.activities.motorcycling.title,
       description: t.theRegion.activities.motorcycling.description,
       icon: "🏍️",
@@ -99,6 +94,26 @@ export default function DeStreek() {
     {
       title: t.theRegion.attractions.shoppingTowns.title,
       description: t.theRegion.attractions.shoppingTowns.description,
+    },
+    {
+      title: t.theRegion.attractions.paleopolis.title,
+      description: t.theRegion.attractions.paleopolis.description,
+    },
+    {
+      title: t.theRegion.attractions.accrobranche.title,
+      description: t.theRegion.attractions.accrobranche.description,
+    },
+    {
+      title: t.theRegion.attractions.charroux.title,
+      description: t.theRegion.attractions.charroux.description,
+    },
+    {
+      title: t.theRegion.attractions.vichy.title,
+      description: t.theRegion.attractions.vichy.description,
+    },
+    {
+      title: t.theRegion.attractions.troncais.title,
+      description: t.theRegion.attractions.troncais.description,
     },
   ];
 
