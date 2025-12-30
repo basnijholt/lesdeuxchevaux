@@ -255,12 +255,12 @@
       "longere": {
         "name": "La Longère (gîte)",
         "price": "vanaf €80/nacht",
-        "details": "2p: €80/nacht, €560/week (laag €500) | 3p: €120/nacht, €735/week (laag €600) | 4p: €160/nacht, €885/week (laag €700) | 5-6p: €200-240/nacht, €1000/week. Excl. pellets voor verwarming."
+        "details": "2-7 personen, eigen badkamer, €40 per extra persoon"
       },
       "chezMarco": {
         "name": "Chez Marco",
         "price": "€80,00 / €140,00",
-        "details": "€80 (1 kamer) of €140 (2 kamers), tot 6 personen"
+        "details": "Tot 6 personen, incl. ontbijt, eigen badkamer"
       },
       "smallCaravan": {
         "name": "Kleine caravan",
@@ -280,7 +280,7 @@
       "mainRoom": {
         "name": "Rode Kamer",
         "price": "€75,00",
-        "details": "2 personen, eigen badkamer"
+        "details": "2 personen, incl. ontbijt, begane grond met eigen douche/toilet"
       }
     },
     "tableTitle": "Table d'Hôtes (Maaltijden)",
