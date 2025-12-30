@@ -86,6 +86,10 @@ export interface Translations {
       fishing: { title: string; description: string };
       canoeing: { title: string; description: string };
       horseRiding: { title: string; description: string };
+      motorcycling: { title: string; description: string };
+      golf: { title: string; description: string };
+      climbing: { title: string; description: string };
+      swimming: { title: string; description: string };
     };
     attractions: {
       puyDeDome: { title: string; description: string };
@@ -94,6 +98,7 @@ export interface Translations {
       vulcania: { title: string; description: string };
       autoMuseum: { title: string; description: string };
       fleaMarkets: { title: string; description: string };
+      shoppingTowns: { title: string; description: string };
     };
   };
   whatToExpect: {

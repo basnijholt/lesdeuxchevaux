@@ -110,6 +110,22 @@
       "horseRiding": {
         "title": "Paardrijden",
         "description": "Verken de omgeving te paard of met een ezel."
+      },
+      "motorcycling": {
+        "title": "Motortoeren",
+        "description": "Prachtige routes door het heuvellandschap van de Auvergne."
+      },
+      "golf": {
+        "title": "Golf",
+        "description": "Verschillende golfbanen in de omgeving."
+      },
+      "climbing": {
+        "title": "Klimmen",
+        "description": "Avontuurlijk klimmen in survival bossen."
+      },
+      "swimming": {
+        "title": "Zwemmen",
+        "description": "Zwemmeren en rivieren met stroomversnellingen in de buurt."
       }
     },
     "attractions": {
@@ -136,6 +152,10 @@
       "fleaMarkets": {
         "title": "Rommelmarkten",
         "description": "Gezellige markten met unieke vondsten."
+      },
+      "shoppingTowns": {
+        "title": "Winkelsteden",
+        "description": "Winkelcentra en gezellige stadjes in de omgeving."
       }
     }
   },
