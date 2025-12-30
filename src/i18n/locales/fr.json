@@ -101,15 +101,11 @@
       },
       "fishing": {
         "title": "Pêche",
-        "description": "Pêchez dans la rivière Sioule, riche en espèces de poissons diverses."
+        "description": "Pêchez dans la rivière Sioule ou dans l'un des 2 étangs de pêche, riches en espèces diverses."
       },
       "canoeing": {
         "title": "Canoë",
         "description": "Naviguez sur la Sioule et profitez de la nature depuis l'eau."
-      },
-      "horseRiding": {
-        "title": "Équitation",
-        "description": "Explorez les environs à cheval ou à dos d'âne."
       },
       "motorcycling": {
         "title": "Moto",
@@ -125,7 +121,7 @@
       },
       "swimming": {
         "title": "Baignade",
-        "description": "Lacs de baignade et rivières avec rapides à proximité."
+        "description": "Baignade au Plan d'eau de Servant, Saint-Éloy-les-Mines, Vieure ou Saint-Clément."
       }
     },
     "attractions": {
@@ -156,6 +152,26 @@
       "shoppingTowns": {
         "title": "Villes commerçantes",
         "description": "Centres commerciaux et villes agréables dans les environs."
+      },
+      "paleopolis": {
+        "title": "Paléopolis (Gannat)",
+        "description": "Parc de dinosaures avec fossiles, squelettes et dinosaures grandeur nature."
+      },
+      "accrobranche": {
+        "title": "Accrobranche",
+        "description": "Plusieurs parcs accrobranche dans la région pour tous les âges et niveaux."
+      },
+      "charroux": {
+        "title": "Charroux",
+        "description": "Un des 'Plus Beaux Villages de France', à 10 km."
+      },
+      "vichy": {
+        "title": "Vichy",
+        "description": "Thermes historiques et magnifique architecture Belle Époque."
+      },
+      "troncais": {
+        "title": "Forêt de Tronçais",
+        "description": "Plus grande chênaie d'Europe avec étangs de baignade et sentiers de randonnée."
       }
     }
   },
