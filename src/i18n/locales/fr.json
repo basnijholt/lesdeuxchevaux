@@ -29,9 +29,9 @@
     "free": "Gratuit"
   },
   "home": {
-    "heroSubtitle": "Mini-camping, chambres d'hôtes et table d'hôtes en Auvergne",
+    "heroSubtitle": "Gîte, mini-camping, chambres d'hôtes et table d'hôtes en Auvergne",
     "welcomeTitle": "Bienvenue en Auvergne",
-    "welcomeText1": "Bienvenue sur le site de Les Deux Chevaux, un mini-camping convivial, chambres d'hôtes (Bed & Breakfast) et table d'hôtes dans la magnifique Auvergne, France.",
+    "welcomeText1": "Bienvenue sur le site de Les Deux Chevaux, un gîte ensoleillé, un mini-camping convivial, chambres d'hôtes (Bed & Breakfast) et table d'hôtes dans la magnifique Auvergne, France.",
     "welcomeText2": "Nous, Yvonne et Rob, vous souhaitons la bienvenue dans notre petit coin de paradis au cœur de la France.",
     "whatWeOffer": "Que proposons-nous ?",
     "whyTheName": "Pourquoi \"Les Deux Chevaux\" ?",
@@ -271,7 +271,7 @@
       "chezMarco": {
         "name": "Chez Marco",
         "price": "à partir de 80€/nuit",
-        "details": "Jusqu'à 6 personnes, petit-déjeuner inclus, 40€ par personne supplémentaire"
+        "details": "Jusqu'à 6 personnes, 40€ par personne supplémentaire"
       },
       "smallCaravan": {
         "name": "Petite caravane",
