@@ -62,12 +62,12 @@ export default function WatTeVerwachten() {
             <h2 className="text-3xl font-bold text-amber-900 text-center mb-4">
               {t.whatToExpect.chambresTitle}
             </h2>
-            <div className="relative h-48 w-64">
+            <div className="relative h-48 w-64 rounded-2xl overflow-hidden shadow-lg">
               <OptimizedImage
                 src="/uploads/2024/gite-sign.jpg"
                 alt="Officieel Gîte de France"
                 fill
-                className="object-contain"
+                className="object-cover"
                 sizes="256px"
               />
             </div>
