@@ -270,8 +270,8 @@
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "price": "80,00 € / 140,00 €",
-        "details": "Jusqu'à 6 personnes, petit-déjeuner inclus, salle de bain privée"
+        "price": "à partir de 80€/nuit",
+        "details": "Jusqu'à 6 personnes, petit-déjeuner inclus, 40€ par personne supplémentaire"
       },
       "smallCaravan": {
         "name": "Petite caravane",
@@ -298,16 +298,16 @@
     "meal": "Repas",
     "tableItems": {
       "dinner": {
-        "description": "Menu 3 plats (incl. eau, verre de vin/bière, café/thé)",
+        "description": "Menu 3 plats avec 1 consommation, café et eau",
         "price": "22,50 € p.p."
       },
-      "drinks": {
-        "description": "Boissons supplémentaires (bière, soft, vin)",
-        "price": "2,50 € le verre"
-      },
       "kids": {
-        "description": "Enfants jusqu'à 10 ans (plat + dessert/glace)",
-        "price": "10,00 €"
+        "description": "Enfants jusqu'à 10 ans",
+        "price": "10,00 € p.p."
+      },
+      "drinks": {
+        "description": "Boissons",
+        "price": "2,50 €"
       },
       "breakfast": {
         "description": "Petit-déjeuner (séparé)",
