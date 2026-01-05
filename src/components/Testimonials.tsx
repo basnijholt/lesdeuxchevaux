@@ -14,49 +14,40 @@ interface Review {
 
 const reviews: Review[] = [
   {
-    name: "Denis",
+    name: "Shirley Gorsira",
     rating: 5,
     text: {
-      nl: "De ontvangst is uitstekend. De kamer 'Bergerie' is aangenaam. De plek is rustig. We hebben het avondeten genomen dat erg lekker is... Het ontbijt is uitgebreid. Ik beveel deze plek van harte aan.",
-      fr: "L'accueil est excellent. La chambre 'Bergerie' est agréable. Le lieu est calme. Nous avons pris le repas du soir qui est très bon... Le petit déjeuner est copieux. Je recommande vivement ce lieu.",
+      nl: "Echt een aanrader! Op onze terugreis vanuit de Ardeche naar Nederland zijn wij heel gastvrij ontvangen en hebben twee nachtjes geslapen in de longère. Een heerlijk huis, alles is aanwezig en vooral erg netjes en schoon. Table d'hôtes, dat hadden wij nog niet eerder meegemaakt... het was heerlijk! Rob (en zijn zoon) kunnen fantastisch koken. Wij komen graag nog een keer terug!",
+      fr: "Vraiment recommandé ! Lors de notre voyage retour de l'Ardèche vers les Pays-Bas, nous avons été accueillis très chaleureusement et avons passé deux nuits dans la longère. Une maison merveilleuse, tout est présent et surtout très propre. Table d'hôtes, nous n'avions jamais essayé... c'était délicieux ! Rob (et son fils) cuisinent fantastiquement. Nous reviendrons avec plaisir !",
     },
-    date: "2020",
+    date: "2025",
   },
   {
-    name: "Pascal",
+    name: "Dian Fluijt",
     rating: 5,
     text: {
-      nl: "Super gîte, warme en vriendelijke ontvangst. Ga er gerust heen, het dorp is prachtig.",
-      fr: "Super gîte, accueil chaleureux et sympathique. Allez-y sans attendre, le village est magnifique.",
+      nl: "Slaperij Les deux chevaux voelt voor ons als thuiskomen. Alle credits voor eigenaren Rob en Yvonne die voortreffelijke gastheer en -vrouw zijn en ook nog eens heerlijk kunnen koken. We mogen zelf een plek kiezen voor onze caravan en genieten van de stilte en de natuur.",
+      fr: "Les Deux Chevaux, c'est comme rentrer à la maison pour nous. Tous les mérites reviennent aux propriétaires Rob et Yvonne, des hôtes exceptionnels qui cuisinent également délicieusement. Nous pouvons choisir notre emplacement pour notre caravane et profiter du calme et de la nature.",
     },
-    date: "2022",
+    date: "2025",
   },
   {
-    name: "Peter",
+    name: "Henk Jan Willen",
     rating: 5,
     text: {
-      nl: "Gastvrijheid op zijn best. Aangenaam en rustig.",
-      fr: "L'hospitalité à son meilleur. Agréable et calme.",
+      nl: "Verborgen schat voor de rustzoeker! Geweldige plek met uitzicht op de Puy de Dôme en een geweldige gastvrijheid. Yvonne en Rob doen er werkelijk alles aan het je naar je zin te maken. Rob kan geweldig koken, dus vraag of je kunt aanschuiven. Wij komen er graag weer terug!",
+      fr: "Un trésor caché pour ceux qui cherchent le calme ! Endroit magnifique avec vue sur le Puy de Dôme et une hospitalité exceptionnelle. Yvonne et Rob font vraiment tout pour vous satisfaire. Rob cuisine merveilleusement, alors demandez à vous joindre à table. Nous y retournerons avec plaisir !",
     },
-    date: "2023",
+    date: "2025",
   },
   {
-    name: "Delphine",
-    rating: 4,
+    name: "Cees van Hal",
+    rating: 5,
     text: {
-      nl: "Warme en authentieke ontvangst op deze vredige plek. Yvonne en Rob zijn zeer attente gastheren die uitstekend voor je zorgen.",
-      fr: "Accueil chaleureux et authentique dans ce lieu paisible. Yvonne et Rob sont des hôtes très attentionnés qui sont aux petits soins.",
+      nl: "Wat een enorm leuke camping cq bed and breakfast. Fantastisch leuke, gastvrije en gezellige mensen. Heerlijk eten. Mooie rustige omgeving. En je kan er gewoon Nederlands spreken.",
+      fr: "Quel camping et chambre d'hôtes formidable ! Des gens fantastiques, accueillants et chaleureux. Délicieuse cuisine. Un bel environnement calme. Et on peut y parler néerlandais.",
     },
-    date: "2022",
-  },
-  {
-    name: "Hugo",
-    rating: 4,
-    text: {
-      nl: "Vredige gîte in het kleine dorpje Nades, met vriendelijke gastheren in een oud huis op een rustige locatie. Grote kamer, ontbijt inbegrepen. Ontspannend.",
-      fr: "Gîte paisible dans le tout petit village de Nades, avec des hôtes sympathiques dans une vieille maison sur un site tranquille. Grande chambre, petit déjeuner inclus. Reposant.",
-    },
-    date: "2017",
+    date: "2025",
   },
 ];
 
@@ -95,8 +86,8 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviews.slice(0, 3).map((review, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {reviews.slice(0, 4).map((review, index) => (
             <div
               key={index}
               className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
