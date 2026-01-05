@@ -38,6 +38,17 @@
     "whyTheNameText1": "De naam \"Les Deux Chevaux\" verwijst naar de iconische Franse auto, de Citroën 2CV - oftewel \"deux chevaux\" (twee paardenkrachten).",
     "whyTheNameText2": "Deze auto symboliseert het relaxte, authentieke Franse plattelandsleven dat wij onze gasten willen bieden.",
     "impressions": "Impressies",
+    "tableSection": {
+      "title": "Table d'Hôtes",
+      "intro": "Table d'hôtes zoals het bedoeld is. Samen eten aan de lange tafel, een glas wijn, goede gesprekken. Vreemden aan het begin van de avond, bekenden aan het einde. Precies zoals vakantie hoort te zijn. Ook kids zijn van harte welkom.",
+      "description": "Geniet van een huisgemaakt driegangenmenu, samen aan tafel, bereid met seizoensproducten.",
+      "included": "Inbegrepen",
+      "includedItems": ["Voorgerecht", "Hoofdgerecht", "Dessert", "Water", "Één glas wijn/bier", "Koffie of thee na afloop"],
+      "price": "€22,50 p.p.",
+      "extras": "Extra drankjes (bier, fris): €2,50 per glas • Meer wijn? +€2,50 per glas",
+      "note": "Eén menu voor alle gasten, allergieën graag vooraf melden.",
+      "kids": "Kinderen t/m 10 jaar: hoofdgerecht + toetje of ijsje — €10,00"
+    },
     "readyForStay": "Klaar voor uw verblijf in de Auvergne?",
     "ctaText": "Neem contact met ons op voor meer informatie of om een reservering te maken.",
     "highlights": {
@@ -51,7 +62,7 @@
       },
       "table": {
         "title": "Table d'Hôtes",
-        "description": "Geniet van authentieke Franse maaltijden"
+        "description": "Table d'hôtes zoals het bedoeld is. Samen eten aan de lange tafel, goede gesprekken. Vreemden aan het begin, bekenden aan het einde. Driegangenmenu incl. water, glas wijn/bier en koffie — €22,50 p.p."
       }
     }
   },
@@ -287,16 +298,16 @@
     "meal": "Maaltijd",
     "tableItems": {
       "dinner": {
-        "description": "Driegangen diner met koffie",
-        "price": "€20,00 p.p."
+        "description": "Driegangenmenu (incl. water, glas wijn/bier, koffie/thee)",
+        "price": "€22,50 p.p."
       },
       "drinks": {
-        "description": "Drankjes bij diner",
-        "price": "€2,00 per stuk"
+        "description": "Extra drankjes (bier, fris, wijn)",
+        "price": "€2,50 per glas"
       },
-      "lunch": {
-        "description": "Lunch",
-        "price": "€7,50 p.p."
+      "kids": {
+        "description": "Kinderen t/m 10 jaar (hoofdgerecht + toetje/ijsje)",
+        "price": "€10,00"
       },
       "breakfast": {
         "description": "Ontbijt (los)",

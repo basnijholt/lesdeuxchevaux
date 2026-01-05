@@ -33,13 +33,13 @@ export default function Home() {
     {
       title: t.home.highlights.chambres.title,
       description: t.home.highlights.chambres.description,
-      image: "/uploads/2016/09/Rode-kamer.jpg",
+      image: "/uploads/2026/01/chambres-dhotes.jpg",
       href: "/wat-te-verwachten",
     },
     {
       title: t.home.highlights.table.title,
       description: t.home.highlights.table.description,
-      image: "/uploads/2020/07/proost.jpg",
+      image: "/uploads/2026/01/table-dhotes.jpg",
       href: "/tarieven",
     },
   ];
@@ -86,6 +86,68 @@ export default function Home() {
                 <Card {...item} />
               </FadeIn>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Table d'Hôtes Section */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <FadeIn direction="left">
+              <div className="relative h-80 lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+                <OptimizedImage
+                  src="/uploads/2026/01/table-dhotes.jpg"
+                  alt="Table d'Hôtes"
+                  fill
+                  className="hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn direction="right">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#5C5840] mb-6 heading-decorated">
+                  {t.home.tableSection.title}
+                </h2>
+                <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+                  {t.home.tableSection.intro}
+                </p>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                  {t.home.tableSection.description}
+                </p>
+                <div className="bg-[#f8f7f2] p-6 rounded-xl mb-6">
+                  <h3 className="font-semibold text-[#5C5840] mb-3">
+                    {t.home.tableSection.included}:
+                  </h3>
+                  <ul className="grid grid-cols-2 gap-2 mb-4">
+                    {t.home.tableSection.includedItems.map((item, index) => (
+                      <li key={index} className="flex items-center gap-2 text-gray-600">
+                        <span className="text-amber-600">✓</span> {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-2xl font-bold text-amber-700 mb-2">
+                    {t.home.tableSection.price}
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    {t.home.tableSection.extras}
+                  </p>
+                </div>
+                <p className="text-gray-600 mb-2 italic">
+                  {t.home.tableSection.note}
+                </p>
+                <p className="text-amber-700 font-medium">
+                  {t.home.tableSection.kids}
+                </p>
+                <Link
+                  href="/tarieven"
+                  className="inline-block mt-6 px-6 py-3 bg-[#5C5840] text-white font-semibold rounded-lg hover:bg-[#4a4833] transition-colors"
+                >
+                  {t.common.viewRates}
+                </Link>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
