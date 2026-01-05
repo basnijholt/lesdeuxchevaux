@@ -270,8 +270,8 @@
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "price": "€80,00 / €140,00",
-        "details": "Tot 6 personen, incl. ontbijt, eigen badkamer"
+        "price": "vanaf €80/nacht",
+        "details": "Tot 6 personen, incl. ontbijt, €40 per extra persoon"
       },
       "smallCaravan": {
         "name": "Kleine caravan",
@@ -298,16 +298,16 @@
     "meal": "Maaltijd",
     "tableItems": {
       "dinner": {
-        "description": "Driegangenmenu (incl. water, glas wijn/bier, koffie/thee)",
+        "description": "Driegangen diner met 1 consumptie, koffie en water",
         "price": "€22,50 p.p."
       },
-      "drinks": {
-        "description": "Extra drankjes (bier, fris, wijn)",
-        "price": "€2,50 per glas"
-      },
       "kids": {
-        "description": "Kinderen t/m 10 jaar (hoofdgerecht + toetje/ijsje)",
-        "price": "€10,00"
+        "description": "Kinderen t/m 10 jaar",
+        "price": "€10,00 p.p."
+      },
+      "drinks": {
+        "description": "Drankjes",
+        "price": "€2,50"
       },
       "breakfast": {
         "description": "Ontbijt (los)",
