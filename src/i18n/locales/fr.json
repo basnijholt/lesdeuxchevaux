@@ -38,6 +38,17 @@
     "whyTheNameText1": "Le nom \"Les Deux Chevaux\" fait référence à l'emblématique voiture française, la Citroën 2CV - soit \"deux chevaux\" (deux chevaux-vapeur).",
     "whyTheNameText2": "Cette voiture symbolise la vie détendue et authentique de la campagne française que nous souhaitons offrir à nos hôtes.",
     "impressions": "Impressions",
+    "tableSection": {
+      "title": "Table d'Hôtes",
+      "intro": "La table d'hôtes comme elle devrait être. Manger ensemble à la grande table, un verre de vin, de bonnes conversations. Étrangers au début de la soirée, amis à la fin. Exactement comme les vacances devraient être. Les enfants sont aussi les bienvenus.",
+      "description": "Profitez d'un menu trois plats fait maison, ensemble à table, préparé avec des produits de saison.",
+      "included": "Inclus",
+      "includedItems": ["Entrée", "Plat principal", "Dessert", "Eau", "Un verre de vin/bière", "Café ou thé après"],
+      "price": "22,50 € p.p.",
+      "extras": "Boissons supplémentaires (bière, soft): 2,50 € le verre • Plus de vin? +2,50 € le verre",
+      "note": "Un seul menu pour tous les invités, merci de signaler les allergies à l'avance.",
+      "kids": "Enfants jusqu'à 10 ans: plat + dessert ou glace — 10,00 €"
+    },
     "readyForStay": "Prêt(e) pour votre séjour en Auvergne ?",
     "ctaText": "Contactez-nous pour plus d'informations ou pour faire une réservation.",
     "highlights": {
@@ -51,7 +62,7 @@
       },
       "table": {
         "title": "Table d'Hôtes",
-        "description": "Savourez d'authentiques repas français"
+        "description": "La table d'hôtes comme elle devrait être. Manger ensemble à la grande table, bonnes conversations. Étrangers au début, amis à la fin. Menu trois plats incl. eau, verre de vin/bière et café — 22,50€ p.p."
       }
     }
   },
@@ -287,16 +298,16 @@
     "meal": "Repas",
     "tableItems": {
       "dinner": {
-        "description": "Menu en 3 services avec café",
-        "price": "20,00 € p.p."
+        "description": "Menu 3 plats (incl. eau, verre de vin/bière, café/thé)",
+        "price": "22,50 € p.p."
       },
       "drinks": {
-        "description": "Boissons au dîner",
-        "price": "2,00 € pièce"
+        "description": "Boissons supplémentaires (bière, soft, vin)",
+        "price": "2,50 € le verre"
       },
-      "lunch": {
-        "description": "Déjeuner",
-        "price": "7,50 € p.p."
+      "kids": {
+        "description": "Enfants jusqu'à 10 ans (plat + dessert/glace)",
+        "price": "10,00 €"
       },
       "breakfast": {
         "description": "Petit-déjeuner (séparé)",

@@ -40,6 +40,17 @@ export interface Translations {
     whyTheNameText1: string;
     whyTheNameText2: string;
     impressions: string;
+    tableSection: {
+      title: string;
+      intro: string;
+      description: string;
+      included: string;
+      includedItems: string[];
+      price: string;
+      extras: string;
+      note: string;
+      kids: string;
+    };
     readyForStay: string;
     ctaText: string;
     highlights: {
@@ -173,7 +184,7 @@ export interface Translations {
     tableItems: {
       dinner: { description: string; price: string };
       drinks: { description: string; price: string };
-      lunch: { description: string; price: string };
+      kids: { description: string; price: string };
       breakfast: { description: string; price: string };
     };
   };

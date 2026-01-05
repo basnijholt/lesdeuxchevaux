@@ -196,10 +196,10 @@ export default function Tarieven() {
                 </tr>
                 <tr className="hover:bg-amber-50">
                   <td className="px-6 py-4">
-                    {t.rates.tableItems.lunch.description}
+                    {t.rates.tableItems.kids.description}
                   </td>
                   <td className="px-6 py-4 text-right font-semibold text-amber-700">
-                    {t.rates.tableItems.lunch.price}
+                    {t.rates.tableItems.kids.price}
                   </td>
                 </tr>
                 <tr className="hover:bg-amber-50">
