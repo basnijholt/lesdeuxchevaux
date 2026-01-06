@@ -82,7 +82,11 @@ export default function Home() {
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {highlights.map((item, index) => (
-              <FadeIn key={item.title} delay={index * 100}>
+              <FadeIn
+                key={item.title}
+                delay={index * 100}
+                className={index === 2 ? "hidden md:block" : undefined}
+              >
                 <Card {...item} />
               </FadeIn>
             ))}
