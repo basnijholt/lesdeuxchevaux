@@ -30,21 +30,25 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 
 const STORAGE_KEY = "lesdeuxchevaux-language";
 
+function getStoredLocale(): Locale {
+  if (typeof window === "undefined") return "nl";
+  const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
+  if (stored && (stored === "nl" || stored === "fr" || stored === "en")) {
+    return stored;
+  }
+  return "nl";
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("nl");
+  const [locale, setLocaleState] = useState<Locale>(getStoredLocale);
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
-    if (stored && (stored === "nl" || stored === "fr" || stored === "en")) {
-      setLocaleState(stored);
-      document.documentElement.lang = stored;
-    }
-  }, []);
+    document.documentElement.lang = locale;
+  }, [locale]);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
     localStorage.setItem(STORAGE_KEY, newLocale);
-    document.documentElement.lang = newLocale;
   };
 
   const value: LanguageContextType = {

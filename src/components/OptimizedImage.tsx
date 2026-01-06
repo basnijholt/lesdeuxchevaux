@@ -25,11 +25,6 @@ export function OptimizedImage({
   height,
   onClick,
 }: OptimizedImageProps) {
-  // ExportedImage needs width/height when not using fill
-  const imageProps = fill
-    ? { fill: true }
-    : { width: width || 1920, height: height || 1080 };
-
   // When using fill, don't wrap in an extra div - let the parent handle positioning
   if (fill) {
     return (

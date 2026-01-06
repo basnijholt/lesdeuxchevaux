@@ -74,7 +74,7 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 export default function Testimonials() {
-  const { t, locale } = useTranslation();
+  const { locale } = useTranslation();
 
   return (
     <section className="py-16 bg-amber-50">
