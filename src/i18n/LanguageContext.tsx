@@ -10,10 +10,12 @@ import {
 import type { Locale, Translations } from "./types";
 import nl from "./locales/nl.json";
 import fr from "./locales/fr.json";
+import en from "./locales/en.json";
 
 const translations: Record<Locale, Translations> = {
   nl: nl as Translations,
   fr: fr as Translations,
+  en: en as Translations,
 };
 
 interface LanguageContextType {
@@ -33,7 +35,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
-    if (stored && (stored === "nl" || stored === "fr")) {
+    if (stored && (stored === "nl" || stored === "fr" || stored === "en")) {
       setLocaleState(stored);
       document.documentElement.lang = stored;
     }

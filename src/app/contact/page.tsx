@@ -135,7 +135,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="text-green-600 hover:text-green-700 transition-colors"
                     >
-                      {locale === "nl" ? "Stuur een bericht" : "Envoyer un message"}
+                      {locale === "nl" ? "Stuur een bericht" : locale === "fr" ? "Envoyer un message" : "Send a message"}
                     </a>
                   </div>
                 </div>

@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "Home",
+    "whoAreWe": "Who are we?",
+    "whereAreWe": "Where are we?",
+    "theRegion": "The region",
+    "whatToExpect": "What to expect?",
+    "rates": "Rates",
+    "contact": "Contact"
+  },
+  "common": {
+    "readMore": "Read more",
+    "contact": "Contact us",
+    "viewRates": "View rates",
+    "openInGoogleMaps": "Open in Google Maps",
+    "allRightsReserved": "All rights reserved",
+    "address": "Address",
+    "navigation": "Navigation",
+    "phone": "Phone",
+    "email": "Email",
+    "interested": "Interested?",
+    "contactUs": "Contact us for more information or to make a reservation.",
+    "location": "Location",
+    "viewOnGoogleMaps": "View on Google Maps",
+    "persons": "persons",
+    "person": "person",
+    "perNight": "per night",
+    "included": "Included",
+    "free": "Free"
+  },
+  "home": {
+    "heroSubtitle": "Gîte, mini-camping, bed & breakfast and table d'hôtes in the Auvergne",
+    "welcomeTitle": "Welcome to the Auvergne",
+    "welcomeText1": "Welcome to the website of Les Deux Chevaux, a sunny gîte, a cozy mini-camping, bed & breakfast and table d'hôtes in the beautiful Auvergne, France.",
+    "welcomeText2": "We, Yvonne and Rob, warmly welcome you to our little piece of paradise in the heart of France.",
+    "whatWeOffer": "What do we offer?",
+    "whyTheName": "Why \"Les Deux Chevaux\"?",
+    "whyTheNameText1": "The name \"Les Deux Chevaux\" refers to the iconic French car, the Citroën 2CV - or \"deux chevaux\" (two horsepower).",
+    "whyTheNameText2": "This car symbolizes the relaxed, authentic French countryside life that we want to offer our guests.",
+    "impressions": "Impressions",
+    "tableSection": {
+      "title": "Table d'Hôtes",
+      "intro": "Table d'hôtes as it should be. Eating together at the long table, a glass of wine, good conversations. Strangers at the start of the evening, friends at the end. Exactly how a holiday should be. Kids are also welcome.",
+      "description": "Enjoy a homemade three-course menu, together at the table, prepared with seasonal products.",
+      "included": "Included",
+      "includedItems": ["Starter", "Main course", "Dessert", "Water", "One glass of wine/beer", "Coffee or tea afterwards"],
+      "price": "€22.50 p.p.",
+      "extras": "Extra drinks (beer, soft drinks): €2.50 per glass • More wine? +€2.50 per glass",
+      "note": "One menu for all guests, please notify allergies in advance.",
+      "kids": "Children up to 10 years: main course + dessert or ice cream — €10.00"
+    },
+    "readyForStay": "Ready for your stay in the Auvergne?",
+    "ctaText": "Contact us for more information or to make a reservation.",
+    "highlights": {
+      "camping": {
+        "title": "Mini-Camping",
+        "description": "6 spacious pitches for tent or caravan in a relaxed atmosphere"
+      },
+      "chambres": {
+        "title": "Gîte / Bed & Breakfast",
+        "description": "Comfortable room or an entire house for yourself"
+      },
+      "table": {
+        "title": "Table d'Hôtes",
+        "description": "Table d'hôtes as it should be. Eating together at the long table, good conversations. Strangers at the start, friends at the end. Three-course menu incl. water, glass of wine/beer and coffee — €22.50 p.p."
+      }
+    }
+  },
+  "whoAreWe": {
+    "heroSubtitle": "Meet Yvonne and Rob",
+    "title": "Yvonne van de Velde & Rob Nijholt",
+    "text1": "At the end of June 2013, we moved from Zierikzee, the Netherlands, to the Auvergne in France to start our dream life.",
+    "text2": "Now we run our mini-camping and bed & breakfast with great pleasure. We warmly welcome you to share the peace and beauty of the Auvergne with us.",
+    "text3": "Whether you come to camp, stay in our Gîte or one of our rooms, or enjoy our table d'hôtes - we make sure you feel at home.",
+    "jipTitle": "Our faithful friend Jip",
+    "jipText": "And then there's Jip, our faithful companion who loves to greet you on arrival! Jip is always happy to meet new guests and ensures a warm welcome.",
+    "sonsTitle": "Reinforcement: the next generation",
+    "sonsText": "For the next two seasons, we're getting help from Paul and Marjolein with their children Mila and Luca. Paul, Rob's son, is taking a gap year to experience adventure in France and help out at Les Deux Chevaux. Whether it's welcoming guests, helping in the kitchen, or maintaining the grounds - with fresh energy and enthusiasm, they complete the team."
+  },
+  "whereAreWe": {
+    "heroSubtitle": "Our location in the heart of the Auvergne",
+    "title": "Nades, Auvergne",
+    "text": "We are located in the picturesque village of Nades (pronounced \"nahd\"), situated in the far south of the Allier department, one of the four departments in the Auvergne region.",
+    "addressTitle": "Address",
+    "addressNote": "This address is recognized by both Google Maps and TomTom navigation systems.",
+    "distances": "Distances",
+    "distance1": "Approximately 60 km north of Clermont-Ferrand",
+    "distance2": "Approximately 750 km from Zierikzee, Netherlands (halfway the southern route)",
+    "directions": "Directions"
+  },
+  "theRegion": {
+    "heroTitle": "What does the region have to offer?",
+    "heroSubtitle": "Discover the beautiful Auvergne",
+    "intro1": "The Auvergne offers year-round beauty with activities for everyone. It's a place where you can truly unwind.",
+    "intro2": "Leave technology behind and enjoy a complete reset in nature.",
+    "outdoorActivities": "Outdoor Activities",
+    "attractionsTitle": "Attractions within 60 km",
+    "winterTitle": "Also in winter",
+    "winterText1": "The Auvergne is also beautiful in winter, with opportunities for winter walks and enjoying the tranquility.",
+    "winterText2": "Enjoy the snowy landscapes and the cozy atmosphere by the fireplace.",
+    "impressions": "Impressions of the region",
+    "activities": {
+      "hiking": {
+        "title": "Hiking",
+        "description": "Numerous trails with various difficulty levels through the beautiful landscape."
+      },
+      "mountainBiking": {
+        "title": "Mountain Biking",
+        "description": "A paradise for MTB enthusiasts with challenging routes."
+      },
+      "cycling": {
+        "title": "Cycling",
+        "description": "Discover the region by bike via scenic roads."
+      },
+      "fishing": {
+        "title": "Fishing",
+        "description": "Fish in the Sioule river or in one of the 2 fishing lakes, rich in various fish species."
+      },
+      "canoeing": {
+        "title": "Canoeing",
+        "description": "Paddle along the Sioule and enjoy nature from the water."
+      },
+      "motorcycling": {
+        "title": "Motorcycle Touring",
+        "description": "Beautiful routes through the hilly landscape of the Auvergne."
+      },
+      "golf": {
+        "title": "Golf",
+        "description": "Several golf courses in the area."
+      },
+      "climbing": {
+        "title": "Climbing",
+        "description": "Adventurous climbing in survival forests."
+      },
+      "swimming": {
+        "title": "Swimming",
+        "description": "Swimming at Plan d'eau de Servant, Lapeyrouse or Saint-Éloy-les-Mines."
+      }
+    },
+    "attractions": {
+      "puyDeDome": {
+        "title": "Puy de Dôme",
+        "description": "Iconic volcano with breathtaking views."
+      },
+      "puyDeSancy": {
+        "title": "Puy de Sancy",
+        "description": "Highest mountain in the Massif Central."
+      },
+      "castles": {
+        "title": "Castles and Ruins",
+        "description": "Rich historical heritage in the area."
+      },
+      "vulcania": {
+        "title": "Parc Vulcania",
+        "description": "Adventure theme park about volcanoes near Clermont-Ferrand."
+      },
+      "autoMuseum": {
+        "title": "Auto Museum Bellenave",
+        "description": "For lovers of classic cars."
+      },
+      "fleaMarkets": {
+        "title": "Flea Markets",
+        "description": "Cozy markets with unique finds."
+      },
+      "shoppingTowns": {
+        "title": "Shopping Towns",
+        "description": "Shopping centers and cozy towns in the area."
+      },
+      "paleopolis": {
+        "title": "Paléopolis (Gannat)",
+        "description": "Dinosaur park with fossils, skeletons, and life-size dinosaurs."
+      },
+      "accrobranche": {
+        "title": "Climbing Parks",
+        "description": "Several accrobranche parks in the area for all ages and levels."
+      },
+      "charroux": {
+        "title": "Charroux",
+        "description": "One of the 'Most Beautiful Villages of France', 10 km away."
+      },
+      "vichy": {
+        "title": "Vichy",
+        "description": "Historic thermal baths and beautiful Belle Époque architecture."
+      },
+      "troncais": {
+        "title": "Forêt de Tronçais",
+        "description": "Largest oak forest in Europe with swimming ponds and hiking trails."
+      }
+    }
+  },
+  "whatToExpect": {
+    "heroTitle": "What can you expect from us?",
+    "heroSubtitle": "Our accommodations and facilities",
+    "intro": "At Les Deux Chevaux, we offer various accommodation options, from camping to luxury rooms, all with the warm hospitality you can expect from us.",
+    "chambresTitle": "Gîte / Bed & Breakfast",
+    "rooms": {
+      "red": {
+        "name": "Red Room",
+        "capacity": "2 persons",
+        "description": "Comfortable and stylishly decorated with private bathroom"
+      },
+      "chezMarco": {
+        "name": "Chez Marco",
+        "capacity": "Up to 6 persons",
+        "description": "Cozy house with 1 bathroom and 2 toilets."
+      },
+      "longere": {
+        "name": "La Longère",
+        "capacity": "2-7 persons",
+        "description": "Spacious holiday home with large, bright living room and equipped kitchen. 2 bathrooms, 2 toilets. Beds made on arrival, towels provided. Private terrace."
+      }
+    },
+    "campingTitle": "Mini-Camping",
+    "campingText": "We have 6 pitches for tents and caravans, with a relaxed atmosphere and all necessary facilities.",
+    "campingFeatures": {
+      "electricity": "Electricity included",
+      "dogs": "Dogs welcome (on leash)",
+      "quiet": "Quiet, green environment",
+      "sanitary": "Shared sanitary facilities"
+    },
+    "additionalTitle": "Additional Accommodation Options",
+    "caravan": {
+      "title": "Small Caravan",
+      "text": "Cozy caravan for 1-2 persons. Ideal for those who want to camp without their own equipment.",
+      "note": "Minimum 2 nights stay"
+    },
+    "bergerie": {
+      "title": "La Bergerie",
+      "text": "A cozy gnome house with a good bed and 2 chairs. Really only for sleeping - sanitary facilities are in the building next door.",
+      "note": "Cozy and romantic"
+    },
+    "tableTitle": "Table d'Hôtes",
+    "tableText": "Our table d'hôtes offers delicious, freshly prepared meals. Enjoy an authentic French dining experience together with other guests.",
+    "tableFeatures": {
+      "dinner": "Three-course dinner with coffee",
+      "fresh": "Freshly prepared meals",
+      "atmosphere": "Cozy atmosphere with other guests"
+    },
+    "impressions": "Impressions"
+  },
+  "rates": {
+    "heroTitle": "Our Rates",
+    "heroSubtitle": "Prices for camping, rooms and meals",
+    "campingTitle": "Camping",
+    "description": "Description",
+    "price": "Price",
+    "campingItems": {
+      "pitch": {
+        "description": "Camping pitch per night",
+        "price": "€20.00"
+      },
+      "electricity": {
+        "description": "Electricity",
+        "price": "Included"
+      },
+      "dog": {
+        "description": "Dog (on leash)",
+        "price": "Free"
+      }
+    },
+    "chambresTitle": "Gîte / Bed & Breakfast",
+    "accommodation": "Accommodation",
+    "pricePerNight": "Price per night",
+    "details": "Details",
+    "chambresItems": {
+      "longere": {
+        "name": "La Longère (gîte)",
+        "price": "from €80/night",
+        "details": "2-7 persons, private bathroom, €40 per extra person"
+      },
+      "chezMarco": {
+        "name": "Chez Marco",
+        "price": "from €80/night",
+        "details": "Up to 6 persons, €40 per extra person"
+      },
+      "smallCaravan": {
+        "name": "Small caravan",
+        "price": "€60.00",
+        "details": "1-2 persons, min. 2 nights"
+      },
+      "luxuryTent": {
+        "name": "Furnished tent",
+        "price": "€60.00",
+        "details": "Min. 2 nights"
+      },
+      "bergerie": {
+        "name": "La Bergerie",
+        "price": "€60.00",
+        "details": "Cozy house, only for sleeping"
+      },
+      "mainRoom": {
+        "name": "Red Room",
+        "price": "€75.00",
+        "details": "2 persons, incl. breakfast, ground floor with private shower/toilet"
+      }
+    },
+    "tableTitle": "Table d'Hôtes (Meals)",
+    "meal": "Meal",
+    "tableItems": {
+      "dinner": {
+        "description": "Three-course dinner with 1 drink, coffee and water",
+        "price": "€22.50 p.p."
+      },
+      "kids": {
+        "description": "Children up to 10 years",
+        "price": "€10.00 p.p."
+      },
+      "drinks": {
+        "description": "Drinks",
+        "price": "€2.50"
+      },
+      "breakfast": {
+        "description": "Breakfast (separate)",
+        "price": "€6.50 p.p."
+      }
+    }
+  },
+  "contact": {
+    "heroSubtitle": "Contact us for more information or a reservation",
+    "contactDetails": "Contact Details",
+    "phoneYvonne": "Phone Yvonne",
+    "phoneRob": "Phone Rob",
+    "viewLocationText": "View our location on Google Maps"
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Address",
+    "navigation": "Navigation",
+    "allRightsReserved": "All rights reserved",
+    "rates": "Rates",
+    "theRegion": "The region"
+  }
+}

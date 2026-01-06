@@ -1,4 +1,4 @@
-export type Locale = "nl" | "fr";
+export type Locale = "nl" | "fr" | "en";
 
 export interface Translations {
   nav: {
