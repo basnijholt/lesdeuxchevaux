@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.6/.schema/devbox.schema.json",
-  "packages": ["bun@latest"],
+  "packages": ["bun@latest", "just@latest"],
   "shell": {
     "init_hook": ["echo 'Welcome to Les Deux Chevaux dev environment!'"],
     "scripts": {
