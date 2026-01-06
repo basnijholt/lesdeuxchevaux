@@ -2,7 +2,6 @@
 
 import { useTranslation } from "@/i18n";
 import Map from "@/components/Map";
-import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   const { t, locale } = useTranslation();
@@ -196,18 +195,6 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Form */}
-      <section className="py-16 bg-amber-50">
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-amber-900 mb-8 text-center">
-            {locale === "nl" ? "Stuur ons een bericht" : "Envoyez-nous un message"}
-          </h2>
-          <div className="bg-white p-8 rounded-xl shadow-sm">
-            <ContactForm />
           </div>
         </div>
       </section>
