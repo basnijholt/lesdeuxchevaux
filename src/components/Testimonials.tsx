@@ -8,6 +8,7 @@ interface Review {
   text: {
     nl: string;
     fr: string;
+    en: string;
   };
   date: string;
 }
@@ -19,6 +20,7 @@ const reviews: Review[] = [
     text: {
       nl: "Echt een aanrader! Op onze terugreis vanuit de Ardeche naar Nederland zijn wij heel gastvrij ontvangen en hebben twee nachtjes geslapen in de longère. Een heerlijk huis, alles is aanwezig en vooral erg netjes en schoon. Table d'hôtes, dat hadden wij nog niet eerder meegemaakt... het was heerlijk! Rob (en zijn zoon) kunnen fantastisch koken. Wij komen graag nog een keer terug!",
       fr: "Vraiment recommandé ! Lors de notre voyage retour de l'Ardèche vers les Pays-Bas, nous avons été accueillis très chaleureusement et avons passé deux nuits dans la longère. Une maison merveilleuse, tout est présent et surtout très propre. Table d'hôtes, nous n'avions jamais essayé... c'était délicieux ! Rob (et son fils) cuisinent fantastiquement. Nous reviendrons avec plaisir !",
+      en: "Highly recommended! On our way back from the Ardèche to the Netherlands, we were warmly welcomed and spent two nights in the longère. A wonderful house, everything is there and especially very neat and clean. Table d'hôtes, we had never experienced that before... it was delicious! Rob (and his son) are fantastic cooks. We would love to come back!",
     },
     date: "2025",
   },
@@ -28,6 +30,7 @@ const reviews: Review[] = [
     text: {
       nl: "Slaperij Les deux chevaux voelt voor ons als thuiskomen. Alle credits voor eigenaren Rob en Yvonne die voortreffelijke gastheer en -vrouw zijn en ook nog eens heerlijk kunnen koken. We mogen zelf een plek kiezen voor onze caravan en genieten van de stilte en de natuur.",
       fr: "Les Deux Chevaux, c'est comme rentrer à la maison pour nous. Tous les mérites reviennent aux propriétaires Rob et Yvonne, des hôtes exceptionnels qui cuisinent également délicieusement. Nous pouvons choisir notre emplacement pour notre caravane et profiter du calme et de la nature.",
+      en: "Les Deux Chevaux feels like coming home to us. All credits to owners Rob and Yvonne who are excellent hosts and can also cook deliciously. We can choose our own spot for our caravan and enjoy the silence and nature.",
     },
     date: "2025",
   },
@@ -37,6 +40,7 @@ const reviews: Review[] = [
     text: {
       nl: "Verborgen schat voor de rustzoeker! Geweldige plek met uitzicht op de Puy de Dôme en een geweldige gastvrijheid. Yvonne en Rob doen er werkelijk alles aan het je naar je zin te maken. Rob kan geweldig koken, dus vraag of je kunt aanschuiven. Wij komen er graag weer terug!",
       fr: "Un trésor caché pour ceux qui cherchent le calme ! Endroit magnifique avec vue sur le Puy de Dôme et une hospitalité exceptionnelle. Yvonne et Rob font vraiment tout pour vous satisfaire. Rob cuisine merveilleusement, alors demandez à vous joindre à table. Nous y retournerons avec plaisir !",
+      en: "Hidden gem for those seeking peace! Amazing place with views of the Puy de Dôme and wonderful hospitality. Yvonne and Rob really do everything to make you feel comfortable. Rob is a great cook, so ask if you can join for dinner. We'd love to come back!",
     },
     date: "2025",
   },
@@ -46,6 +50,7 @@ const reviews: Review[] = [
     text: {
       nl: "Wat een enorm leuke camping cq bed and breakfast. Fantastisch leuke, gastvrije en gezellige mensen. Heerlijk eten. Mooie rustige omgeving. En je kan er gewoon Nederlands spreken.",
       fr: "Quel camping et chambre d'hôtes formidable ! Des gens fantastiques, accueillants et chaleureux. Délicieuse cuisine. Un bel environnement calme. Et on peut y parler néerlandais.",
+      en: "What an amazing camping and bed & breakfast. Fantastic, friendly, hospitable and cozy people. Delicious food. Beautiful quiet surroundings. And you can even speak Dutch there.",
     },
     date: "2025",
   },
@@ -76,7 +81,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-amber-900 mb-4">
-            {locale === "nl" ? "Wat onze gasten zeggen" : "Ce que disent nos hôtes"}
+            {locale === "nl" ? "Wat onze gasten zeggen" : locale === "fr" ? "Ce que disent nos hôtes" : "What our guests say"}
           </h2>
           <div className="flex items-center justify-center gap-2 text-gray-600">
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -111,7 +116,7 @@ export default function Testimonials() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-amber-700 hover:text-amber-800 font-medium"
           >
-            {locale === "nl" ? "Bekijk alle reviews op Google Maps" : "Voir tous les avis sur Google Maps"}
+            {locale === "nl" ? "Bekijk alle reviews op Google Maps" : locale === "fr" ? "Voir tous les avis sur Google Maps" : "View all reviews on Google Maps"}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
