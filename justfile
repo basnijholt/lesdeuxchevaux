@@ -22,13 +22,9 @@ start:
 lint:
     bun run lint
 
-# Format code
-format:
-    bun run format
-
 # Type check
 typecheck:
-    bun run typecheck
+    bunx tsc --noEmit
 
 # Clean build artifacts
 clean:
