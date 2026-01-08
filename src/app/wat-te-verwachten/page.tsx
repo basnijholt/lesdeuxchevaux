@@ -14,9 +14,10 @@ const longereImages = [
 ];
 
 const chezMarcoImages = [
+  { src: "/uploads/2026/01/chez-marco-1.jpg", alt: "Chez Marco slaapkamer" },
   {
     src: "/uploads/2026/01/chez-marco-slaapkamer-new.jpg",
-    alt: "Chez Marco slaapkamer",
+    alt: "Chez Marco slaapkamer nieuw",
   },
   {
     src: "/uploads/2026/01/chez-marco-extra.jpg",
@@ -24,7 +25,6 @@ const chezMarcoImages = [
   },
   { src: "/uploads/2026/01/chez-marco-keuken.jpg", alt: "Chez Marco keuken" },
   { src: "/uploads/2026/01/chez-marco-2.jpg", alt: "Chez Marco interieur" },
-  { src: "/uploads/2026/01/chez-marco-3.jpg", alt: "Chez Marco woonkamer" },
 ];
 
 const rodeKamerImages = [
