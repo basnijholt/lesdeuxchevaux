@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -73,6 +74,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
+      <head>
+        <Script
+          defer
+          data-domain="lesdeuxchevaux.nl"
+          src="https://plausible.nijho.lt/js/script.js"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased min-h-screen flex flex-col`}
       >
