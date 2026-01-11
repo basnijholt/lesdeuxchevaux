@@ -74,16 +74,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
-      <head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased min-h-screen flex flex-col`}
+      >
         <Script
           defer
           data-domain="lesdeuxchevaux.nl"
           src="https://plausible.nijho.lt/js/script.js"
+          strategy="afterInteractive"
         />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased min-h-screen flex flex-col`}
-      >
         <LanguageProvider>
           <Header />
           <main className="flex-grow">{children}</main>
