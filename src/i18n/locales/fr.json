@@ -40,12 +40,12 @@
     "impressions": "Impressions",
     "tableSection": {
       "title": "Table d'Hôtes",
-      "intro": "La table d'hôtes comme elle devrait être. Manger ensemble à la grande table, un verre de vin, de bonnes conversations. Étrangers au début de la soirée, amis à la fin. Exactement comme les vacances devraient être. Les enfants sont aussi les bienvenus.",
+      "intro": "La table d'hôtes comme elle devrait être. Manger ensemble à la grande table, de bonnes conversations. Étrangers au début de la soirée, amis à la fin. Exactement comme les vacances devraient être. Les enfants sont aussi les bienvenus.",
       "description": "Profitez d'un menu trois plats fait maison, ensemble à table, préparé avec des produits de saison.",
       "included": "Inclus",
-      "includedItems": ["Entrée", "Plat principal", "Dessert", "Eau", "Un verre de vin/bière", "Café ou thé après"],
+      "includedItems": ["Entrée", "Plat principal", "Dessert", "Eau", "Café ou thé après"],
       "price": "22,50 € p.p.",
-      "extras": "Boissons supplémentaires (bière, soft): 2,50 € le verre • Plus de vin? +2,50 € le verre",
+      "extras": "Boissons (bière, soft, vin): 2,50 € le verre",
       "note": "Un seul menu pour tous les invités, merci de signaler les allergies à l'avance.",
       "kids": "Enfants jusqu'à 10 ans: plat + dessert ou glace — 10,00 €"
     },
@@ -62,7 +62,7 @@
       },
       "table": {
         "title": "Table d'Hôtes",
-        "description": "La table d'hôtes comme elle devrait être. Manger ensemble à la grande table, bonnes conversations. Étrangers au début, amis à la fin. Menu trois plats incl. eau, verre de vin/bière et café — 22,50€ p.p."
+        "description": "La table d'hôtes comme elle devrait être. Manger ensemble à la grande table, bonnes conversations. Étrangers au début, amis à la fin. Menu trois plats incl. eau et café/thé — 22,50€ p.p."
       }
     }
   },
@@ -232,7 +232,7 @@
     "tableTitle": "Table d'Hôtes",
     "tableText": "Notre table d'hôtes propose de délicieux repas fraîchement préparés. Profitez d'une expérience culinaire française authentique avec d'autres hôtes.",
     "tableFeatures": {
-      "dinner": "Dîner trois services avec café",
+      "dinner": "Dîner trois services avec café/thé",
       "fresh": "Repas fraîchement préparés",
       "atmosphere": "Ambiance conviviale avec d'autres hôtes"
     },
@@ -298,7 +298,7 @@
     "meal": "Repas",
     "tableItems": {
       "dinner": {
-        "description": "Menu 3 plats avec 1 consommation, café et eau",
+        "description": "Menu 3 plats avec eau et café/thé",
         "price": "22,50 € p.p."
       },
       "kids": {

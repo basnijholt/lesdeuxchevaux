@@ -40,12 +40,12 @@
     "impressions": "Impressions",
     "tableSection": {
       "title": "Table d'Hôtes",
-      "intro": "Table d'hôtes as it should be. Eating together at the long table, a glass of wine, good conversations. Strangers at the start of the evening, friends at the end. Exactly how a holiday should be. Kids are also welcome.",
+      "intro": "Table d'hôtes as it should be. Eating together at the long table, good conversations. Strangers at the start of the evening, friends at the end. Exactly how a holiday should be. Kids are also welcome.",
       "description": "Enjoy a homemade three-course menu, together at the table, prepared with seasonal products.",
       "included": "Included",
-      "includedItems": ["Starter", "Main course", "Dessert", "Water", "One glass of wine/beer", "Coffee or tea afterwards"],
+      "includedItems": ["Starter", "Main course", "Dessert", "Water", "Coffee or tea afterwards"],
       "price": "€22.50 p.p.",
-      "extras": "Extra drinks (beer, soft drinks): €2.50 per glass • More wine? +€2.50 per glass",
+      "extras": "Drinks (beer, soft drinks, wine): €2.50 per glass",
       "note": "One menu for all guests, please notify allergies in advance.",
       "kids": "Children up to 10 years: main course + dessert or ice cream — €10.00"
     },
@@ -62,7 +62,7 @@
       },
       "table": {
         "title": "Table d'Hôtes",
-        "description": "Table d'hôtes as it should be. Eating together at the long table, good conversations. Strangers at the start, friends at the end. Three-course menu incl. water, glass of wine/beer and coffee — €22.50 p.p."
+        "description": "Table d'hôtes as it should be. Eating together at the long table, good conversations. Strangers at the start, friends at the end. Three-course menu incl. water and coffee/tea — €22.50 p.p."
       }
     }
   },
@@ -232,7 +232,7 @@
     "tableTitle": "Table d'Hôtes",
     "tableText": "Our table d'hôtes offers delicious, freshly prepared meals. Enjoy an authentic French dining experience together with other guests.",
     "tableFeatures": {
-      "dinner": "Three-course dinner with coffee",
+      "dinner": "Three-course dinner with coffee/tea",
       "fresh": "Freshly prepared meals",
       "atmosphere": "Cozy atmosphere with other guests"
     },
@@ -298,7 +298,7 @@
     "meal": "Meal",
     "tableItems": {
       "dinner": {
-        "description": "Three-course dinner with 1 drink, coffee and water",
+        "description": "Three-course dinner with water and coffee/tea",
         "price": "€22.50 p.p."
       },
       "kids": {
