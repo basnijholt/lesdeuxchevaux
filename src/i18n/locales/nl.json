@@ -40,12 +40,12 @@
     "impressions": "Impressies",
     "tableSection": {
       "title": "Table d'Hôtes",
-      "intro": "Table d'hôtes zoals het bedoeld is. Samen eten aan de lange tafel, een glas wijn, goede gesprekken. Vreemden aan het begin van de avond, bekenden aan het einde. Precies zoals vakantie hoort te zijn. Ook kids zijn van harte welkom.",
+      "intro": "Table d'hôtes zoals het bedoeld is. Samen eten aan de lange tafel, goede gesprekken. Vreemden aan het begin van de avond, bekenden aan het einde. Precies zoals vakantie hoort te zijn. Ook kids zijn van harte welkom.",
       "description": "Geniet van een huisgemaakt driegangenmenu, samen aan tafel, bereid met seizoensproducten.",
       "included": "Inbegrepen",
-      "includedItems": ["Voorgerecht", "Hoofdgerecht", "Dessert", "Water", "Één glas wijn/bier", "Koffie of thee na afloop"],
+      "includedItems": ["Voorgerecht", "Hoofdgerecht", "Dessert", "Water", "Koffie of thee na afloop"],
       "price": "€22,50 p.p.",
-      "extras": "Extra drankjes (bier, fris): €2,50 per glas • Meer wijn? +€2,50 per glas",
+      "extras": "Drankjes (bier, fris, wijn): €2,50 per glas",
       "note": "Eén menu voor alle gasten, allergieën graag vooraf melden.",
       "kids": "Kinderen t/m 10 jaar: hoofdgerecht + toetje of ijsje — €10,00"
     },
@@ -62,7 +62,7 @@
       },
       "table": {
         "title": "Table d'Hôtes",
-        "description": "Table d'hôtes zoals het bedoeld is. Samen eten aan de lange tafel, goede gesprekken. Vreemden aan het begin, bekenden aan het einde. Driegangenmenu incl. water, glas wijn/bier en koffie — €22,50 p.p."
+        "description": "Table d'hôtes zoals het bedoeld is. Samen eten aan de lange tafel, goede gesprekken. Vreemden aan het begin, bekenden aan het einde. Driegangenmenu incl. water en koffie/thee — €22,50 p.p."
       }
     }
   },
@@ -232,7 +232,7 @@
     "tableTitle": "Table d'Hôtes",
     "tableText": "Onze table d'hôtes biedt heerlijke, vers bereide maaltijden. Geniet samen met andere gasten van een authentieke Franse eetervaring.",
     "tableFeatures": {
-      "dinner": "Driegangen diner met koffie",
+      "dinner": "Driegangen diner met koffie/thee",
       "fresh": "Vers bereide maaltijden",
       "atmosphere": "Gezellige sfeer met andere gasten"
     },
@@ -298,7 +298,7 @@
     "meal": "Maaltijd",
     "tableItems": {
       "dinner": {
-        "description": "Driegangen diner met 1 consumptie, koffie en water",
+        "description": "Driegangen diner met water en koffie/thee",
         "price": "€22,50 p.p."
       },
       "kids": {
