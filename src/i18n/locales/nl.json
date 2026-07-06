@@ -265,13 +265,13 @@
     "chambresItems": {
       "longere": {
         "name": "La Longère (gîte)",
-        "price": "vanaf €80/nacht",
-        "details": "2-7 personen, eigen badkamer, €40 per extra persoon"
+        "price": "€80",
+        "details": "Basisprijs voor 2 personen.\nExtra volwassene of kind: + € 40,00 p.p.p.n\n(Geschikt voor 2-7 personen, eigen badkamer)"
       },
       "chezMarco": {
         "name": "Chez Marco",
-        "price": "vanaf €80/nacht",
-        "details": "Tot 6 personen, €40 per extra persoon"
+        "price": "€80",
+        "details": "Basisprijs voor 2 personen.\nExtra volwassene of kind: + € 40,00 p.p.p.n\n(Geschikt tot 6 personen)"
       },
       "smallCaravan": {
         "name": "Kleine caravan",

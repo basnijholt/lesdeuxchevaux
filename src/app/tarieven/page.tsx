@@ -94,7 +94,7 @@ export default function Tarieven() {
                   <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.longere.price}
                   </td>
-                  <td className="px-4 py-3 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600 whitespace-pre-line">
                     {t.rates.chambresItems.longere.details}
                   </td>
                 </tr>
@@ -105,7 +105,7 @@ export default function Tarieven() {
                   <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.chezMarco.price}
                   </td>
-                  <td className="px-4 py-3 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600 whitespace-pre-line">
                     {t.rates.chambresItems.chezMarco.details}
                   </td>
                 </tr>
@@ -116,7 +116,7 @@ export default function Tarieven() {
                   <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.mainRoom.price}
                   </td>
-                  <td className="px-4 py-3 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600 whitespace-pre-line">
                     {t.rates.chambresItems.mainRoom.details}
                   </td>
                 </tr>
@@ -127,7 +127,7 @@ export default function Tarieven() {
                   <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.smallCaravan.price}
                   </td>
-                  <td className="px-4 py-3 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600 whitespace-pre-line">
                     {t.rates.chambresItems.smallCaravan.details}
                   </td>
                 </tr>
@@ -138,7 +138,7 @@ export default function Tarieven() {
                   <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.luxuryTent.price}
                   </td>
-                  <td className="px-4 py-3 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600 whitespace-pre-line">
                     {t.rates.chambresItems.luxuryTent.details}
                   </td>
                 </tr>
@@ -149,7 +149,7 @@ export default function Tarieven() {
                   <td className="px-4 py-3 text-right font-semibold text-amber-700">
                     {t.rates.chambresItems.bergerie.price}
                   </td>
-                  <td className="px-4 py-3 text-gray-600">
+                  <td className="px-4 py-3 text-gray-600 whitespace-pre-line">
                     {t.rates.chambresItems.bergerie.details}
                   </td>
                 </tr>
