@@ -47,7 +47,7 @@
       "price": "€22,50 p.p.",
       "extras": "Drankjes (bier, fris, wijn): €2,50 per glas",
       "note": "Eén menu voor alle gasten, allergieën graag vooraf melden.",
-      "kids": "Kinderen t/m 10 jaar: hoofdgerecht + toetje of ijsje — €10,00"
+      "kids": "Kinderen t/m 10 jaar: hoofdgerecht + toetje of ijsje — €10"
     },
     "readyForStay": "Klaar voor uw verblijf in de Auvergne?",
     "ctaText": "Neem contact met ons op voor meer informatie of om een reservering te maken.",
@@ -247,7 +247,7 @@
     "campingItems": {
       "pitch": {
         "description": "Campingplek per nacht",
-        "price": "€20,00"
+        "price": "€20"
       },
       "electricity": {
         "description": "Elektriciteit",
@@ -266,31 +266,31 @@
       "longere": {
         "name": "La Longère (gîte)",
         "price": "€80",
-        "details": "Basisprijs voor 2 personen.\nExtra volwassene of kind: + € 40,00 p.p.p.n\n(Geschikt voor 2-7 personen, eigen badkamer)"
+        "details": "Basisprijs voor 2 personen.\nExtra volwassene of kind: + € 40 p.p.p.n\n(Geschikt voor 2-7 personen, eigen badkamer)"
       },
       "chezMarco": {
         "name": "Chez Marco",
         "price": "€80",
-        "details": "Basisprijs voor 2 personen.\nExtra volwassene of kind: + € 40,00 p.p.p.n\n(Geschikt tot 6 personen)"
+        "details": "Basisprijs voor 2 personen.\nExtra volwassene of kind: + € 40 p.p.p.n\n(Geschikt tot 6 personen)"
       },
       "smallCaravan": {
         "name": "Kleine caravan",
-        "price": "€60,00",
+        "price": "€60",
         "details": "1-2 personen, min. 2 nachten"
       },
       "luxuryTent": {
         "name": "Ingerichte tent",
-        "price": "€60,00",
+        "price": "€60",
         "details": "Min. 2 nachten"
       },
       "bergerie": {
         "name": "La Bergerie",
-        "price": "€60,00",
+        "price": "€60",
         "details": "Knus huisje, alleen om te slapen"
       },
       "mainRoom": {
         "name": "Rode Kamer",
-        "price": "€75,00",
+        "price": "€75",
         "details": "2 personen, incl. ontbijt, begane grond met eigen douche/toilet"
       }
     },
@@ -303,7 +303,7 @@
       },
       "kids": {
         "description": "Kinderen t/m 10 jaar",
-        "price": "€10,00 p.p."
+        "price": "€10 p.p."
       },
       "drinks": {
         "description": "Drankjes",
