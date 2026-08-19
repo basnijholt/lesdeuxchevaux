@@ -43,7 +43,13 @@
       "intro": "Table d'hôtes zoals het bedoeld is. Samen eten aan de lange tafel, goede gesprekken. Vreemden aan het begin van de avond, bekenden aan het einde. Precies zoals vakantie hoort te zijn. Ook kids zijn van harte welkom.",
       "description": "Geniet van een huisgemaakt driegangenmenu, samen aan tafel, bereid met seizoensproducten.",
       "included": "Inbegrepen",
-      "includedItems": ["Voorgerecht", "Hoofdgerecht", "Dessert", "Water", "Koffie of thee na afloop"],
+      "includedItems": [
+        "Voorgerecht",
+        "Hoofdgerecht",
+        "Dessert",
+        "Water",
+        "Koffie of thee na afloop"
+      ],
       "price": "€22,50 p.p.",
       "extras": "Drankjes (bier, fris, wijn): €2,50 per glas",
       "note": "Eén menu voor alle gasten, allergieën graag vooraf melden.",
@@ -236,7 +242,12 @@
       "fresh": "Vers bereide maaltijden",
       "atmosphere": "Gezellige sfeer met andere gasten"
     },
-    "impressions": "Impressies"
+    "impressions": "Impressies",
+    "luxuryTent": {
+      "title": "Ingerichte Tent",
+      "text": "Een sfeervolle, volledig ingerichte tent op een eigen terras met houten vlonder. Perfect voor wie glamping-comfort wil midden in de natuur — met lampionnen, lichtjes en een plek om te ontspannen onder de sterren.",
+      "note": "Minimaal 2 nachten verblijf · €60 per nacht"
+    }
   },
   "rates": {
     "heroTitle": "Onze Tarieven",

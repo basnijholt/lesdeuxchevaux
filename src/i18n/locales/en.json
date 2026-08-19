@@ -43,7 +43,13 @@
       "intro": "Table d'hôtes as it should be. Eating together at the long table, good conversations. Strangers at the start of the evening, friends at the end. Exactly how a holiday should be. Kids are also welcome.",
       "description": "Enjoy a homemade three-course menu, together at the table, prepared with seasonal products.",
       "included": "Included",
-      "includedItems": ["Starter", "Main course", "Dessert", "Water", "Coffee or tea afterwards"],
+      "includedItems": [
+        "Starter",
+        "Main course",
+        "Dessert",
+        "Water",
+        "Coffee or tea afterwards"
+      ],
       "price": "€22.50 p.p.",
       "extras": "Drinks (beer, soft drinks, wine): €2.50 per glass",
       "note": "One menu for all guests, please notify allergies in advance.",
@@ -236,7 +242,12 @@
       "fresh": "Freshly prepared meals",
       "atmosphere": "Cozy atmosphere with other guests"
     },
-    "impressions": "Impressions"
+    "impressions": "Impressions",
+    "luxuryTent": {
+      "title": "Furnished Tent",
+      "text": "A charming, fully furnished tent on its own terrace with wooden decking. Perfect for those who want glamping comfort in the middle of nature — with lanterns, fairy lights, and a place to unwind under the stars.",
+      "note": "Minimum 2 nights · €60 per night"
+    }
   },
   "rates": {
     "heroTitle": "Our Rates",

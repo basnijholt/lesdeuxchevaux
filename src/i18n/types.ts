@@ -137,6 +137,11 @@ export interface Translations {
       sanitary: string;
     };
     additionalTitle: string;
+    luxuryTent: {
+      title: string;
+      text: string;
+      note: string;
+    };
     caravan: {
       title: string;
       text: string;

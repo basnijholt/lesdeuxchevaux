@@ -43,7 +43,13 @@
       "intro": "La table d'hôtes comme elle devrait être. Manger ensemble à la grande table, de bonnes conversations. Étrangers au début de la soirée, amis à la fin. Exactement comme les vacances devraient être. Les enfants sont aussi les bienvenus.",
       "description": "Profitez d'un menu trois plats fait maison, ensemble à table, préparé avec des produits de saison.",
       "included": "Inclus",
-      "includedItems": ["Entrée", "Plat principal", "Dessert", "Eau", "Café ou thé après"],
+      "includedItems": [
+        "Entrée",
+        "Plat principal",
+        "Dessert",
+        "Eau",
+        "Café ou thé après"
+      ],
       "price": "22,50 € p.p.",
       "extras": "Boissons (bière, soft, vin): 2,50 € le verre",
       "note": "Un seul menu pour tous les invités, merci de signaler les allergies à l'avance.",
@@ -236,7 +242,12 @@
       "fresh": "Repas fraîchement préparés",
       "atmosphere": "Ambiance conviviale avec d'autres hôtes"
     },
-    "impressions": "Impressions"
+    "impressions": "Impressions",
+    "luxuryTent": {
+      "title": "Tente Aménagée",
+      "text": "Une tente conviviale, entièrement équipée, sur sa propre terrasse en bois. Parfaite pour ceux qui souhaitent profiter du confort du glamping au cœur de la nature — avec des lanternes, des guirlandes lumineuses et un espace pour se détendre sous les étoiles.",
+      "note": "Minimum 2 nuits · 60€ par nuit"
+    }
   },
   "rates": {
     "heroTitle": "Nos Tarifs",

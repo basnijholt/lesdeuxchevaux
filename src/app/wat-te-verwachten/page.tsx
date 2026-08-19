@@ -177,6 +177,25 @@ export default function WatTeVerwachten() {
             {t.whatToExpect.additionalTitle}
           </h2>
 
+          {/* Ingerichte Tent */}
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold text-amber-800 mb-4">
+              {t.whatToExpect.luxuryTent.title}
+            </h3>
+            <p className="text-gray-600 mb-4">{t.whatToExpect.luxuryTent.text}</p>
+            <p className="text-amber-600 font-medium mb-6">
+              {t.whatToExpect.luxuryTent.note}
+            </p>
+            <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
+              <OptimizedImage
+                src="/uploads/2026/tent-avond.jpg"
+                alt="Ingerichte tent bij avond met lampionnen"
+                fill
+                sizes="(max-width: 768px) 100vw, 80vw"
+              />
+            </div>
+          </div>
+
           {/* Kleine Caravan */}
           <div className="bg-amber-50 p-8 rounded-xl shadow-sm mb-8">
             <h3 className="text-2xl font-semibold text-amber-800 mb-4">
