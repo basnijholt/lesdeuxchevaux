@@ -3,6 +3,7 @@
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
 import OptimizedImage from "@/components/OptimizedImage";
+import ReserveButton from "@/components/ReserveButton";
 import { useTranslation } from "@/i18n";
 
 const longereImages = [
@@ -36,11 +37,26 @@ const bergerieImages = [
   { src: "/uploads/2026/01/bergerie-2.jpg", alt: "La Bergerie exterieur" },
 ];
 
+const tableDhotesImages = [
+  { src: "/uploads/2026/eten/tafel-vol-gerechten.jpg", alt: "Tafel vol gegrilde gerechten en salades" },
+  { src: "/uploads/2026/eten/paella.jpg", alt: "Paella met garnalen en mosselen" },
+  { src: "/uploads/2026/eten/quiche-pannetje.jpg", alt: "Quiche uit het gietijzeren pannetje" },
+  { src: "/uploads/2026/eten/spareribs.jpg", alt: "Spareribs op de grill" },
+  { src: "/uploads/2026/eten/watermeloensalade.jpg", alt: "Watermeloensalade met feta en rucola" },
+  { src: "/uploads/2026/eten/stoofpot-gietijzer.jpg", alt: "Stoofpot met groenten in gietijzeren pan" },
+  { src: "/uploads/2026/eten/wraps.jpg", alt: "Wraps met pulled pork en verse groenten" },
+  { src: "/uploads/2026/eten/rijst-en-spiesjes.jpg", alt: "Rijst en spiesjes op de Ofyr" },
+  { src: "/uploads/2026/eten/bord-spies-aardappel.jpg", alt: "Bord met spies, gepofte aardappel en gegrilde groenten" },
+  { src: "/uploads/2026/eten/voorbereiding-bbq.jpg", alt: "Voorbereidingen voor de barbecue" },
+];
+
 const campingImages = [
   { src: "/uploads/2020/07/camping-2.jpg", alt: "Camping met tent" },
   { src: "/uploads/2026/01/camping-1.jpg", alt: "Camping terrein" },
   { src: "/uploads/2026/01/camping-2.jpg", alt: "Camping uitzicht" },
   { src: "/uploads/2026/01/camping-3.jpg", alt: "Camping omgeving" },
+  { src: "/uploads/2026/terrein/bank-om-boom.jpg", alt: "Houten bank rondom de boomstam" },
+  { src: "/uploads/2026/terrein/houten-kar.jpg", alt: "Antieke houten kar op het terrein" },
 ];
 
 export default function WatTeVerwachten() {
@@ -137,8 +153,59 @@ export default function WatTeVerwachten() {
         </div>
       </section>
 
-      {/* Camping */}
+      {/* Additional Accommodations */}
       <section className="py-16 bg-amber-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
+            {t.whatToExpect.additionalTitle}
+          </h2>
+
+          {/* Ingerichte Tent */}
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold text-amber-800 mb-4">
+              {t.whatToExpect.luxuryTent.title}
+            </h3>
+            <p className="text-gray-600 mb-4">{t.whatToExpect.luxuryTent.text}</p>
+            <p className="text-amber-600 font-medium mb-6">
+              {t.whatToExpect.luxuryTent.note}
+            </p>
+            <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
+              <OptimizedImage
+                src="/uploads/2026/tent-avond.jpg"
+                alt="Ingerichte tent bij avond met lampionnen"
+                fill
+                sizes="(max-width: 768px) 100vw, 80vw"
+              />
+            </div>
+          </div>
+
+          {/* Kleine Caravan */}
+          <div className="bg-amber-50 p-8 rounded-xl shadow-sm mb-8">
+            <h3 className="text-2xl font-semibold text-amber-800 mb-4">
+              {t.whatToExpect.caravan.title}
+            </h3>
+            <p className="text-gray-600 mb-4">{t.whatToExpect.caravan.text}</p>
+            <p className="text-amber-600 font-medium">
+              {t.whatToExpect.caravan.note}
+            </p>
+          </div>
+
+          {/* La Bergerie */}
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold text-amber-800 mb-4">
+              {t.whatToExpect.bergerie.title}
+            </h3>
+            <p className="text-gray-600 mb-4">{t.whatToExpect.bergerie.text}</p>
+            <p className="text-amber-600 font-medium mb-6">
+              {t.whatToExpect.bergerie.note}
+            </p>
+            <ImageGallery images={bergerieImages} />
+          </div>
+        </div>
+      </section>
+
+      {/* Camping */}
+      <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-amber-900 mb-6">
@@ -170,38 +237,6 @@ export default function WatTeVerwachten() {
         </div>
       </section>
 
-      {/* Additional Accommodations */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
-            {t.whatToExpect.additionalTitle}
-          </h2>
-
-          {/* Kleine Caravan */}
-          <div className="bg-amber-50 p-8 rounded-xl shadow-sm mb-8">
-            <h3 className="text-2xl font-semibold text-amber-800 mb-4">
-              {t.whatToExpect.caravan.title}
-            </h3>
-            <p className="text-gray-600 mb-4">{t.whatToExpect.caravan.text}</p>
-            <p className="text-amber-600 font-medium">
-              {t.whatToExpect.caravan.note}
-            </p>
-          </div>
-
-          {/* La Bergerie */}
-          <div className="mb-8">
-            <h3 className="text-2xl font-semibold text-amber-800 mb-4">
-              {t.whatToExpect.bergerie.title}
-            </h3>
-            <p className="text-gray-600 mb-4">{t.whatToExpect.bergerie.text}</p>
-            <p className="text-amber-600 font-medium mb-6">
-              {t.whatToExpect.bergerie.note}
-            </p>
-            <ImageGallery images={bergerieImages} />
-          </div>
-        </div>
-      </section>
-
       {/* Table d'Hôtes */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -228,33 +263,48 @@ export default function WatTeVerwachten() {
                 </li>
               </ul>
             </div>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+            <div className="flex flex-col gap-6">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <OptimizedImage
-                  src="/uploads/2024/rob-cooking-1.jpg"
-                  alt="Rob kookt voor Table d'Hôtes"
+                  src="/uploads/2026/table-dhotes-1.jpg"
+                  alt="Samen aan tafel bij Table d'Hôtes"
                   fill
-                  sizes="(max-width: 1024px) 33vw, 20vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <OptimizedImage
-                  src="/uploads/2024/rob-cooking-2.jpg"
-                  alt="Rob bereidt maaltijd"
+                  src="/uploads/2026/table-dhotes-2.jpg"
+                  alt="Eten onder de bomen"
                   fill
-                  sizes="(max-width: 1024px) 33vw, 20vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
                 <OptimizedImage
-                  src="/uploads/2024/rob-cooking-3.jpg"
-                  alt="Table d'Hôtes gerecht"
+                  src="/uploads/2026/table-dhotes-3.jpg"
+                  alt="De barbecue wordt klaargemaakt"
                   fill
-                  sizes="(max-width: 1024px) 33vw, 20vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>
           </div>
+
+          <div className="mt-12">
+            <ImageGallery images={tableDhotesImages} />
+          </div>
+        </div>
+      </section>
+
+      {/* Reserveren */}
+      <section className="py-16 bg-amber-800 text-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-6">{t.common.interested}</h2>
+          <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
+            {t.common.contactUs}
+          </p>
+          <ReserveButton variant="light" />
         </div>
       </section>
     </>

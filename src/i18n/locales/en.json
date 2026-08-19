@@ -26,7 +26,10 @@
     "person": "person",
     "perNight": "per night",
     "included": "Included",
-    "free": "Free"
+    "free": "Free",
+    "reserve": "Book or ask a question",
+    "reserveSubject": "Enquiry Les Deux Chevaux",
+    "reserveBody": "Hello Yvonne and Rob,\n\nI would like to enquire about the following:\n\nArrival: \nDeparture: \nNumber of adults: \nNumber of children: \nAccommodation: \n\nQuestion or remark:\n\n\nKind regards,\n"
   },
   "home": {
     "heroSubtitle": "Gîte, mini-camping, bed & breakfast and table d'hôtes in the Auvergne",
@@ -43,7 +46,13 @@
       "intro": "Table d'hôtes as it should be. Eating together at the long table, good conversations. Strangers at the start of the evening, friends at the end. Exactly how a holiday should be. Kids are also welcome.",
       "description": "Enjoy a homemade three-course menu, together at the table, prepared with seasonal products.",
       "included": "Included",
-      "includedItems": ["Starter", "Main course", "Dessert", "Water", "Coffee or tea afterwards"],
+      "includedItems": [
+        "Starter",
+        "Main course",
+        "Dessert",
+        "Water",
+        "Coffee or tea afterwards"
+      ],
       "price": "€22.50 p.p.",
       "extras": "Drinks (beer, soft drinks, wine): €2.50 per glass",
       "note": "One menu for all guests, please notify allergies in advance.",
@@ -222,7 +231,7 @@
     "caravan": {
       "title": "Small Caravan",
       "text": "Cozy caravan for 1-2 persons. Ideal for those who want to camp without their own equipment.",
-      "note": "Minimum 2 nights stay"
+      "note": ""
     },
     "bergerie": {
       "title": "La Bergerie",
@@ -230,13 +239,18 @@
       "note": "Cozy and romantic"
     },
     "tableTitle": "Table d'Hôtes",
-    "tableText": "Our table d'hôtes offers delicious, freshly prepared meals. Enjoy an authentic French dining experience together with other guests.",
+    "tableText": "Rob and Paul, father and son, cook together for the table. Everything is freshly prepared, often outside on the Ofyr or the kamado. Enjoy a real French evening around one long table together with the other guests.",
     "tableFeatures": {
       "dinner": "Three-course dinner with coffee/tea",
       "fresh": "Freshly prepared meals",
       "atmosphere": "Cozy atmosphere with other guests"
     },
-    "impressions": "Impressions"
+    "impressions": "Impressions",
+    "luxuryTent": {
+      "title": "Furnished Tent",
+      "text": "A charming, fully furnished tent on its own terrace with wooden decking. Perfect for those who want glamping comfort in the middle of nature — with lanterns, fairy lights, and a place to unwind under the stars.",
+      "note": "€60 per night"
+    }
   },
   "rates": {
     "heroTitle": "Our Rates",
@@ -276,12 +290,12 @@
       "smallCaravan": {
         "name": "Small caravan",
         "price": "€60.00",
-        "details": "1-2 persons, min. 2 nights"
+        "details": "1-2 persons"
       },
       "luxuryTent": {
         "name": "Furnished tent",
         "price": "€60.00",
-        "details": "Min. 2 nights"
+        "details": ""
       },
       "bergerie": {
         "name": "La Bergerie",

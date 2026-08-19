@@ -22,6 +22,9 @@ export interface Translations {
     email: string;
     interested: string;
     contactUs: string;
+    reserve: string;
+    reserveSubject: string;
+    reserveBody: string;
     location: string;
     viewOnGoogleMaps: string;
     persons: string;
@@ -137,6 +140,11 @@ export interface Translations {
       sanitary: string;
     };
     additionalTitle: string;
+    luxuryTent: {
+      title: string;
+      text: string;
+      note: string;
+    };
     caravan: {
       title: string;
       text: string;

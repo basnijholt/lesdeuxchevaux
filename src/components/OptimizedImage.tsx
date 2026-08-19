@@ -27,12 +27,16 @@ export function OptimizedImage({
 }: OptimizedImageProps) {
   // When using fill, don't wrap in an extra div - let the parent handle positioning
   if (fill) {
+    // Only default to object-cover when the caller hasn't chosen its own object-fit
+    const hasObjectFit = /(^|\s)object-(contain|cover|fill|none|scale-down)(\s|$)/.test(
+      className
+    );
     return (
       <ExportedImage
         src={src}
         alt={alt}
         fill
-        className={`object-cover ${className}`}
+        className={hasObjectFit ? className : `object-cover ${className}`}
         priority={priority}
         sizes={sizes}
         placeholder="blur"

@@ -2,6 +2,7 @@
 
 import { useTranslation } from "@/i18n";
 import Map from "@/components/Map";
+import ReserveButton from "@/components/ReserveButton";
 
 export default function Contact() {
   const { t, locale } = useTranslation();
@@ -12,7 +13,10 @@ export default function Contact() {
       <section className="py-16 bg-amber-800 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold mb-4">{t.nav.contact}</h1>
-          <p className="text-xl text-amber-100">{t.contact.heroSubtitle}</p>
+          <p className="text-xl text-amber-100 mb-8">
+            {t.contact.heroSubtitle}
+          </p>
+          <ReserveButton variant="light" />
         </div>
       </section>
 

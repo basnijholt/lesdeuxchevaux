@@ -26,7 +26,10 @@
     "person": "personne",
     "perNight": "par nuit",
     "included": "Inclus",
-    "free": "Gratuit"
+    "free": "Gratuit",
+    "reserve": "Réserver ou poser une question",
+    "reserveSubject": "Demande Les Deux Chevaux",
+    "reserveBody": "Bonjour Yvonne et Rob,\n\nJe souhaiterais faire la demande suivante :\n\nArrivée : \nDépart : \nNombre d'adultes : \nNombre d'enfants : \nHébergement souhaité : \n\nQuestion ou remarque :\n\n\nCordialement,\n"
   },
   "home": {
     "heroSubtitle": "Gîte, mini-camping, chambres d'hôtes et table d'hôtes en Auvergne",
@@ -43,7 +46,13 @@
       "intro": "La table d'hôtes comme elle devrait être. Manger ensemble à la grande table, de bonnes conversations. Étrangers au début de la soirée, amis à la fin. Exactement comme les vacances devraient être. Les enfants sont aussi les bienvenus.",
       "description": "Profitez d'un menu trois plats fait maison, ensemble à table, préparé avec des produits de saison.",
       "included": "Inclus",
-      "includedItems": ["Entrée", "Plat principal", "Dessert", "Eau", "Café ou thé après"],
+      "includedItems": [
+        "Entrée",
+        "Plat principal",
+        "Dessert",
+        "Eau",
+        "Café ou thé après"
+      ],
       "price": "22,50 € p.p.",
       "extras": "Boissons (bière, soft, vin): 2,50 € le verre",
       "note": "Un seul menu pour tous les invités, merci de signaler les allergies à l'avance.",
@@ -222,7 +231,7 @@
     "caravan": {
       "title": "Petite Caravane",
       "text": "Caravane confortable pour 1-2 personnes. Idéale pour camper sans son propre équipement.",
-      "note": "Minimum 2 nuits"
+      "note": ""
     },
     "bergerie": {
       "title": "La Bergerie",
@@ -230,13 +239,18 @@
       "note": "Cosy et romantique"
     },
     "tableTitle": "Table d'Hôtes",
-    "tableText": "Notre table d'hôtes propose de délicieux repas fraîchement préparés. Profitez d'une expérience culinaire française authentique avec d'autres hôtes.",
+    "tableText": "Rob et Paul, père et fils, cuisinent ensemble pour la table. Tout est préparé frais, souvent dehors sur l'Ofyr ou le kamado. Profitez d'une vraie soirée française autour d'une grande table commune avec les autres hôtes.",
     "tableFeatures": {
       "dinner": "Dîner trois services avec café/thé",
       "fresh": "Repas fraîchement préparés",
       "atmosphere": "Ambiance conviviale avec d'autres hôtes"
     },
-    "impressions": "Impressions"
+    "impressions": "Impressions",
+    "luxuryTent": {
+      "title": "Tente Aménagée",
+      "text": "Une tente conviviale, entièrement équipée, sur sa propre terrasse en bois. Parfaite pour ceux qui souhaitent profiter du confort du glamping au cœur de la nature — avec des lanternes, des guirlandes lumineuses et un espace pour se détendre sous les étoiles.",
+      "note": "60€ par nuit"
+    }
   },
   "rates": {
     "heroTitle": "Nos Tarifs",
@@ -276,12 +290,12 @@
       "smallCaravan": {
         "name": "Petite caravane",
         "price": "60,00 €",
-        "details": "1-2 personnes, min. 2 nuits"
+        "details": "1-2 personnes"
       },
       "luxuryTent": {
         "name": "Tente équipée",
         "price": "60,00 €",
-        "details": "Min. 2 nuits"
+        "details": ""
       },
       "bergerie": {
         "name": "La Bergerie",
