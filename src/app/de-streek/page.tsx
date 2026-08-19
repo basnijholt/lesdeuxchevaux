@@ -23,6 +23,9 @@ const regionImages = [
   { src: "/uploads/2024/streek/region-10.jpg", alt: "De streek" },
   { src: "/uploads/2026/streek/wandelen-bos.jpg", alt: "Wandelen in het bos" },
   { src: "/uploads/2026/streek/avondlandschap.jpg", alt: "Glooiend landschap in de avond" },
+  { src: "/uploads/2026/streek/suppen-kajak.jpg", alt: "Suppen en kajakken op het water" },
+  { src: "/uploads/2026/streek/wandelen-strobalen.jpg", alt: "Wandelen langs de velden met strobalen" },
+  { src: "/uploads/2026/streek/zonsondergang.jpg", alt: "Zonsondergang boven de Auvergne" },
 ];
 
 export default function DeStreek() {

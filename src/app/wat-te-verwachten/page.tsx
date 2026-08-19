@@ -46,6 +46,9 @@ const tableDhotesImages = [
   { src: "/uploads/2026/eten/watermeloensalade.jpg", alt: "Watermeloensalade met feta en rucola" },
   { src: "/uploads/2026/eten/wraps.jpg", alt: "Wraps met pulled pork en verse groenten" },
   { src: "/uploads/2026/eten/voorbereiding-bbq.jpg", alt: "Voorbereidingen voor de barbecue" },
+  { src: "/uploads/2026/eten/quiche-pannetje.jpg", alt: "Quiche uit het gietijzeren pannetje" },
+  { src: "/uploads/2026/eten/stoofpot-gietijzer.jpg", alt: "Stoofpot met groenten in gietijzeren pan" },
+  { src: "/uploads/2026/eten/borden-spiesen.jpg", alt: "Borden met gegrilde vlees- en groentespiesen" },
 ];
 
 const campingImages = [
@@ -53,6 +56,8 @@ const campingImages = [
   { src: "/uploads/2026/01/camping-1.jpg", alt: "Camping terrein" },
   { src: "/uploads/2026/01/camping-2.jpg", alt: "Camping uitzicht" },
   { src: "/uploads/2026/01/camping-3.jpg", alt: "Camping omgeving" },
+  { src: "/uploads/2026/terrein/bank-om-boom.jpg", alt: "Houten bank rondom de boomstam" },
+  { src: "/uploads/2026/terrein/houten-kar.jpg", alt: "Antieke houten kar op het terrein" },
 ];
 
 export default function WatTeVerwachten() {
