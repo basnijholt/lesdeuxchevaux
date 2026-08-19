@@ -21,6 +21,8 @@ const regionImages = [
   { src: "/uploads/2024/streek/region-7.jpg", alt: "De streek" },
   { src: "/uploads/2024/streek/region-9.jpg", alt: "De streek" },
   { src: "/uploads/2024/streek/region-10.jpg", alt: "De streek" },
+  { src: "/uploads/2026/streek/wandelen-bos.jpg", alt: "Wandelen in het bos" },
+  { src: "/uploads/2026/streek/avondlandschap.jpg", alt: "Glooiend landschap in de avond" },
 ];
 
 export default function DeStreek() {

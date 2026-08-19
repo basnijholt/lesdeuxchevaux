@@ -36,6 +36,18 @@ const bergerieImages = [
   { src: "/uploads/2026/01/bergerie-2.jpg", alt: "La Bergerie exterieur" },
 ];
 
+const tableDhotesImages = [
+  { src: "/uploads/2026/eten/tafel-vol-gerechten.jpg", alt: "Tafel vol gegrilde gerechten en salades" },
+  { src: "/uploads/2026/eten/paella.jpg", alt: "Paella met garnalen en mosselen" },
+  { src: "/uploads/2026/eten/spareribs.jpg", alt: "Spareribs op de grill" },
+  { src: "/uploads/2026/eten/spiesjes-rauw.jpg", alt: "Spiesjes klaar voor de grill" },
+  { src: "/uploads/2026/eten/rijst-en-spiesjes.jpg", alt: "Rijst en spiesjes op de Ofyr" },
+  { src: "/uploads/2026/eten/bord-spies-aardappel.jpg", alt: "Bord met spies, gepofte aardappel en gegrilde groenten" },
+  { src: "/uploads/2026/eten/watermeloensalade.jpg", alt: "Watermeloensalade met feta en rucola" },
+  { src: "/uploads/2026/eten/wraps.jpg", alt: "Wraps met pulled pork en verse groenten" },
+  { src: "/uploads/2026/eten/voorbereiding-bbq.jpg", alt: "Voorbereidingen voor de barbecue" },
+];
+
 const campingImages = [
   { src: "/uploads/2020/07/camping-2.jpg", alt: "Camping met tent" },
   { src: "/uploads/2026/01/camping-1.jpg", alt: "Camping terrein" },
@@ -273,6 +285,10 @@ export default function WatTeVerwachten() {
                 />
               </div>
             </div>
+          </div>
+
+          <div className="mt-12">
+            <ImageGallery images={tableDhotesImages} />
           </div>
         </div>
       </section>
