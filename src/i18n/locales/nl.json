@@ -228,7 +228,7 @@
     "caravan": {
       "title": "Kleine Caravan",
       "text": "Gezellige caravan voor 1-2 personen. Ideaal voor wie wil kamperen zonder eigen spullen.",
-      "note": "Minimaal 2 nachten verblijf"
+      "note": ""
     },
     "bergerie": {
       "title": "La Bergerie",
@@ -246,7 +246,7 @@
     "luxuryTent": {
       "title": "Ingerichte Tent",
       "text": "Een sfeervolle, volledig ingerichte tent op een eigen terras met houten vlonder. Perfect voor wie glamping-comfort wil midden in de natuur — met lampionnen, lichtjes en een plek om te ontspannen onder de sterren.",
-      "note": "Minimaal 2 nachten verblijf · €60 per nacht"
+      "note": "€60 per nacht"
     }
   },
   "rates": {
@@ -287,12 +287,12 @@
       "smallCaravan": {
         "name": "Kleine caravan",
         "price": "€60",
-        "details": "1-2 personen, min. 2 nachten"
+        "details": "1-2 personen"
       },
       "luxuryTent": {
         "name": "Ingerichte tent",
         "price": "€60",
-        "details": "Min. 2 nachten"
+        "details": ""
       },
       "bergerie": {
         "name": "La Bergerie",

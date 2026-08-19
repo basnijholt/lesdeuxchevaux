@@ -39,16 +39,14 @@ const bergerieImages = [
 const tableDhotesImages = [
   { src: "/uploads/2026/eten/tafel-vol-gerechten.jpg", alt: "Tafel vol gegrilde gerechten en salades" },
   { src: "/uploads/2026/eten/paella.jpg", alt: "Paella met garnalen en mosselen" },
+  { src: "/uploads/2026/eten/quiche-pannetje.jpg", alt: "Quiche uit het gietijzeren pannetje" },
   { src: "/uploads/2026/eten/spareribs.jpg", alt: "Spareribs op de grill" },
-  { src: "/uploads/2026/eten/spiesjes-rauw.jpg", alt: "Spiesjes klaar voor de grill" },
+  { src: "/uploads/2026/eten/watermeloensalade.jpg", alt: "Watermeloensalade met feta en rucola" },
+  { src: "/uploads/2026/eten/stoofpot-gietijzer.jpg", alt: "Stoofpot met groenten in gietijzeren pan" },
+  { src: "/uploads/2026/eten/wraps.jpg", alt: "Wraps met pulled pork en verse groenten" },
   { src: "/uploads/2026/eten/rijst-en-spiesjes.jpg", alt: "Rijst en spiesjes op de Ofyr" },
   { src: "/uploads/2026/eten/bord-spies-aardappel.jpg", alt: "Bord met spies, gepofte aardappel en gegrilde groenten" },
-  { src: "/uploads/2026/eten/watermeloensalade.jpg", alt: "Watermeloensalade met feta en rucola" },
-  { src: "/uploads/2026/eten/wraps.jpg", alt: "Wraps met pulled pork en verse groenten" },
   { src: "/uploads/2026/eten/voorbereiding-bbq.jpg", alt: "Voorbereidingen voor de barbecue" },
-  { src: "/uploads/2026/eten/quiche-pannetje.jpg", alt: "Quiche uit het gietijzeren pannetje" },
-  { src: "/uploads/2026/eten/stoofpot-gietijzer.jpg", alt: "Stoofpot met groenten in gietijzeren pan" },
-  { src: "/uploads/2026/eten/borden-spiesen.jpg", alt: "Borden met gegrilde vlees- en groentespiesen" },
 ];
 
 const campingImages = [

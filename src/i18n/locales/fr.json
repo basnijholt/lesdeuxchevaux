@@ -228,7 +228,7 @@
     "caravan": {
       "title": "Petite Caravane",
       "text": "Caravane confortable pour 1-2 personnes. Idéale pour camper sans son propre équipement.",
-      "note": "Minimum 2 nuits"
+      "note": ""
     },
     "bergerie": {
       "title": "La Bergerie",
@@ -246,7 +246,7 @@
     "luxuryTent": {
       "title": "Tente Aménagée",
       "text": "Une tente conviviale, entièrement équipée, sur sa propre terrasse en bois. Parfaite pour ceux qui souhaitent profiter du confort du glamping au cœur de la nature — avec des lanternes, des guirlandes lumineuses et un espace pour se détendre sous les étoiles.",
-      "note": "Minimum 2 nuits · 60€ par nuit"
+      "note": "60€ par nuit"
     }
   },
   "rates": {
@@ -287,12 +287,12 @@
       "smallCaravan": {
         "name": "Petite caravane",
         "price": "60,00 €",
-        "details": "1-2 personnes, min. 2 nuits"
+        "details": "1-2 personnes"
       },
       "luxuryTent": {
         "name": "Tente équipée",
         "price": "60,00 €",
-        "details": "Min. 2 nuits"
+        "details": ""
       },
       "bergerie": {
         "name": "La Bergerie",
