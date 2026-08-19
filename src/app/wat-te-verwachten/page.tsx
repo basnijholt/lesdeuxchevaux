@@ -247,29 +247,29 @@ export default function WatTeVerwachten() {
                 </li>
               </ul>
             </div>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+            <div className="flex flex-col gap-6">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <OptimizedImage
-                  src="/uploads/2024/rob-cooking-1.jpg"
-                  alt="Rob kookt voor Table d'Hôtes"
+                  src="/uploads/2026/table-dhotes-1.jpg"
+                  alt="Samen aan tafel bij Table d'Hôtes"
                   fill
-                  sizes="(max-width: 1024px) 33vw, 20vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <OptimizedImage
-                  src="/uploads/2024/rob-cooking-2.jpg"
-                  alt="Rob bereidt maaltijd"
+                  src="/uploads/2026/table-dhotes-2.jpg"
+                  alt="Eten onder de bomen"
                   fill
-                  sizes="(max-width: 1024px) 33vw, 20vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-lg">
                 <OptimizedImage
-                  src="/uploads/2024/rob-cooking-3.jpg"
-                  alt="Table d'Hôtes gerecht"
+                  src="/uploads/2026/table-dhotes-3.jpg"
+                  alt="De barbecue wordt klaargemaakt"
                   fill
-                  sizes="(max-width: 1024px) 33vw, 20vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>
