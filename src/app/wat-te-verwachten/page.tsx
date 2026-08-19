@@ -137,41 +137,8 @@ export default function WatTeVerwachten() {
         </div>
       </section>
 
-      {/* Camping */}
-      <section className="py-16 bg-amber-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-amber-900 mb-6">
-              {t.whatToExpect.campingTitle}
-            </h2>
-            <p className="text-lg text-gray-600 mb-4">
-              {t.whatToExpect.campingText}
-            </p>
-            <ul className="space-y-3 text-gray-600 mb-6">
-              <li className="flex items-start gap-2">
-                <span className="text-amber-600">✓</span>
-                {t.whatToExpect.campingFeatures.electricity}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-amber-600">✓</span>
-                {t.whatToExpect.campingFeatures.dogs}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-amber-600">✓</span>
-                {t.whatToExpect.campingFeatures.quiet}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-amber-600">✓</span>
-                {t.whatToExpect.campingFeatures.sanitary}
-              </li>
-            </ul>
-          </div>
-          <ImageGallery images={campingImages} />
-        </div>
-      </section>
-
       {/* Additional Accommodations */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-amber-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-amber-900 text-center mb-12">
             {t.whatToExpect.additionalTitle}
@@ -218,6 +185,39 @@ export default function WatTeVerwachten() {
             </p>
             <ImageGallery images={bergerieImages} />
           </div>
+        </div>
+      </section>
+
+      {/* Camping */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-amber-900 mb-6">
+              {t.whatToExpect.campingTitle}
+            </h2>
+            <p className="text-lg text-gray-600 mb-4">
+              {t.whatToExpect.campingText}
+            </p>
+            <ul className="space-y-3 text-gray-600 mb-6">
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600">✓</span>
+                {t.whatToExpect.campingFeatures.electricity}
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600">✓</span>
+                {t.whatToExpect.campingFeatures.dogs}
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600">✓</span>
+                {t.whatToExpect.campingFeatures.quiet}
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600">✓</span>
+                {t.whatToExpect.campingFeatures.sanitary}
+              </li>
+            </ul>
+          </div>
+          <ImageGallery images={campingImages} />
         </div>
       </section>
 
