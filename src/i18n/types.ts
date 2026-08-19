@@ -22,6 +22,9 @@ export interface Translations {
     email: string;
     interested: string;
     contactUs: string;
+    reserve: string;
+    reserveSubject: string;
+    reserveBody: string;
     location: string;
     viewOnGoogleMaps: string;
     persons: string;

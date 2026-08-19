@@ -26,7 +26,10 @@
     "person": "persoon",
     "perNight": "per nacht",
     "included": "Inbegrepen",
-    "free": "Gratis"
+    "free": "Gratis",
+    "reserve": "Reserveren of vraag stellen",
+    "reserveSubject": "Aanvraag Les Deux Chevaux",
+    "reserveBody": "Hallo Yvonne en Rob,\n\nGraag zou ik het volgende willen aanvragen:\n\nAankomst: \nVertrek: \nAantal volwassenen: \nAantal kinderen: \nWelk verblijf: \n\nVraag of opmerking:\n\n\nMet vriendelijke groet,\n"
   },
   "home": {
     "heroSubtitle": "Gîte, mini-camping, chambres d'hôtes en table d'hôtes in de Auvergne",

@@ -26,7 +26,10 @@
     "person": "person",
     "perNight": "per night",
     "included": "Included",
-    "free": "Free"
+    "free": "Free",
+    "reserve": "Book or ask a question",
+    "reserveSubject": "Enquiry Les Deux Chevaux",
+    "reserveBody": "Hello Yvonne and Rob,\n\nI would like to enquire about the following:\n\nArrival: \nDeparture: \nNumber of adults: \nNumber of children: \nAccommodation: \n\nQuestion or remark:\n\n\nKind regards,\n"
   },
   "home": {
     "heroSubtitle": "Gîte, mini-camping, bed & breakfast and table d'hôtes in the Auvergne",

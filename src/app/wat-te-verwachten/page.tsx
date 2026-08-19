@@ -3,6 +3,7 @@
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
 import OptimizedImage from "@/components/OptimizedImage";
+import ReserveButton from "@/components/ReserveButton";
 import { useTranslation } from "@/i18n";
 
 const longereImages = [
@@ -293,6 +294,17 @@ export default function WatTeVerwachten() {
           <div className="mt-12">
             <ImageGallery images={tableDhotesImages} />
           </div>
+        </div>
+      </section>
+
+      {/* Reserveren */}
+      <section className="py-16 bg-amber-800 text-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-6">{t.common.interested}</h2>
+          <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
+            {t.common.contactUs}
+          </p>
+          <ReserveButton variant="light" />
         </div>
       </section>
     </>

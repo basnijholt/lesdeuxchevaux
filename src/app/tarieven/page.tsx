@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import ReserveButton from "@/components/ReserveButton";
 import { useTranslation } from "@/i18n";
 
 export default function Tarieven() {
@@ -223,12 +224,15 @@ export default function Tarieven() {
           <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
             {t.common.contactUs}
           </p>
-          <Link
-            href="/contact"
-            className="inline-block px-8 py-3 bg-white text-amber-800 font-semibold rounded-lg hover:bg-amber-50 transition-colors"
-          >
-            {t.common.contact}
-          </Link>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <ReserveButton variant="light" />
+            <Link
+              href="/contact"
+              className="inline-block px-8 py-3 border-2 border-white/70 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
+            >
+              {t.common.contact}
+            </Link>
+          </div>
         </div>
       </section>
     </>
