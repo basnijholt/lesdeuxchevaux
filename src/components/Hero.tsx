@@ -25,32 +25,91 @@ export default function Hero({
   const clips = [...(video ? [video] : []), ...(videos ?? [])];
   const meerdereClips = clips.length > 1;
 
-  const [huidige, setHuidige] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  // Hoe lang het overvloeien duurt (in seconden).
+  const OVERVLOEI = 1.5;
 
-  // Bij wisselen: nieuwe bron laden en meteen afspelen.
+  // Twee lagen over elkaar; er is er steeds één zichtbaar. Bij een wissel
+  // vervaagt de ene terwijl de andere opkomt.
+  const [actieveLaag, setActieveLaag] = useState(0);
+  const [bronnen, setBronnen] = useState<[string, string]>([
+    clips[0] ?? "",
+    clips[1] ?? clips[0] ?? "",
+  ]);
+  const laagRefs = [
+    useRef<HTMLVideoElement>(null),
+    useRef<HTMLVideoElement>(null),
+  ];
+  const volgendeIndex = useRef(1 % Math.max(clips.length, 1));
+  const bezig = useRef(false);
+
+  // De tweede video pas ophalen zodra de eerste loopt, zodat de pagina
+  // net zo snel opent als met één video.
+  const [tweedeGeladen, setTweedeGeladen] = useState(false);
   useEffect(() => {
     if (!meerdereClips) return;
-    const el = videoRef.current;
-    if (!el) return;
-    el.load();
-    el.play().catch(() => {
-      /* browser weigert automatisch afspelen; poster blijft staan */
-    });
-  }, [huidige, meerdereClips]);
-
-  // Tweede video alvast ophalen terwijl de eerste speelt, zodat de wissel vloeiend gaat.
-  useEffect(() => {
-    if (!meerdereClips) return;
-    clips.slice(1).forEach((src) => {
-      const link = document.createElement("link");
-      link.rel = "prefetch";
-      link.as = "video";
-      link.href = src;
-      document.head.appendChild(link);
-    });
+    const eerste = laagRefs[0].current;
+    if (!eerste) return;
+    const start = () => setTweedeGeladen(true);
+    if (eerste.readyState >= 3) start();
+    else eerste.addEventListener("canplaythrough", start, { once: true });
+    return () => eerste.removeEventListener("canplaythrough", start);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [meerdereClips]);
+
+  useEffect(() => {
+    if (!meerdereClips) return;
+
+    const wissel = () => {
+      if (bezig.current) return;
+      bezig.current = true;
+
+      const nieuweLaag = actieveLaag === 0 ? 1 : 0;
+      const el = laagRefs[nieuweLaag].current;
+      if (el) {
+        el.currentTime = 0;
+        el.play().catch(() => {});
+      }
+      setActieveLaag(nieuweLaag);
+
+      // Zodra het overvloeien klaar is, de zojuist verdwenen laag alvast
+      // vullen met de vólgende video.
+      window.setTimeout(() => {
+        const oudeLaag = nieuweLaag === 0 ? 1 : 0;
+        volgendeIndex.current = (volgendeIndex.current + 1) % clips.length;
+        setBronnen((huidig) => {
+          const kopie: [string, string] = [...huidig];
+          kopie[oudeLaag] = clips[volgendeIndex.current];
+          return kopie;
+        });
+        bezig.current = false;
+      }, OVERVLOEI * 1000);
+    };
+
+    // Iets vóór het einde beginnen met overvloeien, zodat het naadloos oogt.
+    const actief = laagRefs[actieveLaag].current;
+    if (!actief) return;
+
+    const bijTijd = () => {
+      if (!actief.duration || Number.isNaN(actief.duration)) return;
+      if (actief.currentTime >= actief.duration - OVERVLOEI) wissel();
+    };
+
+    actief.addEventListener("timeupdate", bijTijd);
+    actief.addEventListener("ended", wissel);
+    return () => {
+      actief.removeEventListener("timeupdate", bijTijd);
+      actief.removeEventListener("ended", wissel);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [actieveLaag, meerdereClips]);
+
+  // De inactieve laag alvast inladen zodat de wissel niet hapert.
+  useEffect(() => {
+    if (!meerdereClips) return;
+    const stil = laagRefs[actieveLaag === 0 ? 1 : 0].current;
+    stil?.load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [bronnen, meerdereClips]);
 
   return (
     <div
@@ -68,29 +127,42 @@ export default function Hero({
         />
       )}
 
-      {/* Video: op alle schermformaten, ook mobiel.
-          Bij meerdere video's speelt hij ze om en om af. */}
-      {clips.length > 0 && (
+      {/* Eén video: gewoon herhalen. */}
+      {clips.length === 1 && (
         <video
-          key={meerdereClips ? clips[huidige] : undefined}
-          ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover scale-105"
           autoPlay
-          loop={!meerdereClips}
+          loop
           muted
           playsInline
           preload="auto"
           poster={image}
           aria-hidden="true"
-          onEnded={
-            meerdereClips
-              ? () => setHuidige((i) => (i + 1) % clips.length)
-              : undefined
-          }
         >
-          <source src={clips[huidige]} type="video/mp4" />
+          <source src={clips[0]} type="video/mp4" />
         </video>
       )}
+
+      {/* Meerdere video's: twee lagen die in elkaar overvloeien. */}
+      {meerdereClips &&
+        ([0, 1] as const).map((laag) => (
+          <video
+            key={laag}
+            ref={laagRefs[laag]}
+            src={bronnen[laag]}
+            className={`absolute inset-0 w-full h-full object-cover scale-105 transition-opacity duration-[1500ms] ease-in-out ${
+              actieveLaag === laag ? "opacity-100" : "opacity-0"
+            }`}
+            autoPlay={laag === 0}
+            muted
+            playsInline
+            // Laag 0 meteen laden, laag 1 pas als de eerste al draait:
+            // zo blijft het openen van de pagina net zo snel als met één video.
+            preload={laag === 0 ? "auto" : tweedeGeladen ? "auto" : "none"}
+            poster={laag === 0 ? image : undefined}
+            aria-hidden="true"
+          />
+        ))}
       {/* Refined gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
 
