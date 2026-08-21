@@ -115,9 +115,11 @@ export default function Hero({
     <div
       className={`relative ${
         fullHeight
-          ? // Op de telefoon lager: een brede video in een hoog vlak snijdt te veel
-            // van links en rechts weg. Vanaf tablet weer beeldvullend.
-            "h-[52vh] min-h-[340px] md:h-[80vh] md:min-h-[600px]"
+          ? clips.length > 0
+            ? // Met video op de telefoon: precies de vorm van het beeld (16:9), zodat
+              // er niets van links en rechts wegvalt. Vanaf tablet weer beeldvullend.
+              "aspect-video min-h-[240px] md:aspect-auto md:h-[80vh] md:min-h-[600px]"
+            : "h-[80vh] min-h-[600px]"
           : "h-[50vh] min-h-[350px]"
       } w-full overflow-hidden`}
     >
@@ -174,8 +176,8 @@ export default function Hero({
 
       {/* Content */}
       <div className="absolute inset-0 flex items-end">
-        <div className="mx-auto max-w-7xl px-4 py-10 md:py-16 sm:px-6 lg:px-8 w-full">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 md:mb-6 drop-shadow-lg tracking-tight">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:py-10 md:py-16 sm:px-6 lg:px-8 w-full">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-2 sm:mb-3 md:mb-6 drop-shadow-lg tracking-tight">
             {title}
           </h1>
           {subtitle && (
@@ -188,7 +190,7 @@ export default function Hero({
 
       {/* Subtle scroll indicator for full height hero */}
       {fullHeight && (
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <svg
             className="w-6 h-6 text-white/70"
             fill="none"
