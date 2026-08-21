@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import OptimizedImage from "./OptimizedImage";
 
 interface HeroProps {
@@ -7,6 +8,8 @@ interface HeroProps {
   subtitle?: string;
   image?: string;
   video?: string;
+  /** Extra video's die na de eerste aan de beurt komen; daarna begint hij weer vooraan. */
+  videos?: string[];
   fullHeight?: boolean;
 }
 
@@ -15,14 +18,46 @@ export default function Hero({
   subtitle,
   image,
   video,
+  videos,
   fullHeight = false,
 }: HeroProps) {
+  // Alle video's op een rij: eerst `video`, daarna eventuele extra's.
+  const clips = [...(video ? [video] : []), ...(videos ?? [])];
+  const meerdereClips = clips.length > 1;
+
+  const [huidige, setHuidige] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Bij wisselen: nieuwe bron laden en meteen afspelen.
+  useEffect(() => {
+    if (!meerdereClips) return;
+    const el = videoRef.current;
+    if (!el) return;
+    el.load();
+    el.play().catch(() => {
+      /* browser weigert automatisch afspelen; poster blijft staan */
+    });
+  }, [huidige, meerdereClips]);
+
+  // Tweede video alvast ophalen terwijl de eerste speelt, zodat de wissel vloeiend gaat.
+  useEffect(() => {
+    if (!meerdereClips) return;
+    clips.slice(1).forEach((src) => {
+      const link = document.createElement("link");
+      link.rel = "prefetch";
+      link.as = "video";
+      link.href = src;
+      document.head.appendChild(link);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div
       className={`relative ${fullHeight ? "h-[80vh] min-h-[600px]" : "h-[50vh] min-h-[350px]"} w-full overflow-hidden`}
     >
       {/* Stilstaand beeld: alleen als er geen video is (anders dient het als poster) */}
-      {image && !video && (
+      {image && clips.length === 0 && (
         <OptimizedImage
           src={image}
           alt={title}
@@ -33,19 +68,27 @@ export default function Hero({
         />
       )}
 
-      {/* Video: op alle schermformaten, ook mobiel */}
-      {video && (
+      {/* Video: op alle schermformaten, ook mobiel.
+          Bij meerdere video's speelt hij ze om en om af. */}
+      {clips.length > 0 && (
         <video
+          key={meerdereClips ? clips[huidige] : undefined}
+          ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover scale-105"
           autoPlay
-          loop
+          loop={!meerdereClips}
           muted
           playsInline
           preload="auto"
           poster={image}
           aria-hidden="true"
+          onEnded={
+            meerdereClips
+              ? () => setHuidige((i) => (i + 1) % clips.length)
+              : undefined
+          }
         >
-          <source src={video} type="video/mp4" />
+          <source src={clips[huidige]} type="video/mp4" />
         </video>
       )}
       {/* Refined gradient overlay */}

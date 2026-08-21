@@ -51,6 +51,7 @@ export default function Home() {
         subtitle={t.home.heroSubtitle}
         image="/uploads/2026/08/drone-banner-still.jpg"
         video="/uploads/2026/08/drone-banner.mp4"
+        videos={["/uploads/2026/08/drone-banner-2.mp4"]}
         fullHeight
       />
 
