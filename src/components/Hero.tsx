@@ -26,7 +26,7 @@ export default function Hero({
   const meerdereClips = clips.length > 1;
 
   // Hoe lang het overvloeien duurt (in seconden).
-  const OVERVLOEI = 1.5;
+  const OVERVLOEI = 0.6;
 
   // Twee lagen over elkaar; er is er steeds één zichtbaar. Bij een wissel
   // vervaagt de ene terwijl de andere opkomt.
@@ -158,7 +158,7 @@ export default function Hero({
             key={laag}
             ref={laagRefs[laag]}
             src={bronnen[laag]}
-            className={`absolute inset-0 w-full h-full object-cover md:scale-105 transition-opacity duration-[1500ms] ease-in-out ${
+            className={`absolute inset-0 w-full h-full object-cover md:scale-105 transition-opacity duration-[600ms] ease-in-out ${
               actieveLaag === laag ? "opacity-100" : "opacity-0"
             }`}
             autoPlay={laag === 0}
