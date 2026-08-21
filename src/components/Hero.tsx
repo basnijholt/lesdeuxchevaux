@@ -6,6 +6,7 @@ interface HeroProps {
   title: string;
   subtitle?: string;
   image?: string;
+  video?: string;
   fullHeight?: boolean;
 }
 
@@ -13,21 +14,38 @@ export default function Hero({
   title,
   subtitle,
   image,
+  video,
   fullHeight = false,
 }: HeroProps) {
   return (
     <div
       className={`relative ${fullHeight ? "h-[80vh] min-h-[600px]" : "h-[50vh] min-h-[350px]"} w-full overflow-hidden`}
     >
+      {/* Stilstaand beeld: altijd aanwezig, op mobiel het enige dat getoond wordt */}
       {image && (
         <OptimizedImage
           src={image}
           alt={title}
           fill
-          className="scale-105"
+          className={`scale-105 ${video ? "md:hidden" : ""}`}
           priority
           sizes="100vw"
         />
+      )}
+
+      {/* Video: alleen vanaf tabletformaat, scheelt data op mobiel */}
+      {video && (
+        <video
+          className="hidden md:block absolute inset-0 w-full h-full object-cover scale-105"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={image}
+          aria-hidden="true"
+        >
+          <source src={video} type="video/mp4" />
+        </video>
       )}
       {/* Refined gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />

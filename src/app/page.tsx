@@ -49,7 +49,8 @@ export default function Home() {
       <Hero
         title="Les Deux Chevaux"
         subtitle={t.home.heroSubtitle}
-        image="/uploads/2020/07/2020-06-29-20.12.14-2.jpg"
+        image="/uploads/2026/08/drone-banner-still.jpg"
+        video="/uploads/2026/08/drone-banner.mp4"
         fullHeight
       />
 
