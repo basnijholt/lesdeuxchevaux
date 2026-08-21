@@ -21,26 +21,27 @@ export default function Hero({
     <div
       className={`relative ${fullHeight ? "h-[80vh] min-h-[600px]" : "h-[50vh] min-h-[350px]"} w-full overflow-hidden`}
     >
-      {/* Stilstaand beeld: altijd aanwezig, op mobiel het enige dat getoond wordt */}
-      {image && (
+      {/* Stilstaand beeld: alleen als er geen video is (anders dient het als poster) */}
+      {image && !video && (
         <OptimizedImage
           src={image}
           alt={title}
           fill
-          className={`scale-105 ${video ? "md:hidden" : ""}`}
+          className="scale-105"
           priority
           sizes="100vw"
         />
       )}
 
-      {/* Video: alleen vanaf tabletformaat, scheelt data op mobiel */}
+      {/* Video: op alle schermformaten, ook mobiel */}
       {video && (
         <video
-          className="hidden md:block absolute inset-0 w-full h-full object-cover scale-105"
+          className="absolute inset-0 w-full h-full object-cover scale-105"
           autoPlay
           loop
           muted
           playsInline
+          preload="auto"
           poster={image}
           aria-hidden="true"
         >
