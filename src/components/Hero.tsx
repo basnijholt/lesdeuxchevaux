@@ -113,7 +113,13 @@ export default function Hero({
 
   return (
     <div
-      className={`relative ${fullHeight ? "h-[80vh] min-h-[600px]" : "h-[50vh] min-h-[350px]"} w-full overflow-hidden`}
+      className={`relative ${
+        fullHeight
+          ? // Op de telefoon lager: een brede video in een hoog vlak snijdt te veel
+            // van links en rechts weg. Vanaf tablet weer beeldvullend.
+            "h-[52vh] min-h-[340px] md:h-[80vh] md:min-h-[600px]"
+          : "h-[50vh] min-h-[350px]"
+      } w-full overflow-hidden`}
     >
       {/* Stilstaand beeld: alleen als er geen video is (anders dient het als poster) */}
       {image && clips.length === 0 && (
@@ -150,7 +156,7 @@ export default function Hero({
             key={laag}
             ref={laagRefs[laag]}
             src={bronnen[laag]}
-            className={`absolute inset-0 w-full h-full object-cover scale-105 transition-opacity duration-[1500ms] ease-in-out ${
+            className={`absolute inset-0 w-full h-full object-cover md:scale-105 transition-opacity duration-[1500ms] ease-in-out ${
               actieveLaag === laag ? "opacity-100" : "opacity-0"
             }`}
             autoPlay={laag === 0}
@@ -168,12 +174,12 @@ export default function Hero({
 
       {/* Content */}
       <div className="absolute inset-0 flex items-end">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 w-full">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg tracking-tight">
+        <div className="mx-auto max-w-7xl px-4 py-10 md:py-16 sm:px-6 lg:px-8 w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 md:mb-6 drop-shadow-lg tracking-tight">
             {title}
           </h1>
           {subtitle && (
-            <p className="text-xl md:text-2xl lg:text-3xl text-white/90 drop-shadow-md max-w-3xl font-light tracking-wide">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 drop-shadow-md max-w-3xl font-light tracking-wide">
               {subtitle}
             </p>
           )}
