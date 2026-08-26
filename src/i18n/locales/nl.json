@@ -228,11 +228,6 @@
       "sanitary": "Gedeelde sanitaire voorzieningen"
     },
     "additionalTitle": "Aanvullende Verblijfsopties",
-    "caravan": {
-      "title": "Kleine Caravan",
-      "text": "Gezellige caravan voor 1-2 personen. Ideaal voor wie wil kamperen zonder eigen spullen.",
-      "note": ""
-    },
     "bergerie": {
       "title": "La Bergerie",
       "text": "Een gezellig kabouterhuisje met een goed bed en 2 stoelen. Echt alleen om in te slapen - sanitair bevindt zich in het gebouwtje ernaast.",
@@ -286,11 +281,6 @@
         "name": "Le Bel Etage",
         "price": "€80",
         "details": "Basisprijs voor 2 personen.\nExtra volwassene of kind: + € 40 p.p.p.n\n(Geschikt tot 6 personen)"
-      },
-      "smallCaravan": {
-        "name": "Kleine caravan",
-        "price": "€60",
-        "details": "1-2 personen"
       },
       "luxuryTent": {
         "name": "Ingerichte tent",

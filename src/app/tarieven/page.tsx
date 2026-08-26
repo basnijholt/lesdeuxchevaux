@@ -121,17 +121,7 @@ export default function Tarieven() {
                     {t.rates.chambresItems.mainRoom.details}
                   </td>
                 </tr>
-                <tr className="hover:bg-amber-50">
-                  <td className="px-4 py-3 font-medium">
-                    {t.rates.chambresItems.smallCaravan.name}
-                  </td>
-                  <td className="px-4 py-3 text-right font-semibold text-amber-700">
-                    {t.rates.chambresItems.smallCaravan.price}
-                  </td>
-                  <td className="px-4 py-3 text-gray-600 whitespace-pre-line">
-                    {t.rates.chambresItems.smallCaravan.details}
-                  </td>
-                </tr>
+
                 <tr className="hover:bg-amber-50">
                   <td className="px-4 py-3 font-medium">
                     {t.rates.chambresItems.luxuryTent.name}

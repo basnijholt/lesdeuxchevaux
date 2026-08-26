@@ -145,11 +145,6 @@ export interface Translations {
       text: string;
       note: string;
     };
-    caravan: {
-      title: string;
-      text: string;
-      note: string;
-    };
     bergerie: {
       title: string;
       text: string;
@@ -183,7 +178,6 @@ export interface Translations {
       mainRoom: { name: string; price: string; details: string };
       longere: { name: string; price: string; details: string };
       chezMarco: { name: string; price: string; details: string };
-      smallCaravan: { name: string; price: string; details: string };
       luxuryTent: { name: string; price: string; details: string };
       bergerie: { name: string; price: string; details: string };
     };
