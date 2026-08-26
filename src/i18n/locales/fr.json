@@ -209,7 +209,7 @@
         "description": "Confortable et chaleureusement décorée avec salle de bain privée"
       },
       "chezMarco": {
-        "name": "Chez Marco",
+        "name": "Le Bel Etage",
         "capacity": "Jusqu'à 6 personnes",
         "description": "Maison accueillante avec 1 salle de bain et 2 toilettes."
       },
@@ -283,7 +283,7 @@
         "details": "2-7 personnes, salle de bain privée, 40€ par personne supplémentaire"
       },
       "chezMarco": {
-        "name": "Chez Marco",
+        "name": "Le Bel Etage",
         "price": "à partir de 80€/nuit",
         "details": "Jusqu'à 6 personnes, 40€ par personne supplémentaire"
       },

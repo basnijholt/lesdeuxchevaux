@@ -15,17 +15,17 @@ const longereImages = [
 ];
 
 const chezMarcoImages = [
-  { src: "/uploads/2026/01/chez-marco-1.jpg", alt: "Chez Marco slaapkamer" },
+  { src: "/uploads/2026/01/chez-marco-1.jpg", alt: "Le Bel Etage slaapkamer" },
   {
     src: "/uploads/2026/01/chez-marco-slaapkamer-new.jpg",
-    alt: "Chez Marco slaapkamer nieuw",
+    alt: "Le Bel Etage slaapkamer nieuw",
   },
   {
     src: "/uploads/2026/01/chez-marco-extra.jpg",
-    alt: "Chez Marco slaapkamer detail",
+    alt: "Le Bel Etage slaapkamer detail",
   },
-  { src: "/uploads/2026/01/chez-marco-keuken.jpg", alt: "Chez Marco keuken" },
-  { src: "/uploads/2026/01/chez-marco-2.jpg", alt: "Chez Marco interieur" },
+  { src: "/uploads/2026/01/chez-marco-keuken.jpg", alt: "Le Bel Etage keuken" },
+  { src: "/uploads/2026/01/chez-marco-2.jpg", alt: "Le Bel Etage interieur" },
 ];
 
 const rodeKamerImages = [
@@ -117,7 +117,7 @@ export default function WatTeVerwachten() {
         </div>
       </section>
 
-      {/* Chez Marco */}
+      {/* Le Bel Etage */}
       <section className="py-16 bg-amber-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
