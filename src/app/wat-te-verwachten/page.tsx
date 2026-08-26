@@ -179,17 +179,6 @@ export default function WatTeVerwachten() {
             </div>
           </div>
 
-          {/* Kleine Caravan */}
-          <div className="bg-amber-50 p-8 rounded-xl shadow-sm mb-8">
-            <h3 className="text-2xl font-semibold text-amber-800 mb-4">
-              {t.whatToExpect.caravan.title}
-            </h3>
-            <p className="text-gray-600 mb-4">{t.whatToExpect.caravan.text}</p>
-            <p className="text-amber-600 font-medium">
-              {t.whatToExpect.caravan.note}
-            </p>
-          </div>
-
           {/* La Bergerie */}
           <div className="mb-8">
             <h3 className="text-2xl font-semibold text-amber-800 mb-4">
