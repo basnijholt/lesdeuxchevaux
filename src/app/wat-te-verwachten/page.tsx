@@ -15,11 +15,11 @@ const longereImages = [
 ];
 
 const chezMarcoImages = [
-  { src: "/uploads/2026/08/le-bel-etage-woonkamer.jpg", alt: "Le Bel Étage woonkamer" },
-  { src: "/uploads/2026/08/le-bel-etage-woonkamer-detail.jpg", alt: "Le Bel Étage interieur" },
-  { src: "/uploads/2026/08/le-bel-etage-kachel.jpg", alt: "Le Bel Étage kachel en stenen muur" },
-  { src: "/uploads/2026/08/le-bel-etage-binnenplaats.jpg", alt: "Binnenplaats van Le Bel Étage" },
-  { src: "/uploads/2026/08/le-bel-etage-deur.jpg", alt: "Rode deur bij Le Bel Étage" },
+  { src: "/uploads/2026/08/le-bel-etage-woonkamer.jpg", alt: "Le Bel Étage woonkamer door de deuren heen" },
+  { src: "/uploads/2026/08/le-bel-etage-woonkamer-detail.jpg", alt: "Le Bel Étage woonkamer vanuit de entree" },
+  { src: "/uploads/2026/08/le-bel-etage-kachel.jpg", alt: "Le Bel Étage houtkachel, trap en koffers" },
+  { src: "/uploads/2026/08/le-bel-etage-binnenplaats.jpg", alt: "Le Bel Étage zithoek" },
+  { src: "/uploads/2026/08/le-bel-etage-deur.jpg", alt: "Le Bel Étage houtkachel en mand" },
 ];
 
 const rodeKamerImages = [
