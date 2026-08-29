@@ -15,17 +15,11 @@ const longereImages = [
 ];
 
 const chezMarcoImages = [
-  { src: "/uploads/2026/01/chez-marco-1.jpg", alt: "Le Bel Etage slaapkamer" },
-  {
-    src: "/uploads/2026/01/chez-marco-slaapkamer-new.jpg",
-    alt: "Le Bel Etage slaapkamer nieuw",
-  },
-  {
-    src: "/uploads/2026/01/chez-marco-extra.jpg",
-    alt: "Le Bel Etage slaapkamer detail",
-  },
-  { src: "/uploads/2026/01/chez-marco-keuken.jpg", alt: "Le Bel Etage keuken" },
-  { src: "/uploads/2026/01/chez-marco-2.jpg", alt: "Le Bel Etage interieur" },
+  { src: "/uploads/2026/08/le-bel-etage-woonkamer.jpg", alt: "Le Bel Étage woonkamer" },
+  { src: "/uploads/2026/08/le-bel-etage-woonkamer-detail.jpg", alt: "Le Bel Étage interieur" },
+  { src: "/uploads/2026/08/le-bel-etage-kachel.jpg", alt: "Le Bel Étage kachel en stenen muur" },
+  { src: "/uploads/2026/08/le-bel-etage-binnenplaats.jpg", alt: "Binnenplaats van Le Bel Étage" },
+  { src: "/uploads/2026/08/le-bel-etage-deur.jpg", alt: "Rode deur bij Le Bel Étage" },
 ];
 
 const rodeKamerImages = [
