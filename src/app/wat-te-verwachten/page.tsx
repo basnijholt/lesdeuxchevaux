@@ -20,6 +20,7 @@ const chezMarcoImages = [
   { src: "/uploads/2026/08/le-bel-etage-kachel.jpg", alt: "Le Bel Étage houtkachel, trap en koffers" },
   { src: "/uploads/2026/08/le-bel-etage-binnenplaats.jpg", alt: "Le Bel Étage zithoek" },
   { src: "/uploads/2026/08/le-bel-etage-deur.jpg", alt: "Le Bel Étage houtkachel en mand" },
+  { src: "/uploads/2026/08/le-bel-etage-keuken.png", alt: "Keuken van Le Bel Étage" },
 ];
 
 const rodeKamerImages = [
