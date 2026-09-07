@@ -7,11 +7,13 @@ import ReserveButton from "@/components/ReserveButton";
 import { useTranslation } from "@/i18n";
 
 const longereImages = [
-  { src: "/uploads/2026/01/longere-1.jpg", alt: "La Longère interieur" },
-  { src: "/uploads/2026/01/longere-2.jpg", alt: "La Longère slaapkamer" },
-  { src: "/uploads/2026/01/longere-3.jpg", alt: "La Longère keuken" },
-  { src: "/uploads/2026/01/longere-4.jpg", alt: "La Longère woonkamer" },
-  { src: "/uploads/2026/01/longere-5.jpg", alt: "La Longère badkamer" },
+  { src: "/uploads/2026/09/longere-leefruimte.jpg", alt: "Leefruimte van La Longère" },
+  { src: "/uploads/2026/09/longere-eetkamer.jpg", alt: "Eetkamer van La Longère" },
+  { src: "/uploads/2026/09/longere-slaapkamer.jpg", alt: "Slaapkamer van La Longère" },
+  { src: "/uploads/2026/01/longere-3.jpg", alt: "Keuken van La Longère" },
+  { src: "/uploads/2026/09/longere-badkamer-1.jpg", alt: "Badkamer van La Longère" },
+  { src: "/uploads/2026/09/longere-badkamer-2.jpg", alt: "Tweede beeld van de badkamer van La Longère" },
+  { src: "/uploads/2026/09/longere-terras.jpg", alt: "Terras van La Longère" },
 ];
 
 const chezMarcoImages = [
