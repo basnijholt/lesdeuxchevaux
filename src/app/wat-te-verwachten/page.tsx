@@ -10,6 +10,7 @@ const longereImages = [
   { src: "/uploads/2026/09/longere-leefruimte.jpg", alt: "Leefruimte van La Longère" },
   { src: "/uploads/2026/09/longere-eetkamer.jpg", alt: "Eetkamer van La Longère" },
   { src: "/uploads/2026/09/longere-slaapkamer.jpg", alt: "Slaapkamer van La Longère" },
+  { src: "/uploads/2026/09/longere-slaapkamer-2.jpg", alt: "Tweede slaapkamer van La Longère" },
   { src: "/uploads/2026/01/longere-3.jpg", alt: "Keuken van La Longère" },
   { src: "/uploads/2026/09/longere-badkamer-1.jpg", alt: "Badkamer van La Longère" },
   { src: "/uploads/2026/09/longere-badkamer-2.jpg", alt: "Tweede beeld van de badkamer van La Longère" },
