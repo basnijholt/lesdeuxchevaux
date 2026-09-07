@@ -7,7 +7,7 @@ import ReserveButton from "@/components/ReserveButton";
 import { useTranslation } from "@/i18n";
 
 const longereImages = [
-  { src: "/uploads/2026/09/longere-leefruimte.jpg", alt: "Leefruimte van La Longère" },
+  { src: "/uploads/2026/09/longere-leefruimte.jpg", alt: "Woonkamer van La Longère" },
   { src: "/uploads/2026/09/longere-eetkamer.jpg", alt: "Eetkamer van La Longère" },
   { src: "/uploads/2026/09/longere-slaapkamer.jpg", alt: "Slaapkamer van La Longère" },
   { src: "/uploads/2026/09/longere-slaapkamer-2.jpg", alt: "Tweede slaapkamer van La Longère" },
