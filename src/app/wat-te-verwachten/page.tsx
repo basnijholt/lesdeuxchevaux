@@ -9,11 +9,13 @@ import { useTranslation } from "@/i18n";
 const longereImages = [
   { src: "/uploads/2026/09/longere-leefruimte.jpg", alt: "Woonkamer van La Longère" },
   { src: "/uploads/2026/01/longere-1.jpg", alt: "Woonkamer en eetruimte van La Longère" },
+  { src: "/uploads/2026/01/longere-2.jpg", alt: "Eethoek van La Longère" },
   { src: "/uploads/2026/09/longere-slaapkamer.jpg", alt: "Slaapkamer van La Longère" },
   { src: "/uploads/2026/09/longere-slaapkamer-2.jpg", alt: "Tweede slaapkamer van La Longère" },
   { src: "/uploads/2026/01/longere-3.jpg", alt: "Keuken van La Longère" },
   { src: "/uploads/2026/09/longere-badkamer-2.jpg", alt: "Badkamer van La Longère" },
   { src: "/uploads/2026/09/longere-terras.jpg", alt: "Terras van La Longère" },
+  { src: "/uploads/2026/01/longere-5.jpg", alt: "Lichte hal van La Longère" },
 ];
 
 const chezMarcoImages = [
