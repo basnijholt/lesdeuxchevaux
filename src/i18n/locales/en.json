@@ -194,6 +194,10 @@
       "troncais": {
         "title": "Forêt de Tronçais",
         "description": "Largest oak forest in Europe with swimming ponds and hiking trails."
+      },
+      "velorails": {
+        "title": "Vélorails in the area",
+        "description": "Several beautiful vélorail routes can be found nearby. The Vélorail de la Sioule follows an old railway line and passes near the Eiffel viaduct at Rouzat. There are also routes at the Fades viaduct and in Noyant-d’Allier."
       }
     }
   },
@@ -206,7 +210,7 @@
       "red": {
         "name": "Red Room",
         "capacity": "2 persons",
-        "description": "Comfortable and stylishly decorated with private bathroom"
+        "description": "Comfortable and stylishly decorated with private bathroom, on the ground floor"
       },
       "chezMarco": {
         "name": "Le Bel Etage",

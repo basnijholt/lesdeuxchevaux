@@ -135,6 +135,11 @@ export default function DeStreek() {
       description: t.theRegion.attractions.troncais.description,
       url: "https://www.onf.fr/vivre-la-foret/forets-de-france/+/16fc::foret-domaniale-de-troncais.html",
     },
+    {
+      title: t.theRegion.attractions.velorails.title,
+      description: t.theRegion.attractions.velorails.description,
+      url: "https://www.veloraildelasioule.fr/",
+    },
   ];
 
   return (

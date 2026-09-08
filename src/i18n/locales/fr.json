@@ -194,6 +194,10 @@
       "troncais": {
         "title": "Forêt de Tronçais",
         "description": "Plus grande chênaie d'Europe avec étangs de baignade et sentiers de randonnée."
+      },
+      "velorails": {
+        "title": "Vélorails dans les environs",
+        "description": "Plusieurs beaux parcours de vélorail dans les environs. Le Vélorail de la Sioule suit une ancienne voie ferrée et passe près du viaduc de Rouzat, construit par Eiffel. Il existe aussi des parcours au viaduc des Fades et à Noyant-d’Allier."
       }
     }
   },
@@ -206,7 +210,7 @@
       "red": {
         "name": "Chambre Rouge",
         "capacity": "2 personnes",
-        "description": "Confortable et chaleureusement décorée avec salle de bain privée"
+        "description": "Confortable et chaleureusement décorée avec salle de bain privée, au rez-de-chaussée"
       },
       "chezMarco": {
         "name": "Le Bel Etage",
