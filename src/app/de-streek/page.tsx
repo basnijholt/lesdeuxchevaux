@@ -148,6 +148,9 @@ export default function DeStreek() {
         title={t.theRegion.heroTitle}
         subtitle={t.theRegion.heroSubtitle}
         image="/uploads/2013/11/WS14.jpg"
+        video="/uploads/2026/09/erik-foto-combo.mp4"
+        fullHeight
+        mobileFullHeight
       />
 
       {/* Introduction */}
