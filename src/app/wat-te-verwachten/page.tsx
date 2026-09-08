@@ -48,6 +48,11 @@ const tableDhotesImages = [
   { src: "/uploads/2026/eten/voorbereiding-bbq.jpg", alt: "Voorbereidingen voor de barbecue" },
 ];
 
+const luxuryTentImages = [
+  { src: "/uploads/2026/tent-avond.jpg", alt: "Ingerichte tent bij avond met lampionnen" },
+  { src: "/uploads/2026/09/tent-golden-hour.jpg", alt: "Ingerichte tent in warm avondlicht" },
+];
+
 const campingImages = [
   { src: "/uploads/2020/07/camping-2.jpg", alt: "Camping met tent" },
   { src: "/uploads/2026/01/camping-1.jpg", alt: "Camping terrein" },
@@ -167,14 +172,7 @@ export default function WatTeVerwachten() {
             <p className="text-amber-600 font-medium mb-6">
               {t.whatToExpect.luxuryTent.note}
             </p>
-            <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-              <OptimizedImage
-                src="/uploads/2026/tent-avond.jpg"
-                alt="Ingerichte tent bij avond met lampionnen"
-                fill
-                sizes="(max-width: 768px) 100vw, 80vw"
-              />
-            </div>
+            <ImageGallery images={luxuryTentImages} />
           </div>
 
           {/* La Bergerie */}
