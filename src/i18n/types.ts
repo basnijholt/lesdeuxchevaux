@@ -119,6 +119,7 @@ export interface Translations {
       charroux: { title: string; description: string };
       vichy: { title: string; description: string };
       troncais: { title: string; description: string };
+      velorails: { title: string; description: string };
     };
   };
   whatToExpect: {

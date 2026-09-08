@@ -194,6 +194,10 @@
       "troncais": {
         "title": "Forêt de Tronçais",
         "description": "Grootste eikenbos van Europa met zwemvijvers en wandelpaden."
+      },
+      "velorails": {
+        "title": "Vélorails in de omgeving",
+        "description": "Meerdere mooie vélorailroutes in de omgeving. Bij de Vélorail de la Sioule fiets je over oude spoorlijnen en langs het Eiffel-viaduct van Rouzat. Ook bij het viaduc des Fades en in Noyant-d’Allier zijn bijzondere routes."
       }
     }
   },
@@ -206,7 +210,7 @@
       "red": {
         "name": "Rode Kamer",
         "capacity": "2 personen",
-        "description": "Comfortabel en sfeervol ingericht met eigen badkamer"
+        "description": "Comfortabel en sfeervol ingericht met eigen badkamer, op de begane grond"
       },
       "chezMarco": {
         "name": "Le Bel Etage",
