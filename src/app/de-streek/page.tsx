@@ -150,6 +150,26 @@ export default function DeStreek() {
         image="/uploads/2013/11/WS14.jpg"
       />
 
+      {/* Aerial photo impression */}
+      <section className="bg-white py-8 sm:py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="overflow-hidden rounded-xl shadow-lg">
+            <video
+              className="aspect-video w-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              poster="/uploads/2013/11/WS14.jpg"
+              aria-label="Luchtfoto's van het landschap rond Les Deux Chevaux"
+            >
+              <source src="/uploads/2026/09/erik-foto-combo.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* Introduction */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
