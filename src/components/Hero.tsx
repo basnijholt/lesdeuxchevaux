@@ -120,7 +120,7 @@ export default function Hero({
         fullHeight
           ? clips.length > 0
             ? mobileFullHeight
-              ? "h-[100svh] min-h-[560px] md:aspect-auto md:h-[80vh] md:min-h-[600px]"
+              ? "h-[75svh] min-h-[480px] md:aspect-auto md:h-[80vh] md:min-h-[600px]"
               : // Met video op de telefoon: precies de vorm van het beeld (16:9), zodat
                 // er niets van links en rechts wegvalt. Vanaf tablet weer beeldvullend.
                 "aspect-video min-h-[240px] md:aspect-auto md:h-[80vh] md:min-h-[600px]"
