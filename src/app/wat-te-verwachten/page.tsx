@@ -8,7 +8,6 @@ import { useTranslation } from "@/i18n";
 
 const longereImages = [
   { src: "/uploads/2026/09/longere-gevel-nieuw.jpeg", alt: "La Longère met rode luiken" },
-  { src: "/uploads/2026/09/longere-gevel-nieuw.jpeg", alt: "La Longère met rode luiken" },
   { src: "/uploads/2026/01/longere-1.jpg", alt: "Woonkamer van La Longère" },
   { src: "/uploads/2026/01/longere-2.jpg", alt: "Eethoek van La Longère" },
   { src: "/uploads/2026/09/longere-keuken.jpg", alt: "Keuken van La Longère" },
