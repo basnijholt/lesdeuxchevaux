@@ -50,8 +50,7 @@ export default function Home() {
         title="Les Deux Chevaux"
         subtitle={t.home.heroSubtitle}
         image="/uploads/2026/08/drone-banner-still.jpg"
-        video="/uploads/2026/08/drone-banner.mp4"
-        videos={["/uploads/2026/08/drone-banner-2.mp4"]}
+        video="/uploads/2026/09/drone-homepage-preview.mp4"
         fullHeight
       />
 
