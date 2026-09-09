@@ -11,6 +11,10 @@ interface HeroProps {
   /** Extra video's die na de eerste aan de beurt komen; daarna begint hij weer vooraan. */
   videos?: string[];
   fullHeight?: boolean;
+  /** Maak de hero op kleine schermen extra hoog, voor een schermvullende banner. */
+  mobileFullHeight?: boolean;
+  imageClassName?: string;
+  className?: string;
 }
 
 export default function Hero({
@@ -20,6 +24,9 @@ export default function Hero({
   video,
   videos,
   fullHeight = false,
+  mobileFullHeight = false,
+  imageClassName,
+  className = "",
 }: HeroProps) {
   // Alle video's op een rij: eerst `video`, daarna eventuele extra's.
   const clips = [...(video ? [video] : []), ...(videos ?? [])];
@@ -116,12 +123,14 @@ export default function Hero({
       className={`relative ${
         fullHeight
           ? clips.length > 0
-            ? // Met video op de telefoon: precies de vorm van het beeld (16:9), zodat
-              // er niets van links en rechts wegvalt. Vanaf tablet weer beeldvullend.
-              "aspect-video min-h-[240px] md:aspect-auto md:h-[80vh] md:min-h-[600px]"
+            ? mobileFullHeight
+              ? "h-[75svh] min-h-[480px] md:aspect-auto md:h-[80vh] md:min-h-[600px]"
+              : // Met video op de telefoon: precies de vorm van het beeld (16:9), zodat
+                // er niets van links en rechts wegvalt. Vanaf tablet weer beeldvullend.
+                "aspect-video min-h-[240px] md:aspect-auto md:h-[80vh] md:min-h-[600px]"
             : "h-[80vh] min-h-[600px]"
           : "h-[50vh] min-h-[350px]"
-      } w-full overflow-hidden`}
+      } w-full overflow-hidden ${className}`}
     >
       {/* Stilstaand beeld: alleen als er geen video is (anders dient het als poster) */}
       {image && clips.length === 0 && (
@@ -129,7 +138,7 @@ export default function Hero({
           src={image}
           alt={title}
           fill
-          className="scale-105"
+          className={imageClassName ?? "scale-105"}
           priority
           sizes="100vw"
         />
