@@ -294,7 +294,7 @@
       "bergerie": {
         "name": "La Bergerie",
         "price": "€60",
-        "details": "Knus huisje, alleen om te slapen"
+        "details": "Knus huisje, alleen om te slapen. Ontbijt inbegrepen."
       },
       "mainRoom": {
         "name": "Rode Kamer",
@@ -318,7 +318,7 @@
         "price": "€2,50"
       },
       "breakfast": {
-        "description": "Ontbijt (los)",
+        "description": "Ontbijt (los, als het niet inbegrepen is)",
         "price": "€6,50 p.p."
       }
     }

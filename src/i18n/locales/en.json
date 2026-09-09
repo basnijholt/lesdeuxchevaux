@@ -294,7 +294,7 @@
       "bergerie": {
         "name": "La Bergerie",
         "price": "€60.00",
-        "details": "Cozy house, only for sleeping"
+        "details": "Cosy little house, for sleeping only. Breakfast included."
       },
       "mainRoom": {
         "name": "Red Room",
@@ -318,7 +318,7 @@
         "price": "€2.50"
       },
       "breakfast": {
-        "description": "Breakfast (separate)",
+        "description": "Breakfast (separately, if not included)",
         "price": "€6.50 p.p."
       }
     }

@@ -294,7 +294,7 @@
       "bergerie": {
         "name": "La Bergerie",
         "price": "60,00 €",
-        "details": "Petite maison cosy, uniquement pour dormir"
+        "details": "Petite maison cosy, uniquement pour dormir. Petit-déjeuner inclus."
       },
       "mainRoom": {
         "name": "Chambre Rouge",
@@ -318,7 +318,7 @@
         "price": "2,50 €"
       },
       "breakfast": {
-        "description": "Petit-déjeuner (séparé)",
+        "description": "Petit-déjeuner (séparément, s’il n’est pas inclus)",
         "price": "6,50 € p.p."
       }
     }
