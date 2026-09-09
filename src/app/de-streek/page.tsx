@@ -119,6 +119,7 @@ export default function DeStreek() {
     {
       title: t.theRegion.attractions.accrobranche.title,
       description: t.theRegion.attractions.accrobranche.description,
+      url: "https://www.accro-sioule.fr/echassieres-accrobranche-allier/",
     },
     {
       title: t.theRegion.attractions.charroux.title,
