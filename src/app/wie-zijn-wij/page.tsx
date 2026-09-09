@@ -13,6 +13,7 @@ export default function WieZijnWij() {
         title={t.nav.whoAreWe}
         subtitle={t.whoAreWe.heroSubtitle}
         image="/uploads/2026/09/paul-marjolein-family-new.jpeg"
+        imageClassName="object-cover scale-105 md:object-contain md:scale-100 md:bg-amber-50"
       />
 
       <section className="py-16 bg-white">
