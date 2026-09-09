@@ -12,7 +12,7 @@ export default function WieZijnWij() {
       <Hero
         title={t.nav.whoAreWe}
         subtitle={t.whoAreWe.heroSubtitle}
-        image="/uploads/2021/09/rob-en-yvonne-1.jpg"
+        image="/uploads/2026/09/paul-marjolein-family-new.jpeg"
       />
 
       <section className="py-16 bg-white">
