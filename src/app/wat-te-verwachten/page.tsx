@@ -72,7 +72,7 @@ export default function WatTeVerwachten() {
       <Hero
         title={t.whatToExpect.heroTitle}
         subtitle={t.whatToExpect.heroSubtitle}
-        image="/uploads/2026/01/chambres-dhotes.jpg"
+        image="/uploads/2026/09/longere-gevel-nieuw.jpeg"
       />
 
       {/* Introduction */}
