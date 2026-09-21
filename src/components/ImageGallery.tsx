@@ -78,7 +78,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           </button>
 
           <button
-            className="absolute left-4 md:left-8 text-white/80 hover:text-white transition-colors p-3 rounded-full hover:bg-white/10"
+            className="absolute left-4 md:left-8 z-10 text-white/80 hover:text-white transition-colors p-3 rounded-full hover:bg-white/10"
             onClick={(e) => {
               e.stopPropagation();
               setSelectedImage(
@@ -116,7 +116,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           </div>
 
           <button
-            className="absolute right-4 md:right-8 text-white/80 hover:text-white transition-colors p-3 rounded-full hover:bg-white/10"
+            className="absolute right-4 md:right-8 z-10 text-white/80 hover:text-white transition-colors p-3 rounded-full hover:bg-white/10"
             onClick={(e) => {
               e.stopPropagation();
               setSelectedImage(
