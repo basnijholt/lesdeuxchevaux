@@ -15,6 +15,36 @@ interface Review {
 
 const reviews: Review[] = [
   {
+    name: "Rens Toeters",
+    rating: 5,
+    text: {
+      nl: "In één woord: fantastisch!\n\nWij konden eind september nog een heerlijk weekend genieten van het fantastische weer bij Slaperij Les Deux Chevaux.\n\nWe hadden de luxe van La Longère, maar hebben eigenlijk het hele weekend buiten geleefd.\n\nVader en zoon kunnen geweldig koken en wij werden elke avond verwend met een heerlijk driegangendiner. Zelfs aan de jongste (4 jaar) onder ons werd gedacht!\n\nWe zijn ontzettend warm ontvangen door de gastheren en gastdames. Het voelde meteen als thuiskomen, ondanks dat dit onze eerste keer bij Les Deux Chevaux was.\n\nWat een heerlijk verblijf, met fantastische mensen en geweldig eten!\n10/10! Wij raden Les Deux Chevaux 100% aan en komen hier zeker nog eens terug!",
+      fr: "En un mot : fantastique !\n\nFin septembre, nous avons encore pu profiter d'un merveilleux week-end avec un temps magnifique à la Slaperij Les Deux Chevaux.\n\nNous avons eu la chance de séjourner dans La Longère, mais en réalité nous avons vécu dehors tout le week-end.\n\nLe père et le fils cuisinent merveilleusement bien et nous avons été gâtés chaque soir avec un délicieux dîner à trois plats. Même le plus jeune d'entre nous, âgé de 4 ans, a été bien pris en compte !\n\nNous avons été accueillis très chaleureusement par nos hôtes. Nous nous sommes tout de suite sentis chez nous, même si c'était notre première fois aux Deux Chevaux.\n\nQuel merveilleux séjour, avec des gens fantastiques et une cuisine formidable !\n10/10 ! Nous recommandons Les Deux Chevaux à 100 % et nous reviendrons certainement !",
+      en: "In one word: fantastic!\n\nAt the end of September, we were still able to enjoy a wonderful weekend of fantastic weather at Slaperij Les Deux Chevaux.\n\nWe had the luxury of staying in La Longère, but in fact we spent the whole weekend outdoors.\n\nFather and son are wonderful cooks, and every evening we were treated to a delicious three-course dinner. Even the youngest among us, aged 4, was well catered for!\n\nWe received an incredibly warm welcome from our hosts. It immediately felt like coming home, even though it was our first time at Les Deux Chevaux.\n\nWhat a wonderful stay, with fantastic people and great food!\n10/10! We highly recommend Les Deux Chevaux and will definitely come back!",
+    },
+    date: "2026",
+  },
+  {
+    name: "Peter van Meer",
+    rating: 5,
+    text: {
+      nl: "Mooie plek om even te ontspannen na een lange reis. Wij gebruikten deze mooie rustige locatie als tussenstop onderweg naar Spanje. Komen hier zeker nog een keertje terug. Bedankt Yvonne, Rob, Marjolein en Paul voor de gastvrije ontvangst en het lekkere eten.",
+      fr: "Bel endroit pour se détendre après un long voyage. Nous avons utilisé ce bel endroit paisible comme étape sur la route vers l'Espagne. Nous reviendrons certainement. Merci à Yvonne, Rob, Marjolein et Paul pour leur accueil chaleureux et leur délicieuse cuisine.",
+      en: "A beautiful place to relax after a long journey. We used this lovely, peaceful location as a stopover on our way to Spain. We will definitely come back. Thank you to Yvonne, Rob, Marjolein and Paul for the warm welcome and delicious food.",
+    },
+    date: "2026",
+  },
+  {
+    name: "Peter Hubers",
+    rating: 5,
+    text: {
+      nl: "Helemaal top. Lekker rustig op een mooie locatie. Mee-eten is een echte aanrader.",
+      fr: "Tout simplement génial. Très calme, dans un bel endroit. Dîner à la table d'hôtes est vivement recommandé.",
+      en: "Absolutely fantastic. Very peaceful, in a beautiful location. Joining the table d'hôtes for dinner is highly recommended.",
+    },
+    date: "2026",
+  },
+  {
     name: "Shirley Gorsira",
     rating: 5,
     text: {
